@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar";
 import Home from "../components/Home";
 import WhyArunLink from "../components/WhyArunLink";
 import Feture from "../components/Feture";
@@ -11,11 +12,27 @@ import Contact from "../components/Contact";
 ---
 
 <Layout>
-  <Home />
-  <WhyArunLink />
-  <Feture />
-  <Customer />
-  <Partner />
-  <Faq />
-  <Contact />
+  <Navbar client:load />
+
+  <section id="home" class="scroll-mt-28 pt-28">
+    <Home />
+  </section>
+  <section id="why" class="scroll-mt-28 min-h-[50vh] pt-10">
+    <WhyArunLink />
+  </section>
+  <section id="feature" class="scroll-mt-28 min-h-[50vh] pt-10">
+    <Feture />
+  </section>
+  <section id="customer" class="scroll-mt-28 min-h-[50vh] pt-10">
+    <Customer />
+  </section>
+  <section id="partner" class="scroll-mt-28 min-h-[50vh] pt-10">
+    <Partner />
+  </section>
+  <section id="faq" class="scroll-mt-28 min-h-[50vh] pt-10">
+    <Faq />
+  </section>
+  <section id="contact" class="scroll-mt-28 min-h-[50vh] pt-10 pb-16">
+    <Contact />
+  </section>
 </Layout>
