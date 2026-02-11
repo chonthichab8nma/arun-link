@@ -3,4 +3,15 @@
 
 body {
   font-family: "Bai Jamjuree", sans-serif;
+
+}
+@theme {
+  --text-h1: 3.375rem; 
+
+}
+@layer components {
+  .FeatuesText{
+    font-size: 3.375rem;
+    font-weight: bold;
+  }
 }
