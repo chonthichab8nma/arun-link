@@ -5,10 +5,17 @@ type NavItem = { label: string; href: string };
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [pinnedWhite, setPinnedWhite] = useState(false);
+  const [autoWhite, setAutoWhite] = useState(false);
   const [activeHash, setActiveHash] = useState("#home");
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 12);
+      const whySection = document.getElementById("why");
+      if (!whySection) return;
+      const triggerTop = whySection.offsetTop - 110;
+      setAutoWhite(window.scrollY >= triggerTop);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -36,21 +43,22 @@ export default function Navbar() {
   );
 
   const wrapperClass = "fixed inset-x-0 top-0 z-50 transition-all duration-300";
+  const isWhite = pinnedWhite || autoWhite;
 
-  const bgClass = pinnedWhite
+  const bgClass = isWhite
     ? "bg-white"
     : scrolled
       ? "bg-white/8 backdrop-blur-md"
       : "bg-transparent";
 
-  const textClass = pinnedWhite ? "text-sky-700" : "text-white";
+  const textClass = isWhite ? "text-sky-700" : "text-white";
 
   const linkBase =
     "px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200";
 
   const linkClass = (href: string) => {
     const isActive = activeHash === href;
-    if (pinnedWhite) {
+    if (isWhite) {
       return [
         linkBase,
         isActive
@@ -88,7 +96,7 @@ export default function Navbar() {
         >
           <div
             className={`h-9 w-9 rounded-sm border ${
-              pinnedWhite ? "border-sky-300 bg-slate-100" : "border-white/60 bg-white/20"
+              isWhite ? "border-sky-300 bg-slate-100" : "border-white/60 bg-white/20"
             }`}
           />
           <div className={`leading-tight ${textClass}`}>
@@ -112,14 +120,15 @@ export default function Navbar() {
 
         <div onClick={(e) => e.stopPropagation()}>
           <a
-            href="#home"
-            className={`rounded-xl px-4 py-2 text-sm font-semibold transition ${
-              pinnedWhite
+            href="https://arunlink.vercel.app/"
+            className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
+              isWhite
                 ? "bg-sky-600 text-white hover:bg-sky-700"
                 : "bg-white text-sky-700 hover:bg-white/90"
             }`}
             onClick={() => setActiveHash("#home")}
           >
+
             ลองใช้เลย
           </a>
         </div>
