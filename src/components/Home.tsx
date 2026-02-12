@@ -93,7 +93,7 @@ export default function Home() {
               backgroundRepeat: "no-repeat",
             }}
           />
-          <div className="pointer-events-none absolute inset-0 rounded-[28px] bg-gradient-to-r from-[#1891CD]/60 to-[#1891CD]/50" />
+          <div className="pointer-events-none absolute inset-0  bg-gradient-to-r from-[#1891CD]/60 to-[#1891CD]/50" />
 
           <img
             src="/Home/All.png"
