@@ -4,19 +4,22 @@ export default function Customer() {
   return (
     <section className="bg-white py-16">
       <div className="mx-auto max-w-[1200px] px-6">
-        <div
-          className="group relative overflow-visible rounded-[28px] px-8 py-10 md:px-14 md:py-14"
-          style={{
-            background:
-              "linear-gradient(90deg, rgba(24,145,205,1) 40%, rgba(24,145,205,1) 64%, rgba(24,145,205,1) 80%, rgba(24,145,205,1) 100%)",
-          }}
-        >
-          {/* ลายพื้นหลังจาง ๆ (optional) */}
-          <div className="pointer-events-none absolute inset-0 opacity-15 rounded-[28px] overflow-hidden">
-            <div className="absolute -left-24 -top-24 h-80 w-80 rounded-full bg-white/30 blur-2xl" />
-            <div className="absolute left-40 top-10 h-72 w-72 rounded-full bg-white/20 blur-2xl" />
-            <div className="absolute right-10 bottom-0 h-96 w-96 rounded-full bg-black/10 blur-2xl" />
-          </div>
+       <div
+  className="group relative overflow-visible rounded-[28px] px-8 py-10 md:px-14 md:py-14"
+  style={{
+    backgroundImage: "url(/Partner/Background1.png)",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+
+<div className="pointer-events-none absolute inset-0 rounded-[28px] bg-gradient-to-r from-[#1891CD]/60 to-[#1891CD]/40" />
+
+
+
+
+
 
           <div className="relative grid items-center gap-10 lg:grid-cols-2">
             {/* LEFT */}
@@ -44,7 +47,7 @@ export default function Customer() {
                   mt-8 inline-flex items-center justify-center
                   rounded-xl bg-white px-6 py-3
                   text-[14px] font-semibold text-[#1891CD]
-                  shadow-sm transition hover:bg-white/90
+                  shadow-sm transition hover:bg-[#D3EDF8] cursor-pointer
                 "
               >
                 สมัครพาร์ทเนอร์
