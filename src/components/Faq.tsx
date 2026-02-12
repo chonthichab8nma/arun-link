@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useState, type FC } from "react";
 import {
   MessageSquareText,
   CalendarDays,
@@ -6,152 +6,142 @@ import {
   PencilLine,
   Smartphone,
   ChevronDown,
+  type LucideIcon,
 } from "lucide-react";
 
 type FAQItem = {
-  icon: React.ReactNode;
+  icon: LucideIcon;
   question: string;
   answer: string;
 };
 
-const faqData: FAQItem[] = [
+const faqItems: FAQItem[] = [
   {
-    icon: <MessageSquareText size={20} />,
+    icon: MessageSquareText,
     question: "ต้องเสียค่าบริการในการใช้งาน อรุณลิงก์ หรือไม่?",
-    answer:
-      "ไม่ต้องเสียค่าใช้จ่ายค่ะ ไม่ว่าจะเป็นผู้ใช้งานทั่วไปที่ต้องการจองช่าง หรือเป็นพาร์ทเนอร์/ช่างที่ต้องการลงผลงานและให้บริการ ทุกคนสามารถเริ่มต้นใช้งานระบบได้ฟรี หากในอนาคตมีบริการเสริมจะมีการแจ้งรายละเอียดอย่างชัดเจน",
+    answer: `ไม่ต้องเสียค่าใช้จ่ายค่ะ
+ไม่ว่าจะเป็นผู้ใช้งานทั่วไปที่ต้องการจองช่าง
+หรือเป็นพาร์ทเนอร์/ช่างที่ต้องการลงผลงานและให้บริการ
+ทุกคนสามารถเริ่มต้นใช้งานระบบได้ ฟรี
+ในอนาคตหากมีบริการเสริม จะมีการแจ้งรายละเอียดล่วงหน้าอย่างชัดเจน`,
   },
   {
-    icon: <CalendarDays size={20} />,
+    icon: CalendarDays,
     question: "หากจองบริการไปแล้ว สามารถยกเลิกหรือเปลี่ยนเวลาได้ไหม?",
-    answer:
-      "ได้ค่ะ คุณสามารถยกเลิกหรือแก้ไขการจองได้จากหน้า 'รายการของฉัน' ภายในระบบ โดยต้องแจ้งล่วงหน้าตามเงื่อนไขของแต่ละบริการ หากยกเลิกในนาทีสุดท้าย ระบบอาจบันทึกข้อมูลไว้เพื่อการให้บริการครั้งถัดไป",
+    answer: `ได้ค่ะ คุณสามารถยกเลิกหรือแก้ไขการจองได้จากหน้า “รายการของฉัน” ภายในระบบ
+โดยต้องแจ้งล่วงหน้าก่อนวันนัดหมายตามเวลาที่กำหนดในแต่ละบริการ
+
+หากมีการยกเลิกในนาทีสุดท้าย ระบบอาจบันทึกไว้เป็นข้อมูลสำหรับการให้บริการครั้งถัดไป`,
   },
   {
-    icon: <ShieldCheck size={20} />,
+    icon: ShieldCheck,
     question:
       "ฉันจะมั่นใจได้อย่างไรว่า “ช่าง” หรือ “พาร์ทเนอร์” ในระบบไว้ใจได้?",
-    answer:
-      "ช่างทุกคนต้องผ่านการยืนยันตัวตน และมีการลงผลงานจริงให้ตรวจสอบ ลูกค้าสามารถอ่านรีวิว ดูคะแนน และ Portfolio ก่อนตัดสินใจ ระบบยังมีการจัดการกรณีเกิดปัญหาเพื่อให้ความเป็นธรรมทั้งสองฝ่าย",
+    answer: `ช่างหรือผู้ให้บริการที่อยู่ใน อรุณลิงก์ จะต้องผ่านการยืนยันตัวตน และมีการลงผลงานจริง
+ให้ตรวจสอบก่อนใช้งาน ลูกค้าสามารถอ่านรีวิวจากผู้ใช้จริงก่อนหน้า และดู Portfolio
+เพื่อประกอบการตัดสินใจได้
+
+ระบบยังมีการจัดการกรณีเกิดปัญหาหลังการจอง เพื่อให้ความเป็นธรรมทั้งสองฝ่ายค่ะ`,
   },
   {
-    icon: <PencilLine size={20} />,
+    icon: PencilLine,
     question: "ถ้าฉันเป็นช่าง ไม่มีร้าน ไม่มีบริษัท จะสมัครได้ไหม?",
-    answer:
-      "ได้เลยค่ะ ไม่ว่าจะเป็นช่างเดี่ยว ร้านเล็ก หรือทีมงานครบชุด ระบบเปิดโอกาสให้ทุกคนเข้าร่วมได้ เพียงมีผลงานจริงและพร้อมให้บริการในพื้นที่ของคุณ",
+    answer: `ได้เลยค่ะ! ไม่ว่าคุณจะเป็นช่างเดี่ยว ร้านเล็ก หรือทีมงานช่างครบเซต อรุณลิงก์
+เปิดโอกาสให้ทุกคนเข้าร่วมระบบอย่างเท่าเทียม เพียงแค่คุณมีผลงานจริง
+พร้อมให้บริการในพื้นที่ ระบบจะช่วยคุณสร้างความน่าเชื่อถือผ่านรีวิว
+และการแสดงตัวตนแบบมืออาชีพ`,
   },
   {
-    icon: <Smartphone size={20} />,
+    icon: Smartphone,
     question: "ต้องใช้แอปพลิเคชันหรือไม่? ใช้งานจากมือถือได้ไหม?",
-    answer:
-      "อรุณลิงก์ รองรับการใช้งานผ่านเว็บไซต์โดยตรง ไม่จำเป็นต้องดาวน์โหลดแอป และรองรับมือถือ แท็บเล็ต และคอมพิวเตอร์ สามารถจอง ติดตามสถานะ และจัดการข้อมูลได้ทุกที่",
+    answer: `อรุณลิงก์ รองรับการใช้งานผ่านเว็บไซต์โดยตรง ไม่จำเป็นต้องโหลดแอป
+
+และระบบถูกออกแบบมาให้ใช้งานได้ดีทั้งในมือถือ แท็บเล็ต และคอมพิวเตอร์
+ไม่ว่าคุณจะอยู่ที่ไหน ก็สามารถจอง/ให้บริการ และติดตามสถานะได้อย่างสะดวก`,
   },
 ];
 
-export default function Faq() {
-  // ✅ เริ่มต้นหุบหมด
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+type FAQCardProps = {
+  item: FAQItem;
+  index: number;
+  isActive: boolean;
+  onToggle: (index: number) => void;
+};
 
-  // (ถ้ายังอยากให้มี “อ่านเพิ่มเติม” คงไว้ได้)
-  const [expanded, setExpanded] = useState<Record<number, boolean>>({});
-
-  const toggleOpen = (index: number) => {
-    setOpenIndex((prev) => {
-      const next = prev === index ? null : index;
-
-      // ✅ เวลาเปลี่ยนข้อที่เปิด ให้รีเซ็ต readmore ของข้อที่กำลังเปิดใหม่
-      // (กันกรณีเคยกดอ่านเพิ่มเติมแล้วไปเปิดข้ออื่น)
-      if (next !== null) {
-        setExpanded((old) => ({ ...old, [next]: false }));
-      }
-
-      return next;
-    });
-  };
-
-  const toggleReadMore = (index: number) => {
-    setExpanded((prev) => ({ ...prev, [index]: !prev[index] }));
-  };
-
-  const isLong = useMemo(() => faqData.map((x) => x.answer.length > 160), []);
+const FAQCard: FC<FAQCardProps> = ({ item, index, isActive, onToggle }) => {
+  const Icon = item.icon;
+  const answerId = `faq-answer-${index}`;
+  const questionId = `faq-question-${index}`;
 
   return (
-    <section className="bg-white py-16 px-4">
-      <div className="mx-auto max-w-[736px]">
-        <h2 className="text-center font-bold text-[28px] sm:text-[32px] md:text-[40px] mb-10">
+    <article className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 ease-in-out hover:bg-gray-50">
+      <button
+        type="button"
+        id={questionId}
+        aria-expanded={isActive}
+        aria-controls={answerId}
+        onClick={() => onToggle(index)}
+        className="flex w-full items-center justify-between gap-3 p-4 text-left sm:gap-4 sm:p-5"
+      >
+        <div className="flex min-w-0 items-center gap-3 sm:gap-4">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-200 bg-white text-sky-500">
+            <Icon size={20} />
+          </div>
+          <p className="min-w-0 text-[17px] font-semibold leading-snug text-gray-900 sm:text-[18px]">
+            <span className="font-bold">Q:</span>{" "}
+            <span className="break-words">{item.question}</span>
+          </p>
+        </div>
+
+        <ChevronDown
+          size={22}
+          className={`shrink-0 transition-transform duration-300 ease-in-out ${
+            isActive ? "rotate-180" : "rotate-0"
+          }`}
+        />
+      </button>
+
+      {isActive && (
+        <div
+          id={answerId}
+          role="region"
+          aria-labelledby={questionId}
+          className="px-4 pb-5 sm:px-5 sm:pl-[76px]"
+        >
+          <p className="whitespace-pre-line text-[16px] leading-relaxed text-gray-600">
+            <span className="font-semibold text-gray-800">A:</span>{" "}
+            {item.answer}
+          </p>
+        </div>
+      )}
+    </article>
+  );
+};
+
+export default function Faq() {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const handleToggle = (index: number) => {
+    setActiveIndex((prev) => (prev === index ? null : index));
+  };
+
+  return (
+    <section className="bg-white px-4 py-16 sm:px-6 md:py-20">
+      <div className="mx-auto max-w-4xl">
+        <h2 className="mb-10 text-center text-[28px] font-bold leading-tight text-gray-900 sm:mb-12 sm:text-[40px]">
           คำถามที่พบบ่อย
         </h2>
 
-        <div className="space-y-[10px]">
-          {faqData.map((item, index) => {
-            const isOpen = openIndex === index;
-            const showMore = !!expanded[index];
-
-            return (
-              <div
-                key={index}
-                className="rounded-lg border border-gray-200 bg-white overflow-hidden"
-              >
-                <button
-                  type="button"
-                  onClick={() => toggleOpen(index)}
-                  className="w-full flex items-center justify-between gap-[10px] p-4 text-left"
-                >
-                  <div className="flex items-center gap-[10px] min-w-0">
-                    <div className="h-9 w-9 sm:h-10 sm:w-10 shrink-0 rounded-lg border border-gray-200 bg-white flex items-center justify-center text-blue-500">
-                      {item.icon}
-                    </div>
-
-                    <p className="min-w-0 font-semibold text-[14px] sm:text-[16px] leading-relaxed text-gray-900">
-                      <span className="font-bold">Q:</span>{" "}
-                      <span className="break-words">{item.question}</span>
-                    </p>
-                  </div>
-
-                  <ChevronDown
-                    className={`shrink-0 transition-transform duration-300 ${
-                      isOpen ? "rotate-180" : ""
-                    }`}
-                    size={18}
-                  />
-                </button>
-
-                <div
-                  className={`grid transition-[grid-template-rows] duration-500 ease-in-out ${
-                    isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-                  }`}
-                >
-                  <div className="overflow-hidden">
-                    <div className="px-4 pb-4 text-gray-600 text-[14px] sm:text-[15px] leading-relaxed">
-                      <p className="mb-2 font-semibold text-gray-800">
-                        <span className="font-bold">A:</span>
-                      </p>
-
-                      <div
-                        className={
-                          showMore
-                            ? ""
-                            : "overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3]"
-                        }
-                      >
-                        {item.answer}
-                      </div>
-
-                      {isLong[index] && (
-                        <button
-                          type="button"
-                          onClick={() => toggleReadMore(index)}
-                          className="mt-2 inline-flex items-center gap-2 text-blue-600 hover:underline"
-                        >
-                          {showMore ? "ย่อข้อความ" : "อ่านเพิ่มเติม"}
-                        </button>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+        <div className="space-y-4 sm:space-y-5">
+          {faqItems.map((item, index) => (
+            <FAQCard
+              key={item.question}
+              item={item}
+              index={index}
+              isActive={activeIndex === index}
+              onToggle={handleToggle}
+            />
+          ))}
         </div>
       </div>
     </section>
