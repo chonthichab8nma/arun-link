@@ -5,18 +5,25 @@ type ServiceCard = {
   image: string;
 };
 
+type PainPointCard = {
+  title: string;
+  lines: string[];
+  image: string;
+  imageClass: string;
+};
+
 const serviceCards: ServiceCard[] = [
   {
     title: "งานโครงสร้าง",
     desc1: "งานฐานราก กำแพงกันดิน",
     desc2: "และโครงสร้างหลัก",
-    image: "/WhyArunLink/asset/Asset6.png",
+    image: "/WhyArunLink/asset/Asset5.png",
   },
   {
     title: "งานซ่อมแซม",
     desc1: "แก้ไข ปรับปรุง",
     desc2: "ดูแลโครงสร้างและระบบเดิม",
-    image: "/WhyArunLink/asset/Asset5.png",
+    image: "/WhyArunLink/asset/Asset6.png",
   },
   {
     title: "งานต่อเติม",
@@ -26,59 +33,97 @@ const serviceCards: ServiceCard[] = [
   },
 ];
 
+const painPointCards: PainPointCard[] = [
+  {
+    title: "ปัญหาด้านราคาและต้นทุน",
+    lines: [
+      "ราคาวัสดุก่อสร้างผันผวน",
+      "ผู้รับเหมามักต้องปรับแผนงานและงบประมาณ",
+      "ต้นทุนที่สูงขึ้น ส่งผลให้ควบคุมค่าใช้จ่ายได้ยาก",
+    ],
+    image: "/WhyArunLink/asset/Asset8.png",
+    imageClass: "w-[88%] max-w-[560px] right-0 -bottom-14",
+  },
+  {
+    title: "ปัญหาด้านห่วงโซ่อุปทาน",
+    lines: [
+      "ความล่าช้าของวัสดุเฉพาะทาง",
+      "ส่งผลต่อกำหนดการก่อสร้าง",
+      "ระบบขนส่งและโลจิสติกส์ยังมีความซับซ้อน",
+    ],
+    image: "/WhyArunLink/asset/Asset9.png",
+    imageClass: "w-[62%] max-w-[420px] right-0 -bottom-15",
+  },
+  {
+    title: "ปัญหาด้านช่างผู้รับเหมา",
+    lines: [
+      "ช่างและผู้รับเหมาขาดแคลน",
+      "ต้นทุนแรงงานสูงขึ้น",
+      "การควบคุมคุณภาพงานทำได้ยาก",
+    ],
+    image: "/WhyArunLink/asset/Asset10.png",
+    imageClass: "w-[48%] max-w-[300px] right-6 -bottom-2",
+  },
+  {
+    title: "การขาดแคลนแรงงาน",
+    lines: [
+      "หากโครงการขาดแรงงาน",
+      "อาจทำให้งานล่าช้า และกระทบ",
+      "ต่อกำหนดส่งมอบหรือการซ่อมแซม",
+    ],
+    image: "/WhyArunLink/asset/Asset11.png",
+    imageClass: "w-[45%] max-w-[280px] right-4 -bottom-1",
+  },
+];
+
 export default function WhyArunLink() {
   return (
-    <section className="relative overflow-hidden bg-[#f2f2f2]">
+    <section className="relative overflow-hidden bg-white">
       <div className="relative isolate overflow-hidden">
         <img
           src="/WhyArunLink/bg/bg1.png"
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 h-full w-full object-cover opacity-[0.09]"
+          className="absolute inset-0 h-full w-full object-cover opacity-[0.1]"
         />
-        <div
-          className="pointer-events-none absolute inset-x-0 bottom-0 h-[220px] blur-2xl
-bg-[radial-gradient(140%_100%_at_center,rgba(76,196,255,0.22)_0%,rgba(76,196,255,0.12)_40%,rgba(76,196,255,0.05)_65%,rgba(76,196,255,0)_100%)]"
-        />
-
         <img
           src="/WhyArunLink/asset/Asset1.png"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute -left-24 top-2 w-[60vw] max-w-[620px] md:-left-32 md:top-0 md:w-[42vw] lg:-left-40 lg:-top-4 lg:w-[36vw]"
+          className="pointer-events-none absolute -left-20 top-8 w-[58vw] max-w-155 md:-left-28 md:top-6 md:w-[42vw] lg:-left-32 lg:top-10 lg:w-[34vw]"
         />
         <img
           src="/WhyArunLink/asset/Asset2.png"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute -right-24 top-2 w-[56vw] max-w-[600px] md:-right-28 md:top-0 md:w-[40vw] lg:-right-36 lg:-top-2 lg:w-[33vw]"
+          className="pointer-events-none absolute -right-20 top-8 w-[54vw] max-w-150 md:-right-24 md:top-6 md:w-[40vw] lg:-right-28 lg:top-10 lg:w-[31vw]"
         />
         <img
           src="/WhyArunLink/asset/Asset3.png"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute -bottom-24 -left-24 w-[56vw] max-w-[560px] md:-bottom-24 md:-left-32 md:w-[38vw] lg:-bottom-28 lg:-left-40 lg:w-[30vw]"
+          className="pointer-events-none absolute -bottom-28 -left-20 w-[52vw] max-w-130 md:-bottom-32 md:-left-24 md:w-[36vw] lg:-bottom-36 lg:-left-24 lg:w-[26vw]"
         />
         <img
           src="/WhyArunLink/asset/Asset4.png"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute -bottom-20 -right-20 w-[50vw] max-w-[520px] md:-bottom-20 md:-right-20 md:w-[32vw] lg:-bottom-24 lg:-right-28 lg:w-[28vw]"
+          className="pointer-events-none absolute -bottom-28 -right-12 w-[46vw] max-w-125 md:-bottom-32 md:-right-16 md:w-[32vw] lg:-bottom-40 lg:-right-14 lg:w-[25vw]"
         />
 
-        <div className="relative z-10 mx-auto flex min-h-[1040px] max-w-7xl flex-col px-5 pt-32 pb-22 text-center md:min-h-[840px] md:px-8 md:pt-40 lg:min-h-[930px] lg:pt-56">
+        <div className="relative z-10 mx-auto flex min-h-245 max-w-7xl flex-col px-5 pt-52 pb-20 text-center md:min-h-215 md:px-8 md:pt-64 lg:min-h-254 lg:pt-60">
           <div className="mx-auto max-w-5xl">
-            <h2 className="leading-[1.1] tracking-[-0.01em] text-[#0f1116] FeatuesText text-[42px] md:text-[3.375rem]">
+            <h2 className="leading-[1.1] tracking-[-0.01em] text-[#0f1116] FeatuesText text-[42px] md:text-h1">
               งานโครงสร้างที่ดี
             </h2>
-            <h3 className="mt-2 FeatuesText leading-[1.1] tracking-[-0.01em] text-[#1f93ce] text-[42px] md:text-[3.375rem]">
+            <h3 className="mt-2 FeatuesText leading-[1.1] tracking-[-0.01em] text-[#1f93ce] text-[42px] md:text-h1">
               ทำไมต้องที่ อรุณลิงก์
             </h3>
 
-            <p className="mx-auto mt-12 max-w-5xl leading-[1.45] text-[#6b757d] text-[18px] md:text-[24px]">
+            <p className="mx-auto mt-10 max-w-5xl leading-[1.45] text-[#707a82] text-[18px] md:text-[24px]">
               หลายคนเริ่มงานก่อสร้าง โดยเฉพาะงานโครงสร้างอย่างกำแพงกันดิน
             </p>
-            <p className="mx-auto mt-8 max-w-5xl leading-[1.4] text-[#6b757d] text-[18px] md:text-[24px]">
+            <p className="mx-auto mt-8 max-w-4xl leading-[1.4] text-[#707a82] text-[18px] md:text-[24px]">
               โดยมีข้อมูลไม่ครบถ้วนในการเลือกวัสดุหรือแนวทางก่อสร้าง
               ทั้งที่งานประเภทเหล่านี้ต้องอาศัยความเชี่ยวชาญเฉพาะทาง
               เพื่อให้แข็งแรง ปลอดภัย และใช้งานได้ในระยะยาว
@@ -87,57 +132,132 @@ bg-[radial-gradient(140%_100%_at_center,rgba(76,196,255,0.22)_0%,rgba(76,196,255
         </div>
       </div>
 
-      <div className="relative z-20 mx-auto mt-8 max-w-[1480px] px-6 pb-24 pt-8 md:px-8 md:pb-28 lg:px-14 lg:pt-12">
-        <h2 className="text-center text-[3rem] font-bold leading-[1.15] tracking-[-0.01em] text-[#14161b] md:text-[3.5rem] lg:text-[4.6rem]">
+      <div className="relative z-20 mx-auto mt-16 md:mt-20 lg:mt-28 max-w-7xl px-5 sm:px-6 md:px-10 lg:px-16 pb-20 md:pb-28 lg:pb-36 pt-10 md:pt-14 lg:pt-20">
+        <h2 className="lg:text-[36px]  text-center text-3xl font-bold leading-[1.15] tracking-[-0.01em] text-[#14161b] md:text-h1">
           เราคัดเฉพาะงาน
           <br />
           ที่ต้องใช้ความเชี่ยวชาญจริง
         </h2>
 
-        <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          className="mt-14 md:mt-16 lg:mt-20
+                grid grid-cols-1 gap-y-4 gap-x-4
+                sm:gap-y-8 sm:gap-x-8
+                md:grid-cols-2 md:gap-y-4 md:gap-x-4
+                lg:grid-cols-3 lg:gap-y-4 lg:gap-x-4"
+        >
           {serviceCards.map((card, idx) => (
             <article
               key={card.title}
-              className={`relative min-h-[360px] overflow-hidden rounded-[22px] border border-[#d8d8d8] bg-[#f4f4f4] p-5 md:min-h-[380px] md:p-6 lg:min-h-[350px] ${
-                idx === 2
-                  ? "md:col-span-2 md:mx-auto md:w-[78%] lg:col-span-1 lg:mx-0 lg:w-auto"
-                  : ""
-              }`}
+              className={`group relative mx-auto h-55.5 w-full max-w-95.5
+                overflow-hidden rounded-[22px]
+                border border-[#ebebeb]
+                p-5 md:p-6
+                transform-gpu transition-all duration-500 ease-out
+                hover:bg-[#eff9ff]
+                ${idx === 2 ? "md:col-span-2 md:mx-auto lg:col-span-1 lg:mx-0" : ""}`}
             >
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[156px] bg-[radial-gradient(ellipse_at_center,rgba(76,196,255,0.2)_0%,rgba(76,196,255,0)_100%)]" />
+              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(76,196,255,0.2)_0%,rgba(76,196,255,0.08)_45%,rgba(76,196,255,0)_78%)]" />
               <img
                 src={card.image}
                 alt=""
                 aria-hidden="true"
-                className={`pointer-events-none absolute bottom-0 right-0 z-10 ${
-                  idx === 0
-                    ? "w-[58%] max-w-[270px] md:w-[56%]"
-                    : idx === 1
-                      ? "w-[58%] max-w-[305px] md:w-[56%]"
-                      : "w-[63%] max-w-[335px] md:w-[60%]"
-                }`}
+                className={`pointer-events-none absolute bottom-0 right-0 z-10
+                  transform-gpu transition-transform duration-700 ease-out
+                  origin-bottom
+                  scale-100 group-hover:scale-[1.08]
+                  ${
+                    idx === 0
+                      ? "w-[64%] max-w-83.75 md:w-[62%]"
+                      : idx === 1
+                        ? "w-[70%] max-w-90 md:w-[66%]"
+                        : "w-[63%] max-w-83.75 md:w-[60%]"
+                  }`}
               />
 
-              <div className="relative z-20 max-w-[58%]">
-                <h3 className="text-[2.9rem] font-bold leading-[1.2] text-[#17191f] md:text-[3rem]">
+              <div className="relative z-20 max-w-[72%] md:max-w-[58%]">
+                <h3 className="text-[24px] font-bold leading-[1.2] text-[#17191f]">
                   {card.title}
                 </h3>
-                <p className="mt-2 text-[1.8rem] leading-[1.45] text-[#6b757d] md:text-[1.8rem]">
+                <p className="mt-2 text-[16px] leading-[1.45] text-[#6b757d]">
                   {card.desc1}
                 </p>
-                <p className="text-[1.8rem] leading-[1.45] text-[#6b757d] md:text-[1.8rem]">
+                <p className="text-[16px] leading-[1.45] text-[#6b757d]">
                   {card.desc2}
                 </p>
               </div>
 
               <a
                 href="#contact"
-                className="absolute bottom-5 left-5 z-20 text-[1.95rem] font-medium text-[#1183c8] transition hover:text-[#0d6da8] md:bottom-6 md:left-6 md:text-[1.9rem]"
+                className="absolute bottom-5 left-5 z-20 text-[16px] font-medium text-[#1183c8] transition hover:text-[#0d6da8] md:bottom-6 md:left-6"
               >
                 ดูเพิ่มเติม {">"}
               </a>
             </article>
           ))}
+        </div>
+
+        <div className="nail-corners relative mt-16 overflow-visible border border-[#d6d6d6] box-border md:mt-30">
+          <div className="w-full p-2 sm:p-3 md:p-5 lg:p-6">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 lg:gap-6">
+              {painPointCards.map((card) => (
+                <article
+                  key={card.title}
+                  className="group relative flex h-[344px] w-full flex-col justify-between overflow-hidden rounded-[20px] bg-[#daedf7] p-6 transition-colors duration-300 hover:bg-[#bccdde] md:p-8"
+                >
+                  <div className="relative z-10 w-full pr-[34%]">
+                    <h3 className="text-xl font-bold leading-[1.2] text-[#17191f]">
+                      {card.title}
+                    </h3>
+                    <div className="mt-3 space-y-1 text-[16px] leading-[1.45] text-[#5f6b73]">
+                      {card.lines.map((line) => (
+                        <p key={line}>{line}</p>
+                      ))}
+                    </div>
+                  </div>
+
+                  <img
+                    src={card.image}
+                    alt=""
+                    aria-hidden="true"
+                    className={`pointer-events-none absolute transition-transform duration-500 ease-out ${
+                      card.title === "ปัญหาด้านห่วงโซ่อุปทาน"
+                        ? "scale-x-[-1] group-hover:scale-x-[-1.1] group-hover:scale-y-[1.1]"
+                        : "group-hover:scale-110"
+                    } ${card.imageClass}`}
+                  />
+                </article>
+              ))}
+            </div>
+
+            <article className="group relative mt-4 h-[732px] w-full overflow-hidden rounded-[20px] bg-[#dff1fb] px-6 py-8 transition-colors duration-300 hover:bg-[#bccdde] md:mt-6 md:h-[825px] md:px-8 md:py-12 lg:flex lg:h-[504px] lg:items-center">
+              <div className="relative z-10 w-full lg:pr-[58%]">
+                <h3 className="text-3xl font-bold leading-[1.2] text-[#17191f]">
+                  อรุณลิงก์ช่วยให้คุณ
+                  <br />
+                  จัดการงานก่อสร้างได้ดีขึ้น
+                </h3>
+                <div className="mt-4 space-y-1 text-[16px] leading-[1.45] text-[#5f6b73]">
+                  <p>เราช่วยเชื่อมต่อวัสดุก่อสร้างที่เหมาะสม</p>
+                  <p>กับช่างและผู้รับเหมาที่มีประสบการณ์</p>
+                  <p>เพื่อลดความซับซ้อนของงาน</p>
+                  <p>และเพิ่มประสิทธิภาพในทุกขั้นตอน</p>
+                </div>
+              </div>
+
+              <img
+                src="/WhyArunLink/asset/Asset12.png"
+                alt=""
+                aria-hidden="true"
+                className="
+                pointer-events-none absolute bottom-0
+                -right-10 w-[78%]
+                transition-transform duration-500 ease-out group-hover:scale-110
+                md:-right-12 md:w-[64%] md:max-w-[780px]
+                lg:-right-16 lg:w-[54%] lg:max-w-[900px]"
+              />
+            </article>
+          </div>
         </div>
       </div>
     </section>

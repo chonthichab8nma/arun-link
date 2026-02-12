@@ -26,5 +26,27 @@ body {
     font-size: 3.375rem; 
     font-weight: bold;
   }
-  
+}
+
+.nail-corners::before {
+  content: "";
+  position: absolute;
+  inset: -14px;
+  pointer-events: none;
+  z-index: 50;
+
+  background-image:
+    url('/WhyArunLink/asset/Asset13.png'),
+    url('/WhyArunLink/asset/Asset13.png'),
+    url('/WhyArunLink/asset/Asset13.png'),
+    url('/WhyArunLink/asset/Asset13.png');
+
+  background-position:
+    left top,
+    right top,
+    left bottom,
+    right bottom;
+
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
 }
