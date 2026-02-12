@@ -19,7 +19,7 @@ export default function Home() {
           <img
             src="/Home/All.png"
             alt="materials"
-             className="pointer-events-none select-none absolute inset-0 h-full w-full object-contain object-center"
+             className="pointer-events-none select-none absolute inset-0  h-full w-full object-contain object-center  animate-under-in2"
           />
 
           {/* Content */}
@@ -53,7 +53,8 @@ export default function Home() {
           <img
             src="/Home/under.png"
             alt="under"
-            className="pointer-events-none select-none absolute left-0 right-0 bottom-0 w-full h-[250px] object-cover"
+             className="pointer-events-none select-none absolute left-0 right-0 bottom-0 w-full h-[250px] object-cover animate-under-in"
+            // className="pointer-events-none select-none absolute left-0 right-0 bottom-0 w-full h-[250px] object-cover transform transition-transform ease-in-out translate-y-full duration-500 hover:translate-y-0"
           />
         </div>
       </div>
