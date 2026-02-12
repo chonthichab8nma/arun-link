@@ -42,7 +42,7 @@ const painPointCards: PainPointCard[] = [
       "ต้นทุนที่สูงขึ้น ส่งผลให้ควบคุมค่าใช้จ่ายได้ยาก",
     ],
     image: "/WhyArunLink/asset/Asset8.png",
-    imageClass: "w-[65%] max-w-[420px] right-0 -bottom-30",
+    imageClass: "w-[88%] max-w-[560px] right-0 -bottom-14",
   },
   {
     title: "ปัญหาด้านห่วงโซ่อุปทาน",
@@ -52,7 +52,7 @@ const painPointCards: PainPointCard[] = [
       "ระบบขนส่งและโลจิสติกส์ยังมีความซับซ้อน",
     ],
     image: "/WhyArunLink/asset/Asset9.png",
-    imageClass: " w-[62%] max-w-[420px] right-0 -bottom-15 scale-x-[-1]",
+    imageClass: "w-[62%] max-w-[420px] right-0 -bottom-15",
   },
   {
     title: "ปัญหาด้านช่างผู้รับเหมา",
@@ -197,56 +197,62 @@ export default function WhyArunLink() {
           ))}
         </div>
 
-        <div className="relative mt-16 overflow-visible border border-[#d6d6d6] p-1.5 md:mt-30 md:p-3 lg:mx-auto lg:w-[1200px] lg:max-w-[1200px] nail-corners">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
-            {painPointCards.map((card) => (
-              <article
-                key={card.title}
-                className="relative min-h-60 overflow-hidden rounded-[20px] bg-[#daedf7] p-6 transition-colors duration-300 hover:bg-[#bccdde] md:min-h-90 md:p-8 lg:h-[344px] lg:min-h-[344px]"
-              >
-                <div className="relative z-10 max-w-[78%]">
-                  <h3 className="text-xl font-bold leading-[1.2] text-[#17191f]">
-                    {card.title}
-                  </h3>
-                  <div className="mt-3 space-y-1 text-[16px] leading-[1.45] text-[#5f6b73]">
-                    {card.lines.map((line) => (
-                      <p key={line}>{line}</p>
-                    ))}
+        <div className="nail-corners relative mt-16 overflow-visible border border-[#d6d6d6] box-border md:mt-30">
+          <div className="w-full p-2 sm:p-3 md:p-5 lg:p-6">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 lg:gap-6">
+              {painPointCards.map((card) => (
+                <article
+                  key={card.title}
+                  className="group relative flex h-[344px] w-full flex-col justify-between overflow-hidden rounded-[20px] bg-[#daedf7] p-6 transition-colors duration-300 hover:bg-[#bccdde] md:p-8"
+                >
+                  <div className="relative z-10 w-full pr-[34%]">
+                    <h3 className="text-xl font-bold leading-[1.2] text-[#17191f]">
+                      {card.title}
+                    </h3>
+                    <div className="mt-3 space-y-1 text-[16px] leading-[1.45] text-[#5f6b73]">
+                      {card.lines.map((line) => (
+                        <p key={line}>{line}</p>
+                      ))}
+                    </div>
                   </div>
-                </div>
 
-                <img
-                  src={card.image}
-                  alt=""
-                  aria-hidden="true"
-                  className={`pointer-events-none absolute ${card.imageClass}`}
-                />
-              </article>
-            ))}
-          </div>
-
-          <article className="relative mt-6 min-h-[260px] overflow-hidden rounded-[20px] bg-[#dff1fb] px-6 py-8 md:mt-8 md:min-h-[420px] md:px-8 md:py-12 lg:h-[504px] lg:min-h-[504px]">
-            <div className="relative z-10 max-w-[95%] md:max-w-[42%]">
-              <h3 className="text-[36px] font-bold leading-[1.2] text-[#17191f]">
-                อรุณลิงก์ช่วยให้คุณ
-                <br />
-                จัดการงานก่อสร้างได้ดีขึ้น
-              </h3>
-              <div className="mt-4 space-y-1 text-[16px] leading-[1.45] text-[#5f6b73]">
-                <p>เราช่วยเชื่อมต่อวัสดุก่อสร้างที่เหมาะสม</p>
-                <p>กับช่างและผู้รับเหมาที่มีประสบการณ์</p>
-                <p>เพื่อลดความซับซ้อนของงาน</p>
-                <p>และเพิ่มประสิทธิภาพในทุกขั้นตอน</p>
-              </div>
+                  <img
+                    src={card.image}
+                    alt=""
+                    aria-hidden="true"
+                    className={`pointer-events-none absolute transition-transform duration-500 ease-out ${
+                      card.title === "ปัญหาด้านห่วงโซ่อุปทาน"
+                        ? "scale-x-[-1] group-hover:scale-x-[-1.1] group-hover:scale-y-[1.1]"
+                        : "group-hover:scale-110"
+                    } ${card.imageClass}`}
+                  />
+                </article>
+              ))}
             </div>
 
-            <img
-              src="/WhyArunLink/asset/Asset12.png"
-              alt=""
-              aria-hidden="true"
-              className="pointer-events-none absolute -right-10 bottom-0 w-[72%] max-w-[900px] md:-right-16 md:w-[54%]"
-            />
-          </article>
+            <article className="group relative mt-4 h-[732px] w-full overflow-hidden rounded-[20px] bg-[#dff1fb] px-6 py-8 transition-colors duration-300 hover:bg-[#bccdde] md:mt-6 md:h-[825px] md:px-8 md:py-12 lg:flex lg:h-[504px] lg:items-center">
+              <div className="relative z-10 w-full lg:pr-[58%]">
+                <h3 className="text-3xl font-bold leading-[1.2] text-[#17191f]">
+                  อรุณลิงก์ช่วยให้คุณ
+                  <br />
+                  จัดการงานก่อสร้างได้ดีขึ้น
+                </h3>
+                <div className="mt-4 space-y-1 text-[16px] leading-[1.45] text-[#5f6b73]">
+                  <p>เราช่วยเชื่อมต่อวัสดุก่อสร้างที่เหมาะสม</p>
+                  <p>กับช่างและผู้รับเหมาที่มีประสบการณ์</p>
+                  <p>เพื่อลดความซับซ้อนของงาน</p>
+                  <p>และเพิ่มประสิทธิภาพในทุกขั้นตอน</p>
+                </div>
+              </div>
+
+              <img
+                src="/WhyArunLink/asset/Asset12.png"
+                alt=""
+                aria-hidden="true"
+                className="pointer-events-none absolute -right-10 bottom-0 w-[72%] transition-transform duration-500 ease-out group-hover:scale-110 md:-right-16 md:w-[54%]"
+              />
+            </article>
+          </div>
         </div>
       </div>
     </section>
