@@ -27,8 +27,8 @@ export default function Home() {
     pointer-events-none select-none
     absolute left-1/2 bottom-36
     -translate-x-1/2
-    w-[100%] max-w-none
-    h-[420px] sm:h-[500px] md:h-[560px]
+    w-[100%] max-w-none 
+    h-[420px] sm:h-[500px] 
     object-contain object-bottom
     z-[1]
     animate-under-in2
@@ -40,7 +40,7 @@ export default function Home() {
 
 
           {/* Content */}
-          <div className="relative z-10 flex h-full items-start pt-36 md:pt-0 md:items-center justify-center px-6">
+          <div className="relative z-10 flex h-full items-start pt-40 md:pt-0 md:items-center justify-center px-6">
             <div className="text-center text-white">
               <h1 className="text-[56px] font-extrabold leading-none drop-shadow-[0_6px_18px_rgba(0,0,0,0.25)]">
                 อรุณลิงก์
@@ -98,7 +98,7 @@ export default function Home() {
           <img
             src="/Home/All.png"
             alt="materials"
-            className="pointer-events-none select-none absolute inset-0 h-full w-full object-contain object-center animate-under-in2"
+            className="pointer-events-none select-none absolute lg:inset-0 h-full w-full object-contain object-center animate-under-in2 md:-bottom-30"
           />
 
           <div className="relative z-10 flex h-full items-center justify-center">

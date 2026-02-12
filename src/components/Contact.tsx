@@ -139,7 +139,7 @@ export default function Footer() {
             © 2026 ArunLink by Soraroon Group. All rights reserved.
           </div>
 
-          <div className="flex items-center gap-3 md:gap-4">
+          <div className="flex items-center gap-3 md:gap-4 justify-center">
             <a
               href="https://facebook.com"
               target="_blank"
