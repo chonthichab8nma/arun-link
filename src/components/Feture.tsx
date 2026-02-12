@@ -119,7 +119,7 @@ export default function Feture() {
                 w-full h-full
                 object-contain object-bottom
                 transition-transform duration-700 ease-out
-                group-hover:scale-105 origin-bottom hover:bg-sky-100
+                group-hover:scale-105 origin-bottom hover:bg-[#EFF9FF]
                 
               "
             />
@@ -170,7 +170,7 @@ export default function Feture() {
                 w-full h-full
                 object-contain object-bottom
                 transition-transform duration-700 ease-out
-                group-hover:scale-105 origin-bottom hover:bg-sky-100
+                group-hover:scale-105 origin-bottom hover:bg-[#EFF9FF]
                 
               "
             />
@@ -221,8 +221,7 @@ export default function Feture() {
                 w-full h-full
                 object-contain object-bottom
                 transition-transform duration-700 ease-out
-                group-hover:scale-105 origin-bottom hover:bg-sky-100
-                
+                group-hover:scale-105 origin-bottom hover:bg-[#EFF9FF]
               "
             />
           </div>
