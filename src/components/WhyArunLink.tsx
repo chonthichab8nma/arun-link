@@ -249,7 +249,12 @@ export default function WhyArunLink() {
                 src="/WhyArunLink/asset/Asset12.png"
                 alt=""
                 aria-hidden="true"
-                className="pointer-events-none absolute -right-10 bottom-0 w-[72%] transition-transform duration-500 ease-out group-hover:scale-110 md:-right-16 md:w-[54%]"
+                className="
+                pointer-events-none absolute bottom-0
+                -right-10 w-[78%]
+                transition-transform duration-500 ease-out group-hover:scale-110
+                md:-right-12 md:w-[64%] md:max-w-[780px]
+                lg:-right-16 lg:w-[54%] lg:max-w-[900px]"
               />
             </article>
           </div>
