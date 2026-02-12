@@ -82,25 +82,50 @@ export default function Footer() {
 
             <div className="mt-4 space-y-3 text-[13px] text-[#6B7A8C]">
               <div className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-[#8AA0B2]" />
+               <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#6B7280]">
+                <img
+                  src="/Contact/1.svg"
+                  alt="icon"
+                  className="h-4 w-4"
+                />
+              </div>
+
                 <span>อีเมล</span>
                 <span className="ml-auto text-[#4A5A6A]">support@arunlink.co</span>
               </div>
 
               <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-[#8AA0B2]" />
+                 <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#6B7280]">
+                <img
+                  src="/Contact/2.svg"
+                  alt="icon"
+                  className="h-4 w-4"
+                />
+              </div>
                 <span>Line</span>
                 <span className="ml-auto text-[#4A5A6A]">arunlink</span>
               </div>
 
               <div className="flex items-center gap-2">
-                <Facebook className="h-4 w-4 text-[#8AA0B2]" />
+                 <div className="flex h-7 w-7 items-center justify-center rounded-full">
+                <img
+                  src="/Contact/3.svg"
+                  alt="icon"
+                  className="h-6 w-6"
+                />
+              </div>
                 <span>Facebook</span>
                 <span className="ml-auto text-[#4A5A6A]">ArunLink</span>
               </div>
 
               <div className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 text-[#8AA0B2]" />
+                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-[#6B7280]">
+                <img
+                  src="/Contact/4.svg"
+                  alt="icon"
+                  className="h-4 w-4"
+                />
+              </div>
                 <span>Google Maps</span>
                 <span className="ml-auto text-[#4A5A6A]">ArunLink</span>
               </div>
@@ -119,37 +144,55 @@ export default function Footer() {
               href="https://facebook.com"
               target="_blank"
               rel="noreferrer"
-              className="grid h-8 w-8 place-items-center rounded-full bg-[#0B77B7] text-white hover:opacity-90"
+              
               aria-label="Facebook"
             >
-              <Facebook className="h-4 w-4" />
+             
+                <img
+                  src="/Contact/fb.svg"
+                  alt="icon"
+                  className="h-7 w-7"
+                />
+              
             </a>
             <a
               href="https://line.me"
               target="_blank"
               rel="noreferrer"
-              className="grid h-8 w-8 place-items-center rounded-full bg-[#0B77B7] text-white hover:opacity-90"
+              className="grid h-8 w-8 place-items-center rounded-full text-white hover:opacity-90"
               aria-label="Line"
             >
-              <span className="text-[12px] font-bold">L</span>
+                <img
+                  src="/Contact/L.svg"
+                  alt="icon"
+                  className="h-7 w-7"
+                />
             </a>
             <a
               href="https://www.youtube.com"
               target="_blank"
               rel="noreferrer"
-              className="grid h-8 w-8 place-items-center rounded-full bg-[#0B77B7] text-white hover:opacity-90"
+              className="grid h-8 w-8 place-items-center rounded-full  text-white hover:opacity-90"
               aria-label="YouTube"
             >
-              <span className="text-[12px] font-bold">▶</span>
+                  <img
+                  src="/Contact/ut.svg"
+                  alt="icon"
+                  className="h-7 w-7"
+                />
             </a>
             <a
               href="https://www.tiktok.com"
               target="_blank"
               rel="noreferrer"
-              className="grid h-8 w-8 place-items-center rounded-full bg-[#0B77B7] text-white hover:opacity-90"
+              className="grid h-8 w-8 place-items-center rounded-full  text-white hover:opacity-90"
               aria-label="TikTok"
             >
-              <span className="text-[12px] font-bold">♪</span>
+                <img
+                  src="/Contact/tt.svg"
+                  alt="icon"
+                  className="h-7 w-7"
+                />
             </a>
           </div>
         </div>
