@@ -10,6 +10,7 @@ type PainPointCard = {
   lines: string[];
   image: string;
   imageClass: string;
+  watermark: string;
 };
 
 const serviceCards: ServiceCard[] = [
@@ -42,7 +43,10 @@ const painPointCards: PainPointCard[] = [
       "ต้นทุนที่สูงขึ้น ส่งผลให้ควบคุมค่าใช้จ่ายได้ยาก",
     ],
     image: "/WhyArunLink/asset/Asset8.png",
-    imageClass: "w-[88%] max-w-[560px] right-0 -bottom-14",
+    imageClass:
+      "w-[125%] max-w-[840px] -right-5 -bottom-37 lg:-right-10 lg:-bottom-80 rotate-[5deg] md:w-[150%] md:-bottom-50",
+
+    watermark: "/WhyArunLink/watermark/1.png",
   },
   {
     title: "ปัญหาด้านห่วงโซ่อุปทาน",
@@ -52,7 +56,9 @@ const painPointCards: PainPointCard[] = [
       "ระบบขนส่งและโลจิสติกส์ยังมีความซับซ้อน",
     ],
     image: "/WhyArunLink/asset/Asset9.png",
-    imageClass: "w-[62%] max-w-[420px] right-0 -bottom-15",
+    imageClass:
+      "w-[150%] max-w-[840px] -right-40 -bottom-20 lg:-right-10 lg:-bottom-30 lg:w-[100%] md:w-[150%] md:-bottom-25",
+    watermark: "/WhyArunLink/watermark/2.png",
   },
   {
     title: "ปัญหาด้านช่างผู้รับเหมา",
@@ -62,7 +68,8 @@ const painPointCards: PainPointCard[] = [
       "การควบคุมคุณภาพงานทำได้ยาก",
     ],
     image: "/WhyArunLink/asset/Asset10.png",
-    imageClass: "w-[48%] max-w-[300px] right-6 -bottom-2",
+    imageClass: "w-[150%] max-w-[840px] -right-50 -bottom-5 lg:-right-30 lg:-bottom-20 lg:w-[100%] md:w-[140%] md:bottom-1",
+    watermark: "/WhyArunLink/watermark/3.png",
   },
   {
     title: "การขาดแคลนแรงงาน",
@@ -72,46 +79,47 @@ const painPointCards: PainPointCard[] = [
       "ต่อกำหนดส่งมอบหรือการซ่อมแซม",
     ],
     image: "/WhyArunLink/asset/Asset11.png",
-    imageClass: "w-[45%] max-w-[280px] right-4 -bottom-1",
+    imageClass: "w-[100%] max-w-[840px] -right-30 -bottom-15 lg:-right-20 lg:-bottom-50 lg:w-[80%] md:w-[110%] md:-bottom-25 md:-right-45  ",
+    watermark: "/WhyArunLink/watermark/4.png",
   },
 ];
 
 export default function WhyArunLink() {
   return (
-    <section className="relative overflow-hidden bg-white">
+    <section className="relative overflow-hidden bg-white mt-8 md:mt-5 lg:mt-10">
       <div className="relative isolate overflow-hidden">
         <img
           src="/WhyArunLink/bg/bg1.png"
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 h-full w-full object-cover opacity-[0.1]"
+          className="absolute inset-0 h-full w-full object-cover opacity-[0.1] grayscale"
         />
         <img
           src="/WhyArunLink/asset/Asset1.png"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute -left-20 top-8 w-[58vw] max-w-155 md:-left-28 md:top-6 md:w-[42vw] lg:-left-32 lg:top-10 lg:w-[34vw]"
+          className="pointer-events-none absolute -left-15 -top-8 w-[58vw] max-w-155 md:-left-20 md:-top-6 md:w-[42vw] lg:-left-20 lg:-top-10 lg:w-[34vw]"
         />
         <img
           src="/WhyArunLink/asset/Asset2.png"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute -right-20 top-8 w-[54vw] max-w-150 md:-right-24 md:top-6 md:w-[40vw] lg:-right-28 lg:top-10 lg:w-[31vw]"
+          className="pointer-events-none absolute -right-10 -top-8 w-[54vw] max-w-150 md:-right-20 md:-top-6 md:w-[40vw] lg:-right-10 lg:-top-10 lg:w-[31vw]"
         />
         <img
           src="/WhyArunLink/asset/Asset3.png"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute -bottom-28 -left-20 w-[52vw] max-w-130 md:-bottom-32 md:-left-24 md:w-[36vw] lg:-bottom-36 lg:-left-24 lg:w-[26vw]"
+          className="pointer-events-none absolute bottom-0 left-0 w-[56vw] max-w-130 md:-bottom-10 md:left-0 md:w-[48vw] lg:-bottom-7 lg:left-0 lg:w-[36vw]"
         />
         <img
           src="/WhyArunLink/asset/Asset4.png"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute -bottom-28 -right-12 w-[46vw] max-w-125 md:-bottom-32 md:-right-16 md:w-[32vw] lg:-bottom-40 lg:-right-14 lg:w-[25vw]"
+          className="pointer-events-none absolute -bottom-2 -right-5 w-[56vw] max-w-125 md:-bottom-2 md:-right-5 md:w-[45vw] lg:-bottom-4 lg:right-0 lg:w-[36vw]"
         />
 
-        <div className="relative z-10 mx-auto flex min-h-245 max-w-7xl flex-col px-5 pt-52 pb-20 text-center md:min-h-215 md:px-8 md:pt-64 lg:min-h-254 lg:pt-60">
+        <div className="relative z-10 mx-auto flex min-h-245 max-w-7xl flex-col px-5 pt-76 pb-20 text-center md:min-h-215 md:px-8 md:pt-64 lg:min-h-254 lg:pt-76">
           <div className="mx-auto max-w-5xl">
             <h2 className="leading-[1.1] tracking-[-0.01em] text-[#0f1116] FeatuesText text-[42px] md:text-h1">
               งานโครงสร้างที่ดี
@@ -132,7 +140,7 @@ export default function WhyArunLink() {
         </div>
       </div>
 
-      <div className="relative z-20 mx-auto mt-16 md:mt-20 lg:mt-28 max-w-7xl px-5 sm:px-6 md:px-10 lg:px-16 pb-20 md:pb-28 lg:pb-36 pt-10 md:pt-14 lg:pt-20">
+      <div className="relative z-20 mx-auto mt-16 md:mt-20 lg:mt-5 max-w-7xl px-5 sm:px-6 md:px-10 lg:px-16 pb-20 md:pb-28 lg:pb-36 pt-10 md:pt-14 lg:pt-20">
         <h2 className="lg:text-[36px]  text-center text-3xl font-bold leading-[1.15] tracking-[-0.01em] text-[#14161b] md:text-h1">
           เราคัดเฉพาะงาน
           <br />
@@ -203,9 +211,15 @@ export default function WhyArunLink() {
               {painPointCards.map((card) => (
                 <article
                   key={card.title}
-                  className="group relative flex h-[344px] w-full flex-col justify-between overflow-hidden rounded-[20px] bg-[#daedf7] p-6 transition-colors duration-300 hover:bg-[#bccdde] md:p-8"
+                  className="group relative flex min-h-80 w-full flex-col justify-between overflow-hidden rounded-[20px] bg-[#daedf7] p-5 transition-colors duration-300 hover:bg-[#c9dbe9] sm:min-h-86 sm:p-6 md:p-8"
                 >
-                  <div className="relative z-10 w-full pr-[34%]">
+                  <img
+                    src={card.watermark}
+                    alt=""
+                    aria-hidden="true"
+                    className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-45"
+                  />
+                  <div className="relative z-10 w-full pr-[24%] sm:pr-[28%] md:pr-[40%] lg:pr-[46%]">
                     <h3 className="text-xl font-bold leading-[1.2] text-[#17191f]">
                       {card.title}
                     </h3>
@@ -230,7 +244,13 @@ export default function WhyArunLink() {
               ))}
             </div>
 
-            <article className="group relative mt-4 h-[732px] w-full overflow-hidden rounded-[20px] bg-[#dff1fb] px-6 py-8 transition-colors duration-300 hover:bg-[#bccdde] md:mt-6 md:h-[825px] md:px-8 md:py-12 lg:flex lg:h-[504px] lg:items-center">
+            <article className="group relative mt-4 h-130 w-full overflow-hidden rounded-[20px] bg-[#dff1fb] px-6 py-8 transition-colors duration-300 hover:bg-[#bccdde] md:mt-6 md:h-206.25 md:px-8 md:py-12 lg:flex lg:h-126 lg:items-center">
+              <img
+                src="/WhyArunLink/watermark/5.png"
+                alt=""
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-45"
+              />
               <div className="relative z-10 w-full lg:pr-[58%]">
                 <h3 className="text-3xl font-bold leading-[1.2] text-[#17191f]">
                   อรุณลิงก์ช่วยให้คุณ
@@ -251,10 +271,11 @@ export default function WhyArunLink() {
                 aria-hidden="true"
                 className="
                 pointer-events-none absolute bottom-0
-                -right-10 w-[78%]
+                -right-10 w-[300%]
                 transition-transform duration-500 ease-out group-hover:scale-110
-                md:-right-12 md:w-[64%] md:max-w-[780px]
-                lg:-right-16 lg:w-[54%] lg:max-w-[900px]"
+                md:-right-12  md:w-[120%]
+                lg:-right-16 lg:w-[54%] lg:max-w-225"
+  
               />
             </article>
           </div>
