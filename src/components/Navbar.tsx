@@ -54,7 +54,7 @@ export default function Navbar() {
       return [
         linkBase,
         isActive
-          ? "bg-sky-100 text-sky-900"
+          ? "text-sky-900"
           : "text-slate-600 hover:text-sky-900 ",
       ].join(" ");
     }
@@ -62,8 +62,8 @@ export default function Navbar() {
     return [
       linkBase,
       isActive
-        ? "bg-white/20 text-white"
-        : "text-white/85 hover:text-white hover:bg-white/10",
+        ? "text-white"
+        : "text-blue-200 hover:text-white ",
     ].join(" ");
   };
 
@@ -107,8 +107,8 @@ export default function Navbar() {
             href="https://arunlink.vercel.app/"
             className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
               isWhite
-                ? "bg-sky-600 text-white hover:bg-sky-700"
-                : "bg-white text-sky-700 hover:bg-white/90"
+                ? "bg-sky-600 text-white hover:bg-[#006ba7]"
+                : "bg-white text-[#1891cd] hover:bg-white/90"
             }`}
             onClick={() => setActiveHash("#home")}
           >
