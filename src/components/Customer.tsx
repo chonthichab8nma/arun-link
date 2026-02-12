@@ -64,7 +64,7 @@ export default function Customer() {
     <section className="bg-white py-20">
       <div className="px-5 md:px-20">
         {/* Title */}
-        <h2 className="text-center FeatuesText font-extrabold tracking-tight text-slate-900">
+        <h2 className="text-center text-[36px] font-bold  tracking-tight text-slate-900">
           สิ่งที่ลูกค้าพูดถึงเรา
         </h2>
 

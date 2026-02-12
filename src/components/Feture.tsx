@@ -71,13 +71,13 @@ export default function Feture() {
     <section className="bg-white py-16">
       <div className="px-5 md:px-20">
         <header className="text-center">
-          <h2 className="FeatuesText mb-4">ฟีเจอร์ที่ช่วยให้การทำงานง่ายขึ้น</h2>
+          <h2 className="text-[36px] font-bold mb-4">ฟีเจอร์ที่ช่วยให้การทำงานง่ายขึ้น</h2>
           <p className="text-[#6B757A] text-[16px]">
             ฟีเจอร์ที่ออกแบบมาเพื่อเจ้าของบ้าน ช่าง และพาร์ทเนอร์ ครอบคลุมตั้งแต่วัสดุ การเลือกช่าง ไปจนถึงการจัดการงานก่อสร้าง
           </p>
         </header>
 
-        <h3 className="mt-10 mb-10 text-center text-[2.813rem] font-bold text-[#6B757A]">
+        <h3 className="mt-10 mb-10 text-center text-[30px] font-bold text-[#6B757A]">
           เจ้าของบ้านได้อะไร
         </h3>
 
@@ -130,7 +130,7 @@ export default function Feture() {
 
         <div className="border-t border-slate-200 my-5"></div>
 
-        <h3 className="mt-10 mb-10 text-center text-[2.813rem] font-bold text-[#6B757A]">
+        <h3 className="mt-10 mb-10 text-center text-[30px] font-bold text-[#6B757A]">
           ช่างได้อะไร
         </h3>
         <div
@@ -181,7 +181,7 @@ export default function Feture() {
 
          <div className="border-t border-slate-200 my-5"></div>
 
-        <h3 className="mt-10 mb-10 text-center text-[2.813rem] font-bold text-[#6B757A]">
+        <h3 className="mt-10 mb-10 text-center text-[30px] font-bold text-[#6B757A]">
           พาร์ทเนอร์ได้อะไร
         </h3>
         <div
