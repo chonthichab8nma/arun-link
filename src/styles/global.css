@@ -7,6 +7,17 @@ body {
 }
 @theme {
   --text-h1: 3.375rem; 
+  --animate-under-in: under-in 1.5s ease-in-out forwards;
+  --animate-under-in2: under-in 2.5s ease-in-out forwards;
+
+   @keyframes under-in {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
 
 }
 @layer components {
