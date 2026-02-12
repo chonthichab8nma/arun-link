@@ -1,39 +1,237 @@
 export default function Feture() {
+  const items1 = [
+    {
+      title: "เข้าถึงวัสดุที่เหมาะกับงานจริง",
+      desc: "วัสดุก่อสร้างที่ผ่านการคัดเลือกพร้อมราคาเหมาะสมกับงานโครงสร้าง",
+      img: "/Feature/Image5.png",
+    },
+    {
+      title: "วางแผนงานได้ชัดเจนขึ้น",
+      desc: "ลดความล่าช้าในการจัดหาวัสดุทำให้การก่อสร้างเป็นไปตามแผน",
+      img: "/Feature/Image6.png",
+    },
+    {
+      title: "เลือกช่างที่เชี่ยวชาญเฉพาะทาง",
+      desc: "ช่างและผู้รับเหมาที่มีประสบการณ์ตรงพร้อมงบประมาณที่ควบคุมได้",
+      img: "/Feature/Image7.png",
+    },
+    {
+      title: "ควบคุมเวลาและความคืบหน้าได้",
+      desc: "ติดตามงานและกำหนดกรอบเวลาให้โครงการเดินหน้าอย่างมั่นใจ",
+      img: "/Feature/Image8.png",
+    },
+  ];
+
+  const items2 = [
+    {
+      title: "ลดความเสี่ยงจากต้นทุนหน้างาน",
+      desc: "ไม่ต้องแบกรับความไม่แน่นอนด้านวัสดุและการจัดหา",
+      img: "/Feature/Image1.png"
+    },
+     {
+      title: "ลดความเสี่ยงจากต้นทุนหน้างาน",
+      desc: "ไม่ต้องแบกรับความไม่แน่นอนด้านวัสดุและการจัดหา",
+      img: "/Feature/Image2.png"
+    },
+     {
+      title: "ลดความเสี่ยงจากต้นทุนหน้างาน",
+      desc: "ไม่ต้องแบกรับความไม่แน่นอนด้านวัสดุและการจัดหา",
+      img: "/Feature/Image3.png"
+    },
+     {
+      title: "ลดความเสี่ยงจากต้นทุนหน้างาน",
+      desc: "ไม่ต้องแบกรับความไม่แน่นอนด้านวัสดุและการจัดหา",
+      img: "/Feature/Image4.png"
+    },
+  ]
+  const items3 = [
+    {
+      title: "เข้าถึงลูกค้าในพื้นที่ทันที",
+      desc: "เชื่อมต่อกับความต้องการจริงของงานก่อสร้างในพื้นที่",
+      img: "/Feature/Image9.png"
+    },
+     {
+      title: "วางแผนสินค้าได้ตรงจุด",
+      desc: "บริหารสต็อกให้สอดคล้องกับลักษณะงานก่อสร้าง",
+      img: "/Feature/Image10.png"
+    },
+     {
+      title: "แข่งขันด้วยต้นทุนที่เหมาะสม",
+      desc: "นำเสนอราคาและบริการที่สอดคล้องกับตลาดจริง",
+      img: "/Feature/Image11.png"
+    },
+     {
+      title: "สร้างความสัมพันธ์ระยะยาวกับลูกค้า",
+      desc: "เพิ่มโอกาสการซื้อซ้ำและการใช้งานต่อเนื่อง",
+      img: "/Feature/Image12.png"
+    },
+  ]
+
   return (
-    <>
-    <header className="text-center">
-      <h2 className="FeatuesText">ฟีเจอร์ที่ช่วยให้การทำงานง่ายขึ้น</h2>
-      <p className="text-[#6B757A]">ฟีเจอร์ที่ออกแบบมาเพื่อเจ้าของบ้าน ช่าง และพาร์ทเนอร์ ครอบคลุมตั้งแต่วัสดุ การเลือกช่าง ไปจนถึงการจัดการงานก่อสร้าง</p>
+    <section className="bg-white py-16">
+      <div className="px-5 md:px-20">
+        <header className="text-center">
+          <h2 className="FeatuesText mb-4">ฟีเจอร์ที่ช่วยให้การทำงานง่ายขึ้น</h2>
+          <p className="text-[#6B757A] text-[16px]">
+            ฟีเจอร์ที่ออกแบบมาเพื่อเจ้าของบ้าน ช่าง และพาร์ทเนอร์ ครอบคลุมตั้งแต่วัสดุ การเลือกช่าง ไปจนถึงการจัดการงานก่อสร้าง
+          </p>
+        </header>
 
-      <main className="mt-6">
-        <h2 className="mb-6 text-[#6B757A]">เจ้าของบ้านได้อะไร</h2>
-        <div className="grid grid-cols-4 gap-4 mx-20 ">
-          <div className="border">
-            <h1>1</h1>
+        <h3 className="mt-10 mb-10 text-center text-[2.813rem] font-bold text-[#6B757A]">
+          เจ้าของบ้านได้อะไร
+        </h3>
+
+        {/*  <= md: เลื่อนข้าง / >= md: grid 4 */}
+        <div
+          className="
+            md:grid md:grid-cols-4 md:gap-6
+            flex gap-6 overflow-x-auto md:overflow-visible
+            snap-x snap-mandatory
+            pb-4
+            [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
+          "
+        >
+          {items1.map((it, i) => (
+            <div
+              key={i}
+              className="
+                group relative h-[450px] 
+                rounded-[28px] border border-slate-200
+                bg-[#FFFFFF]
+                overflow-hidden
+                snap-start
+                shrink-0 w-[85%] sm:w-[60%] md:w-auto
+              "
+            >
+              <div className="px-8 pt-10 relative z-10">
+                <h4 className="text-[22px] font-bold leading-tight text-slate-900">
+                  {it.title}
+                </h4>
+                <p className="mt-4 text-[16px] leading-relaxed text-[#6B757A]">
+                  {it.desc}
+                </p>
+              </div>
+          <div className="absolute left-0 right-0 bottom-0 inset-0 h-full overflow-hidden">
+            <img
+              src={it.img}
+              alt={it.title}
+              className="
+                w-full h-full
+                object-contain object-bottom
+                transition-transform duration-700 ease-out
+                group-hover:scale-105 origin-bottom hover:bg-sky-100
+                
+              "
+            />
           </div>
-
-          <div className="border">
-            <h1>2</h1>
-          </div>
-
-          <div className="border">
-          <h1>3</h1>
-          </div>
-          <div className="border">
-
-            <h1>4</h1>
-            
-          </div>
-            
-            
-        
-
+            </div>
+          ))}
         </div>
 
-      </main>
+        <div className="border-t border-slate-200 my-5"></div>
 
-    </header>
-    
-    </>
-  )
+        <h3 className="mt-10 mb-10 text-center text-[2.813rem] font-bold text-[#6B757A]">
+          ช่างได้อะไร
+        </h3>
+        <div
+          className="
+            md:grid md:grid-cols-4 md:gap-6
+            flex gap-6 overflow-x-auto md:overflow-visible
+            snap-x snap-mandatory
+            pb-4
+            [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
+          "
+         >
+          {items2.map((it, i) => (
+            <div
+              key={i}
+              className="
+                group relative h-[450px] 
+                rounded-[28px] border border-slate-200
+                bg-[#FFFFFF]
+                overflow-hidden
+                snap-start
+                shrink-0 w-[85%] sm:w-[60%] md:w-auto
+              "
+            >
+              <div className="px-8 pt-10 relative z-10">
+                <h4 className="text-[22px] font-bold leading-tight text-slate-900">
+                  {it.title}
+                </h4>
+                <p className="mt-4 text-[16px] leading-relaxed text-[#6B757A]">
+                  {it.desc}
+                </p>
+              </div>
+          <div className="absolute left-0 right-0 bottom-0 inset-0 h-full overflow-hidden">
+            <img
+              src={it.img}
+              alt={it.title}
+              className="
+                w-full h-full
+                object-contain object-bottom
+                transition-transform duration-700 ease-out
+                group-hover:scale-105 origin-bottom hover:bg-sky-100
+                
+              "
+            />
+          </div>
+            </div>
+          ))}
+        </div>
+
+         <div className="border-t border-slate-200 my-5"></div>
+
+        <h3 className="mt-10 mb-10 text-center text-[2.813rem] font-bold text-[#6B757A]">
+          พาร์ทเนอร์ได้อะไร
+        </h3>
+        <div
+          className="
+            md:grid md:grid-cols-4 md:gap-6
+            flex gap-6 overflow-x-auto md:overflow-visible
+            snap-x snap-mandatory
+            pb-4
+            [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
+          "
+         >
+          {items3.map((it, i) => (
+            <div
+              key={i}
+              className="
+                group relative h-[450px] 
+                rounded-[28px] border border-slate-200
+                bg-[#FFFFFF]
+                overflow-hidden
+                snap-start
+                shrink-0 w-[85%] sm:w-[60%] md:w-auto
+              "
+            >
+              <div className="px-8 pt-10 relative z-10">
+                <h4 className="text-[22px] font-bold leading-tight text-slate-900">
+                  {it.title}
+                </h4>
+                <p className="mt-4 text-[16px] leading-relaxed text-[#6B757A]">
+                  {it.desc}
+                </p>
+              </div>
+          <div className="absolute left-0 right-0 bottom-0 inset-0 h-full overflow-hidden">
+            <img
+              src={it.img}
+              alt={it.title}
+              className="
+                w-full h-full
+                object-contain object-bottom
+                transition-transform duration-700 ease-out
+                group-hover:scale-105 origin-bottom hover:bg-sky-100
+                
+              "
+            />
+          </div>
+            </div>
+          ))}
+        </div>
+        
+      </div>
+      
+    </section>
+  );
 }
