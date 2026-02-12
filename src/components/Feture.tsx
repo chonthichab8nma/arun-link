@@ -84,8 +84,8 @@ export default function Feture() {
         {/*  <= md: เลื่อนข้าง / >= md: grid 4 */}
         <div
           className="
-            md:grid md:grid-cols-4 md:gap-6
-            flex gap-6 overflow-x-auto md:overflow-visible
+            md:flex  md:gap-6 lg:grid lg:grid-cols-4
+            flex gap-6 overflow-x-auto md:overflow-x-auto
             snap-x snap-mandatory
             pb-4
             [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
@@ -135,8 +135,8 @@ export default function Feture() {
         </h3>
         <div
           className="
-            md:grid md:grid-cols-4 md:gap-6
-            flex gap-6 overflow-x-auto md:overflow-visible
+            md:flex  md:gap-6 lg:grid lg:grid-cols-4
+            flex gap-6 overflow-x-auto md:overflow-x-auto
             snap-x snap-mandatory
             pb-4
             [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
@@ -186,8 +186,8 @@ export default function Feture() {
         </h3>
         <div
           className="
-            md:grid md:grid-cols-4 md:gap-6
-            flex gap-6 overflow-x-auto md:overflow-visible
+            md:flex md:gap-6 lg:grid lg:grid-cols-4
+            flex gap-6 overflow-x-auto md:overflow-x-auto
             snap-x snap-mandatory
             pb-4
             [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden

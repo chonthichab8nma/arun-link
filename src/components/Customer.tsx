@@ -61,23 +61,24 @@ export default function Customer() {
   ];
 
   return (
-    <section className="bg-white py-20">
-      <div className="px-5 md:px-20">
+    <section className="bg-white py-20 md:max-w-2xl md:mx-auto lg:max-w-none lg:mx-auto mb-100 lg:mb-0">
+     
         {/* Title */}
         <h2 className="text-center text-[36px] font-bold  tracking-tight text-slate-900">
           สิ่งที่ลูกค้าพูดถึงเรา
         </h2>
 
         {/* Cards */}
-        <div className="mt-14 p-[32px] grid gap-[16px] md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-[16px] md:flex lg:grid lg:grid-cols-3 lg:gap-4  px-4 md:px-4 
+              md:overflow-x-auto [scrollbar-width:none] snap-x snap-mandatory  [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden h-62.5 ">
           {reviews.map((r, idx) => (
             <article
               key={idx}
-              className="rounded-3xl border border-slate-200 bg-white p-10 shadow-sm"
+              className="rounded-3xl border border-slate-200 bg-white p-10 shadow-sm  lg:w-full md:min-w-lg lg:min-w-0"
             >
-              <div className="flex items-start justify-between gap-4">
+              <div className="flex items-start justify-between gap-4 ">
                 <div>
-                  <h3 className="text-[16px] font-bold text-slate-900">{r.name}</h3>
+                  <h3 className="text-[16px] font-bold text-slate-900 truncate">{r.name}</h3>
                   <p className="mt-1 text-[13px] text-slate-500">{r.role}</p>
                 </div>
               </div>
@@ -88,13 +89,14 @@ export default function Customer() {
                 <span className="text-sm text-slate-400">{r.date}</span>
               </div>
 
-              <p className="mt-[16px] text-[14px] leading-7 text-slate-500">
+              <p className="mt-[16px] text-[14px] leading-7 text-slate-500 line-clamp-3  text-wrap overflow-hidden text-ellipsis
+[display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical]">
                 {r.message}
               </p>
             </article>
           ))}
         </div>
-      </div>
+
     </section>
   );
 }
