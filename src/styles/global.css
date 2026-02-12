@@ -11,7 +11,8 @@ body {
 }
 @layer components {
   .FeatuesText{
-    font-size: 3.375rem;
+    /* หัวข้อหลัก */
+    font-size: 3.375rem; 
     font-weight: bold;
   }
   
