@@ -55,23 +55,31 @@ export default function Customer() {
             </div>
 
             {/* spacer */}
-            <div className="relative min-h-[280px] lg:min-h-[360px]" />
+            <div className="relative min-h-[260px] sm:min-h-[300px] md:min-h-[340px] lg:min-h-[360px]" />
 
-            {/* IMAGE: ปกติ = scale-100, hover = ขยาย */}
-            <img
-              src="/Partner/Menphone.png"
-              alt="Menphone"
-              className="
-                absolute right-[-100px] -top-[203px]
-                h-[520px] lg:h-[620px] w-auto object-contain
-                pointer-events-none select-none
-                drop-shadow-[0_18px_35px_rgba(0,0,0,0.25)]
-                transform-gpu transition-transform duration-700 ease-out
-                origin-bottom
-                scale-100
-                group-hover:scale-[1.05]
-              "
-            />
+{/* IMAGE */}
+<img
+  src="/Partner/Menphone.png"
+  alt="Menphone"
+  className="
+    absolute pointer-events-none select-none
+    w-auto object-contain
+    drop-shadow-[0_18px_35px_rgba(0,0,0,0.25)]
+    transform-gpu transition-transform duration-700 ease-out origin-bottom
+    scale-100 group-hover:scale-[1.05]
+
+
+    /* ===== Phone (sm) ===== */
+    bottom-[-190px] right-[-24px]
+    h-[520px] sm:h-[600px] md:h-[720px]
+
+    /* ===== iPad (md) ===== */
+    md:right-[-50px] md:bottom-[-138px] md:h-[460px]
+
+    /* ===== Laptop+ (lg) : ใช้ของเดิม ไม่เปลี่ยนดีไซน์ ===== */
+    lg:right-[-100px] lg:bottom-auto lg:-top-[203px] lg:h-[620px]
+  "
+/>
           </div>
         </div>
       </div>
