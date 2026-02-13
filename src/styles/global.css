@@ -4,7 +4,21 @@
 body {
   font-family: "Bai Jamjuree", sans-serif;
   overflow-x: hidden;
+  line-height: 1.55;
+  letter-spacing: 0;
+}
 
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.25;
+    letter-spacing: 0;
+  }
+
+  p, li, a, button, input, textarea, label, span {
+    line-height: 1.55;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
+  }
 }
 @theme {
   --text-h1: 3.375rem; 
