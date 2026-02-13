@@ -219,7 +219,7 @@ export default function WhyArunLink() {
                     aria-hidden="true"
                     className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-45"
                   />
-                  <div className="relative z-10 w-full pr-[24%] sm:pr-[28%] md:pr-[40%] lg:pr-[46%]">
+                  <div className="relative z-10 w-full pr-[24%] sm:pr-[28%] md:pr-[25%] lg:pr-[10%]">
                     <h3 className="text-xl font-bold leading-[1.2] text-[#17191f]">
                       {card.title}
                     </h3>
@@ -244,7 +244,7 @@ export default function WhyArunLink() {
               ))}
             </div>
 
-            <article className="group relative mt-4 h-130 w-full overflow-hidden rounded-[20px] bg-[#dff1fb] px-6 py-8 transition-colors duration-300 hover:bg-[#eaf6fc md:mt-6 md:h-206.25 md:px-8 md:py-12 lg:flex lg:h-126 lg:items-center">
+            <article className="group relative mt-4 h-150 w-full overflow-hidden rounded-[20px] bg-[#dff1fb] px-6 py-8 transition-colors duration-300 hover:bg-[#eaf6fc md:mt-6 md:h-206.25 md:px-8 md:py-12 lg:flex lg:h-126 lg:items-center">
               <img
                 src="/WhyArunLink/watermark/5.webp"
                 alt=""
