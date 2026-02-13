@@ -47,9 +47,14 @@ export default function Home() {
                   สมัครสมาชิก
                 </a>
 
-                <button className="rounded-xl bg-white/25 px-6 py-3 text-[14px] font-semibold text-white backdrop-blur-sm transition hover:bg-white/30">
+                <a
+                  href="https://arunlink.vercel.app/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-xl bg-white/25 px-6 py-3 text-[14px] font-semibold text-white backdrop-blur-sm transition hover:bg-white/30"
+                >
                   สมัครพาร์ทเนอร์
-                </button>
+                </a>
               </div>
             </div>
           </div>
