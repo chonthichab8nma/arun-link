@@ -32,7 +32,8 @@ export default function Home() {
     h-[420px] sm:h-[500px] 
     object-contain object-bottom
     z-[1] 
-    object-bottom-left           
+    object-bottom-left  
+    animate-under-in2         
   "
 />
 <img
