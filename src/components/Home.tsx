@@ -27,13 +27,12 @@ export default function Home() {
     pointer-events-none select-none
     absolute 
     left-1/4 bottom-10
-    -translate-x-1/2             /* ใช้ค่าลบเพื่อดึงรูปไปทางซ้าย */
+    -translate-x-1/2            
     w-[100%] max-w-none 
     h-[420px] sm:h-[500px] 
     object-contain object-bottom
     z-[1] 
-    object-bottom-left           /* ให้เนื้อหารูปชิดซ้ายล่าง */
-    animate-under-in2
+    object-bottom-left           
   "
 />
 <img
@@ -87,7 +86,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* bottom fade / cloud (ถ้ามี) */}
 <img
   src="/Home/under.webp"
   alt="under"
@@ -103,7 +101,7 @@ export default function Home() {
 
         </div>
 
-        {/* ===================== DESKTOP (md+) ใช้ของเดิม ===================== */}
+        {/* ===================== DESKTOP (md+) ===================== */}
         <div className="relative hidden w-full overflow-hidden md:block md:h-[820px] lg:h-[820px]">
           <div
             className="absolute inset-0"
@@ -119,7 +117,7 @@ export default function Home() {
           <img
             src="/Home/All-left.webp"
             alt="materials"
-            className="pointer-events-none select-none absolute lg:inset h-220  w-full object-contain  object-bottom-left animate-under-in2 md:-bottom-30 md:-left-30 lg:-bottom-20"
+            className="pointer-events-none select-none absolute lg:inset h-220  w-full object-contain  object-bottom-left animate-under-in2 md:-bottom-30 md:-left-40 lg:-bottom-20"
           />
             <img
             src="/Home/All-right.webp"
