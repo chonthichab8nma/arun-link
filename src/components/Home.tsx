@@ -25,12 +25,14 @@ export default function Home() {
   alt="materials"
   className="
     pointer-events-none select-none
-    absolute left-1/4 bottom-10
-    -translate-x-1/2
+    absolute 
+    left-1/4 bottom-10
+    -translate-x-1/2             /* ใช้ค่าลบเพื่อดึงรูปไปทางซ้าย */
     w-[100%] max-w-none 
     h-[420px] sm:h-[500px] 
     object-contain object-bottom
-    z-[1] object-bottom-left
+    z-[1] 
+    object-bottom-left           /* ให้เนื้อหารูปชิดซ้ายล่าง */
     animate-under-in2
   "
 />
@@ -102,7 +104,7 @@ export default function Home() {
         </div>
 
         {/* ===================== DESKTOP (md+) ใช้ของเดิม ===================== */}
-        <div className="relative hidden w-full overflow-hidden md:block md:h-[760px] lg:h-[820px]">
+        <div className="relative hidden w-full overflow-hidden md:block md:h-[820px] lg:h-[820px]">
           <div
             className="absolute inset-0"
             style={{
@@ -117,21 +119,21 @@ export default function Home() {
           <img
             src="/Home/All-left.webp"
             alt="materials"
-            className="pointer-events-none select-none absolute lg:inset-0 h-full w-full object-contain md:left-1/2 object-bottom-left animate-under-in2 md:-bottom-30"
+            className="pointer-events-none select-none absolute lg:inset h-220  w-full object-contain  object-bottom-left animate-under-in2 md:-bottom-30 md:-left-30 lg:-bottom-20"
           />
             <img
             src="/Home/All-right.webp"
             alt="materials"
-            className="pointer-events-none select-none absolute lg:inset-0 h-full w-full object-contain object-bottom-right animate-under-in2 md:-bottom-30"
+            className="pointer-events-none select-none absolute lg:inset-0 h-full w-full object-contain object-bottom-right animate-under-in2 md:-bottom-30 md:-right-40"
           />
 
-          <div className="relative z-10 flex h-full items-center justify-center">
+          <div className="relative z-10 flex h-full items-center justify-center ">
             <div className="text-center text-white">
               <h1 className="text-[56px] font-extrabold leading-none drop-shadow-[0_6px_18px_rgba(0,0,0,0.25)] md:text-[72px]">
                 อรุณลิงก์
               </h1>
 
-              <p className="mt-6 text-[18px] leading-8 text-white/95 md:text-[20px]">
+              <p className="mt-6 text-[18px] leading-8 text-white/95 md:text-[20px] ">
                 แพลตฟอร์มสำหรับงานโครงสร้าง
                 <br />
                 ที่คัดเลือกจากประสบการณ์ทำงานจริง

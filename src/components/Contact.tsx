@@ -3,12 +3,12 @@
 export default function Footer() {
   return (
     <footer className="bg-white">
-      <div className="mx-auto max-w-[1200px] px-6 py-10">
+      <div className="mx-auto max-w-[1200px] px-6 pt-10">
         <div
           className="
             relative mb-10 overflow-hidden
             rounded-[16px]
-            px-6 py-8
+            px-6 pt-8
             md:px-10 md:py-10
           "
           style={{
