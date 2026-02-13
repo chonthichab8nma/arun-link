@@ -89,7 +89,7 @@ const FAQCard: FC<FAQCardProps> = ({ item, index, isActive, onToggle }) => {
           </div>
           <p className="min-w-0 text-[17px] font-semibold leading-snug text-gray-900 sm:text-[18px]">
             <span className="font-bold">Q:</span>{" "}
-            <span className="break-words">{item.question}</span>
+            <span className="wrap-break-word">{item.question}</span>
           </p>
         </div>
 
@@ -101,19 +101,23 @@ const FAQCard: FC<FAQCardProps> = ({ item, index, isActive, onToggle }) => {
         />
       </button>
 
-      {isActive && (
-        <div
-          id={answerId}
-          role="region"
-          aria-labelledby={questionId}
-          className="px-4 pb-5 sm:px-5 sm:pl-[76px]"
-        >
-          <p className="whitespace-pre-line text-[16px] leading-relaxed text-gray-600">
-            <span className="font-semibold text-gray-800">A:</span>{" "}
-            {item.answer}
-          </p>
+      <div
+        id={answerId}
+        role="region"
+        aria-labelledby={questionId}
+        className={`grid transition-all duration-300 ease-in-out ${
+          isActive ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <div className="px-4 pb-5 sm:px-5 sm:pl-19">
+            <p className="whitespace-pre-line text-[16px] leading-relaxed text-gray-600">
+              <span className="font-semibold text-gray-800">A:</span>{" "}
+              {item.answer}
+            </p>
+          </div>
         </div>
-      )}
+      </div>
     </article>
   );
 };

@@ -45,16 +45,19 @@ export default function Customer() {
                 ทุกอย่างอยู่ที่นี่เดียว
               </p>
 
-              <button
+              <a
+                href="https://arunlink.vercel.app/login"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="
-                  mt-8 inline-flex items-center justify-center
-                  rounded-xl bg-white px-6 py-3
-                  text-[14px] font-semibold text-[#1891CD]
-                  shadow-sm transition hover:bg-[#D3EDF8] cursor-pointer
-                "
+                    mt-8 inline-flex items-center justify-center
+                    rounded-xl bg-white px-6 py-3
+                    text-[14px] font-semibold text-[#1891CD]
+                    shadow-sm transition hover:bg-[#D3EDF8] cursor-pointer
+                  "
               >
                 สมัครพาร์ทเนอร์
-              </button>
+              </a>
             </div>
 
             {/* spacer */}
