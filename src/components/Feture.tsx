@@ -87,7 +87,7 @@ export default function Feture() {
             md:flex  md:gap-6 lg:grid lg:grid-cols-4
             flex gap-6 overflow-x-auto md:overflow-x-auto
             snap-x snap-mandatory 
-            pb-4
+            pb-4 
             [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
           "
         >
@@ -98,9 +98,9 @@ export default function Feture() {
                 group relative h-[450px] 
                 rounded-[28px] border border-slate-200
                 bg-[#FFFFFF]
-                overflow-hidden
-                snap-start
-                shrink-0 w-[85%] sm:w-[60%] md:w-auto
+                overflow-hidden 
+                snap-start 
+                shrink-0 w-[85%] sm:w-[60%] md:max-w-[288px] lg:w-auto
               "
             >
               <div className="px-8 pt-10 relative z-10">
@@ -151,7 +151,7 @@ export default function Feture() {
                 bg-[#FFFFFF]
                 overflow-hidden
                 snap-start
-                shrink-0 w-[85%] sm:w-[60%] md:w-auto
+                shrink-0 w-[85%] sm:w-[60%] md:max-w-[288px] lg:w-auto
               "
             >
               <div className="px-8 pt-10 relative z-10">
@@ -202,7 +202,7 @@ export default function Feture() {
                 bg-[#FFFFFF]
                 overflow-hidden
                 snap-start
-                shrink-0 w-[85%] sm:w-[60%] md:w-auto
+                shrink-0 w-[85%] sm:w-[60%] md:max-w-[288px] lg:w-auto
               "
             >
               <div className="px-8 pt-10 relative z-10">
