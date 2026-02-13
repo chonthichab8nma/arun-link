@@ -7,7 +7,7 @@ export default function Customer() {
        <div
   className="group relative overflow-visible rounded-[28px] px-8 py-10 md:px-14 md:py-14"
   style={{
-    backgroundImage: "url(/Partner/Background1.png)",
+    backgroundImage: "url(/Partner/Background1.webp)",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -59,7 +59,7 @@ export default function Customer() {
 
 {/* IMAGE */}
 <img
-  src="/Partner/Menphone.png"
+  src="/Partner/Menphone.webp"
   alt="Menphone"
   className="
     absolute pointer-events-none select-none

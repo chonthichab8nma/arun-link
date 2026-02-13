@@ -10,7 +10,7 @@ export default function Home() {
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: "url(/Home/bg.png)",
+              backgroundImage: "url(/Home/bg.webp)",
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
@@ -21,7 +21,7 @@ export default function Home() {
 
           {/* top materials image (ให้เหมือนรูป: วัสดุอยู่ด้านล่าง, crop) */}
 <img
-  src="/Home/All.png"
+  src="/Home/All.webp"
   alt="materials"
   className="
     pointer-events-none select-none
@@ -68,7 +68,7 @@ export default function Home() {
 
           {/* bottom fade / cloud (ถ้ามี) */}
 <img
-  src="/Home/under.png"
+  src="/Home/under.webp"
   alt="under"
   className="
     pointer-events-none select-none
@@ -87,7 +87,7 @@ export default function Home() {
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: "url(/Home/bg.png)",
+              backgroundImage: "url(/Home/bg.webp)",
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
@@ -96,7 +96,7 @@ export default function Home() {
           <div className="pointer-events-none absolute inset-0  bg-gradient-to-r from-[#1891CD]/60 to-[#1891CD]/50" />
 
           <img
-            src="/Home/All.png"
+            src="/Home/All.webp"
             alt="materials"
             className="pointer-events-none select-none absolute lg:inset-0 h-full w-full object-contain object-center animate-under-in2 md:-bottom-30"
           />
@@ -128,7 +128,7 @@ export default function Home() {
           </div>
 
           <img
-            src="/Home/under.png"
+            src="/Home/under.webp"
             alt="under"
             className="pointer-events-none select-none absolute left-0 right-0 bottom-0 w-full h-[250px] object-cover animate-under-in"
           />
