@@ -18,19 +18,19 @@ const serviceCards: ServiceCard[] = [
     title: "งานโครงสร้าง",
     desc1: "งานฐานราก กำแพงกันดิน",
     desc2: "และโครงสร้างหลัก",
-    image: "/WhyArunLink/asset/Asset5.png",
+    image: "/WhyArunLink/asset/Asset5.webp",
   },
   {
     title: "งานซ่อมแซม",
     desc1: "แก้ไข ปรับปรุง",
     desc2: "ดูแลโครงสร้างและระบบเดิม",
-    image: "/WhyArunLink/asset/Asset6.png",
+    image: "/WhyArunLink/asset/Asset6.webp",
   },
   {
     title: "งานต่อเติม",
     desc1: "ต่อเติมพื้นที่",
     desc2: "เพิ่มฟังก์ชันการใช้งาน",
-    image: "/WhyArunLink/asset/Asset7.png",
+    image: "/WhyArunLink/asset/Asset7.webp",
   },
 ];
 
@@ -42,11 +42,11 @@ const painPointCards: PainPointCard[] = [
       "ผู้รับเหมามักต้องปรับแผนงานและงบประมาณ",
       "ต้นทุนที่สูงขึ้น ส่งผลให้ควบคุมค่าใช้จ่ายได้ยาก",
     ],
-    image: "/WhyArunLink/asset/Asset8.png",
+    image: "/WhyArunLink/asset/Asset8.webp",
     imageClass:
       "w-[125%] max-w-[840px] -right-5 -bottom-37 lg:-right-10 lg:-bottom-80 rotate-[5deg] md:w-[150%] md:-bottom-50",
 
-    watermark: "/WhyArunLink/watermark/1.png",
+    watermark: "/WhyArunLink/watermark/1.webp",
   },
   {
     title: "ปัญหาด้านห่วงโซ่อุปทาน",
@@ -55,10 +55,10 @@ const painPointCards: PainPointCard[] = [
       "ส่งผลต่อกำหนดการก่อสร้าง",
       "ระบบขนส่งและโลจิสติกส์ยังมีความซับซ้อน",
     ],
-    image: "/WhyArunLink/asset/Asset9.png",
+    image: "/WhyArunLink/asset/Asset9.webp",
     imageClass:
       "w-[150%] max-w-[840px] -right-40 -bottom-20 lg:-right-10 lg:-bottom-30 lg:w-[100%] md:w-[150%] md:-bottom-25",
-    watermark: "/WhyArunLink/watermark/2.png",
+    watermark: "/WhyArunLink/watermark/2.webp",
   },
   {
     title: "ปัญหาด้านช่างผู้รับเหมา",
@@ -67,9 +67,9 @@ const painPointCards: PainPointCard[] = [
       "ต้นทุนแรงงานสูงขึ้น",
       "การควบคุมคุณภาพงานทำได้ยาก",
     ],
-    image: "/WhyArunLink/asset/Asset10.png",
+    image: "/WhyArunLink/asset/Asset10.webp",
     imageClass: "w-[150%] max-w-[840px] -right-50 -bottom-5 lg:-right-30 lg:-bottom-20 lg:w-[100%] md:w-[140%] md:bottom-1",
-    watermark: "/WhyArunLink/watermark/3.png",
+    watermark: "/WhyArunLink/watermark/3.webp",
   },
   {
     title: "การขาดแคลนแรงงาน",
@@ -78,9 +78,9 @@ const painPointCards: PainPointCard[] = [
       "อาจทำให้งานล่าช้า และกระทบ",
       "ต่อกำหนดส่งมอบหรือการซ่อมแซม",
     ],
-    image: "/WhyArunLink/asset/Asset11.png",
+    image: "/WhyArunLink/asset/Asset11.webp",
     imageClass: "w-[100%] max-w-[840px] -right-30 -bottom-15 lg:-right-20 lg:-bottom-50 lg:w-[80%] md:w-[110%] md:-bottom-25 md:-right-45  ",
-    watermark: "/WhyArunLink/watermark/4.png",
+    watermark: "/WhyArunLink/watermark/4.webp",
   },
 ];
 
@@ -89,31 +89,31 @@ export default function WhyArunLink() {
     <section className="relative overflow-hidden bg-white mt-8 md:mt-5 lg:mt-10">
       <div className="relative isolate overflow-hidden">
         <img
-          src="/WhyArunLink/bg/bg1.png"
+          src="/WhyArunLink/bg/bg1.webp"
           alt=""
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover opacity-[0.1] grayscale"
         />
         <img
-          src="/WhyArunLink/asset/Asset1.png"
+          src="/WhyArunLink/asset/Asset1.webp"
           alt=""
           aria-hidden="true"
           className="pointer-events-none absolute -left-15 -top-8 w-[58vw] max-w-155 md:-left-20 md:-top-6 md:w-[42vw] lg:-left-20 lg:-top-10 lg:w-[34vw]"
         />
         <img
-          src="/WhyArunLink/asset/Asset2.png"
+          src="/WhyArunLink/asset/Asset2.webp"
           alt=""
           aria-hidden="true"
           className="pointer-events-none absolute -right-10 -top-8 w-[54vw] max-w-150 md:-right-20 md:-top-6 md:w-[40vw] lg:-right-10 lg:-top-10 lg:w-[31vw]"
         />
         <img
-          src="/WhyArunLink/asset/Asset3.png"
+          src="/WhyArunLink/asset/Asset3.webp"
           alt=""
           aria-hidden="true"
           className="pointer-events-none absolute bottom-0 left-0 w-[56vw] max-w-130 md:-bottom-10 md:left-0 md:w-[48vw] lg:-bottom-7 lg:left-0 lg:w-[36vw]"
         />
         <img
-          src="/WhyArunLink/asset/Asset4.png"
+          src="/WhyArunLink/asset/Asset4.webp"
           alt=""
           aria-hidden="true"
           className="pointer-events-none absolute -bottom-2 -right-5 w-[56vw] max-w-125 md:-bottom-2 md:-right-5 md:w-[45vw] lg:-bottom-4 lg:right-0 lg:w-[36vw]"
@@ -246,7 +246,7 @@ export default function WhyArunLink() {
 
             <article className="group relative mt-4 h-130 w-full overflow-hidden rounded-[20px] bg-[#dff1fb] px-6 py-8 transition-colors duration-300 hover:bg-[#eaf6fc md:mt-6 md:h-206.25 md:px-8 md:py-12 lg:flex lg:h-126 lg:items-center">
               <img
-                src="/WhyArunLink/watermark/5.png"
+                src="/WhyArunLink/watermark/5.webp"
                 alt=""
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-45"
@@ -266,7 +266,7 @@ export default function WhyArunLink() {
               </div>
 
               <img
-                src="/WhyArunLink/asset/Asset12.png"
+                src="/WhyArunLink/asset/Asset12.webp"
                 alt=""
                 aria-hidden="true"
                 className="

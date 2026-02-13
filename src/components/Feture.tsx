@@ -3,22 +3,22 @@ export default function Feture() {
     {
       title: "เข้าถึงวัสดุที่เหมาะกับงานจริง",
       desc: "วัสดุก่อสร้างที่ผ่านการคัดเลือกพร้อมราคาเหมาะสมกับงานโครงสร้าง",
-      img: "/Feature/Image5.png",
+      img: "/Feature/Image5.webp",
     },
     {
       title: "วางแผนงานได้ชัดเจนขึ้น",
       desc: "ลดความล่าช้าในการจัดหาวัสดุทำให้การก่อสร้างเป็นไปตามแผน",
-      img: "/Feature/Image6.png",
+      img: "/Feature/Image6.webp",
     },
     {
       title: "เลือกช่างที่เชี่ยวชาญเฉพาะทาง",
       desc: "ช่างและผู้รับเหมาที่มีประสบการณ์ตรงพร้อมงบประมาณที่ควบคุมได้",
-      img: "/Feature/Image7.png",
+      img: "/Feature/Image7.webp",
     },
     {
       title: "ควบคุมเวลาและความคืบหน้าได้",
       desc: "ติดตามงานและกำหนดกรอบเวลาให้โครงการเดินหน้าอย่างมั่นใจ",
-      img: "/Feature/Image8.png",
+      img: "/Feature/Image8.webp",
     },
   ];
 
@@ -26,44 +26,44 @@ export default function Feture() {
     {
       title: "ลดความเสี่ยงจากต้นทุนหน้างาน",
       desc: "ไม่ต้องแบกรับความไม่แน่นอนด้านวัสดุและการจัดหา",
-      img: "/Feature/Image1.png"
+      img: "/Feature/Image1.webp"
     },
      {
       title: "ลดความเสี่ยงจากต้นทุนหน้างาน",
       desc: "ไม่ต้องแบกรับความไม่แน่นอนด้านวัสดุและการจัดหา",
-      img: "/Feature/Image2.png"
+      img: "/Feature/Image2.webp"
     },
      {
       title: "ลดความเสี่ยงจากต้นทุนหน้างาน",
       desc: "ไม่ต้องแบกรับความไม่แน่นอนด้านวัสดุและการจัดหา",
-      img: "/Feature/Image3.png"
+      img: "/Feature/Image3.webp"
     },
      {
       title: "ลดความเสี่ยงจากต้นทุนหน้างาน",
       desc: "ไม่ต้องแบกรับความไม่แน่นอนด้านวัสดุและการจัดหา",
-      img: "/Feature/Image4.png"
+      img: "/Feature/Image4.webp"
     },
   ]
   const items3 = [
     {
       title: "เข้าถึงลูกค้าในพื้นที่ทันที",
       desc: "เชื่อมต่อกับความต้องการจริงของงานก่อสร้างในพื้นที่",
-      img: "/Feature/Image9.png"
+      img: "/Feature/Image9.webp"
     },
      {
       title: "วางแผนสินค้าได้ตรงจุด",
       desc: "บริหารสต็อกให้สอดคล้องกับลักษณะงานก่อสร้าง",
-      img: "/Feature/Image10.png"
+      img: "/Feature/Image10.webp"
     },
      {
       title: "แข่งขันด้วยต้นทุนที่เหมาะสม",
       desc: "นำเสนอราคาและบริการที่สอดคล้องกับตลาดจริง",
-      img: "/Feature/Image11.png"
+      img: "/Feature/Image11.webp"
     },
      {
       title: "สร้างความสัมพันธ์ระยะยาวกับลูกค้า",
       desc: "เพิ่มโอกาสการซื้อซ้ำและการใช้งานต่อเนื่อง",
-      img: "/Feature/Image12.png"
+      img: "/Feature/Image12.webp"
     },
   ]
 
@@ -71,21 +71,21 @@ export default function Feture() {
     <section className="bg-white py-16">
       <div className="px-5 md:px-20">
         <header className="text-center">
-          <h2 className="FeatuesText mb-4">ฟีเจอร์ที่ช่วยให้การทำงานง่ายขึ้น</h2>
+          <h2 className="text-[36px] font-bold mb-4">ฟีเจอร์ที่ช่วยให้การทำงานง่ายขึ้น</h2>
           <p className="text-[#6B757A] text-[16px]">
             ฟีเจอร์ที่ออกแบบมาเพื่อเจ้าของบ้าน ช่าง และพาร์ทเนอร์ ครอบคลุมตั้งแต่วัสดุ การเลือกช่าง ไปจนถึงการจัดการงานก่อสร้าง
           </p>
         </header>
 
-        <h3 className="mt-10 mb-10 text-center text-[2.813rem] font-bold text-[#6B757A]">
+        <h3 className="mt-10 mb-10 text-center text-[30px] font-bold text-[#6B757A]">
           เจ้าของบ้านได้อะไร
         </h3>
 
         {/*  <= md: เลื่อนข้าง / >= md: grid 4 */}
         <div
           className="
-            md:grid md:grid-cols-4 md:gap-6
-            flex gap-6 overflow-x-auto md:overflow-visible
+            md:flex  md:gap-6 lg:grid lg:grid-cols-4
+            flex gap-6 overflow-x-auto md:overflow-x-auto
             snap-x snap-mandatory
             pb-4
             [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
@@ -130,13 +130,13 @@ export default function Feture() {
 
         <div className="border-t border-slate-200 my-5"></div>
 
-        <h3 className="mt-10 mb-10 text-center text-[2.813rem] font-bold text-[#6B757A]">
+        <h3 className="mt-10 mb-10 text-center text-[30px] font-bold text-[#6B757A]">
           ช่างได้อะไร
         </h3>
         <div
           className="
-            md:grid md:grid-cols-4 md:gap-6
-            flex gap-6 overflow-x-auto md:overflow-visible
+            md:flex  md:gap-6 lg:grid lg:grid-cols-4
+            flex gap-6 overflow-x-auto md:overflow-x-auto
             snap-x snap-mandatory
             pb-4
             [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
@@ -181,13 +181,13 @@ export default function Feture() {
 
          <div className="border-t border-slate-200 my-5"></div>
 
-        <h3 className="mt-10 mb-10 text-center text-[2.813rem] font-bold text-[#6B757A]">
+        <h3 className="mt-10 mb-10 text-center text-[30px] font-bold text-[#6B757A]">
           พาร์ทเนอร์ได้อะไร
         </h3>
         <div
           className="
-            md:grid md:grid-cols-4 md:gap-6
-            flex gap-6 overflow-x-auto md:overflow-visible
+            md:flex md:gap-6 lg:grid lg:grid-cols-4
+            flex gap-6 overflow-x-auto md:overflow-x-auto
             snap-x snap-mandatory
             pb-4
             [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden

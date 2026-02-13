@@ -8,6 +8,7 @@ import Customer from "../components/Customer";
 import Partner from "../components/Partner";
 import Faq from "../components/Faq";
 import Contact from "../components/Contact";
+import ScrollToTop from "../components/ScrollToTop";
 ---
 
 <Layout>
@@ -25,13 +26,14 @@ import Contact from "../components/Contact";
   <section id="customer" class="scroll-mt-28 min-h-[50vh] ">
     <Customer />
   </section>
-  <!-- <section id="partner" class="scroll-mt-28 min-h-[50vh] pt-10">
+  <section id="partner" class="scroll-mt-28 min-h-[50vh] pt-10">
     <Partner />
-  </section> -->
+  </section>
   <section id="faq" class="scroll-mt-28 min-h-[50vh] pt-10">
     <Faq client:load />
   </section>
   <section id="contact" class="scroll-mt-28 min-h-[50vh] pt-10 pb-16">
     <Contact />
   </section>
+  <ScrollToTop client:load />
 </Layout>
