@@ -96,9 +96,14 @@ export default function Home() {
           <div className="pointer-events-none absolute inset-0  bg-gradient-to-r from-[#1891CD]/60 to-[#1891CD]/50" />
 
           <img
-            src="/Home/All.webp"
+            src="/Home/All-left.webp"
             alt="materials"
-            className="pointer-events-none select-none absolute lg:inset-0 h-full w-full object-contain object-center animate-under-in2 md:-bottom-30"
+            className="pointer-events-none select-none absolute lg:inset-0 h-full w-full object-contain object-bottom-left animate-under-in2 md:-bottom-30"
+          />
+            <img
+            src="/Home/All-right.webp"
+            alt="materials"
+            className="pointer-events-none select-none absolute lg:inset-0 h-full w-full object-contain object-bottom-right animate-under-in2 md:-bottom-30"
           />
 
           <div className="relative z-10 flex h-full items-center justify-center">
