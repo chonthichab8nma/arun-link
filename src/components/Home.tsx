@@ -21,19 +21,38 @@ export default function Home() {
 
           {/* top materials image (ให้เหมือนรูป: วัสดุอยู่ด้านล่าง, crop) */}
 <img
-  src="/Home/All.webp"
+  src="/Home/All-left.webp"
   alt="materials"
   className="
     pointer-events-none select-none
-    absolute left-1/2 bottom-36
+    absolute left-1/4 bottom-10
     -translate-x-1/2
     w-[100%] max-w-none 
     h-[420px] sm:h-[500px] 
     object-contain object-bottom
-    z-[1]
+    z-[1] object-bottom-left
     animate-under-in2
   "
 />
+<img
+  src="/Home/All-right.webp"
+  alt="materials"
+  className="
+    pointer-events-none select-none
+    absolute 
+    bottom-10
+    -right-1/4           
+    translate-x-0      
+    w-auto            
+    max-w-none      
+    h-[420px] sm:h-[500px] 
+    object-contain 
+    object-right-bottom 
+    z-[1] 
+    animate-under-in2
+  "
+/>
+
 
 
 
@@ -54,7 +73,7 @@ export default function Home() {
                 รวมช่างมืออาชีพมากกว่า 40 ปีในวงการก่อสร้าง
               </p>
 
-              <div className="mt-10 flex items-center justify-center gap-4">
+              <div className="mt-8 flex items-center justify-center gap-4">
                 <button className="rounded-xl bg-white px-6 py-3 text-[14px] font-semibold text-[#1891CD] shadow-sm transition hover:bg-white/90">
                   สมัครสมาชิก
                 </button>
@@ -98,7 +117,7 @@ export default function Home() {
           <img
             src="/Home/All-left.webp"
             alt="materials"
-            className="pointer-events-none select-none absolute lg:inset-0 h-full w-full object-contain object-bottom-left animate-under-in2 md:-bottom-30"
+            className="pointer-events-none select-none absolute lg:inset-0 h-full w-full object-contain md:left-1/2 object-bottom-left animate-under-in2 md:-bottom-30"
           />
             <img
             src="/Home/All-right.webp"
