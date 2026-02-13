@@ -68,7 +68,7 @@ const painPointCards: PainPointCard[] = [
       "การควบคุมคุณภาพงานทำได้ยาก",
     ],
     image: "/WhyArunLink/asset/Asset10.webp",
-    imageClass: "w-[150%] max-w-[840px] -right-50 -bottom-5 lg:-right-30 lg:-bottom-20 lg:w-[100%] md:w-[140%] md:bottom-1",
+    imageClass: "w-[150%] max-w-[840px] -right-53 -bottom-5 lg:-right-30 lg:-bottom-5 lg:w-[100%] md:w-[140%] md:bottom-1",
     watermark: "/WhyArunLink/watermark/3.webp",
   },
   {
@@ -79,7 +79,7 @@ const painPointCards: PainPointCard[] = [
       "ต่อกำหนดส่งมอบหรือการซ่อมแซม",
     ],
     image: "/WhyArunLink/asset/Asset11.webp",
-    imageClass: "w-[100%] max-w-[840px] -right-30 -bottom-15 lg:-right-20 lg:-bottom-50 lg:w-[80%] md:w-[110%] md:-bottom-25 md:-right-45  ",
+    imageClass: "w-[100%] max-w-[840px] -right-30 -bottom-15 lg:-right-20 lg:-bottom-40 lg:w-[80%] md:w-[110%] md:-bottom-25 md:-right-45  ",
     watermark: "/WhyArunLink/watermark/4.webp",
   },
 ];
@@ -124,14 +124,14 @@ export default function WhyArunLink() {
             <h2 className="leading-[1.1] tracking-[-0.01em] text-[#0f1116] FeatuesText text-[42px] md:text-h1">
               งานโครงสร้างที่ดี
             </h2>
-            <h3 className="mt-2 FeatuesText leading-[1.1] tracking-[-0.01em] text-[#1f93ce] text-[42px] md:text-h1">
+            <h3 className="mt-2 FeatuesText leading-normal tracking-[-0.01em] text-[#1f93ce] text-[42px] md:text-h1">
               ทำไมต้องที่ อรุณลิงก์
             </h3>
 
             <p className="mx-auto mt-10 max-w-5xl leading-[1.45] text-[#707a82] text-[18px] md:text-[24px]">
               หลายคนเริ่มงานก่อสร้าง โดยเฉพาะงานโครงสร้างอย่างกำแพงกันดิน
             </p>
-            <p className="mx-auto mt-8 max-w-4xl leading-[1.4] text-[#707a82] text-[18px] md:text-[24px]">
+            <p className="mx-auto mt-8 max-w-4xl leading-normal text-[#707a82] text-[18px] md:text-[24px]">
               โดยมีข้อมูลไม่ครบถ้วนในการเลือกวัสดุหรือแนวทางก่อสร้าง
               ทั้งที่งานประเภทเหล่านี้ต้องอาศัยความเชี่ยวชาญเฉพาะทาง
               เพื่อให้แข็งแรง ปลอดภัย และใช้งานได้ในระยะยาว
@@ -141,7 +141,7 @@ export default function WhyArunLink() {
       </div>
 
       <div className="relative z-20 mx-auto mt-16 md:mt-20 lg:mt-5 max-w-7xl px-5 sm:px-6 md:px-10 lg:px-16 pb-20 md:pb-28 lg:pb-36 pt-10 md:pt-14 lg:pt-20">
-        <h2 className="lg:text-[36px]  text-center text-3xl font-bold leading-[1.15] tracking-[-0.01em] text-[#14161b] md:text-h1">
+        <h2 className="lg:text-[36px]  text-center text-3xl font-bold leading-normal tracking-[-0.01em] text-[#14161b] md:text-h1">
           เราคัดเฉพาะงาน
           <br />
           ที่ต้องใช้ความเชี่ยวชาญจริง
@@ -252,7 +252,7 @@ export default function WhyArunLink() {
                 className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-45"
               />
               <div className="relative z-10 w-full lg:pr-[58%]">
-                <h3 className="text-3xl font-bold leading-[1.2] text-[#17191f]">
+                <h3 className="text-3xl font-bold leading-normal text-[#17191f]">
                   อรุณลิงก์ช่วยให้คุณ
                   <br />
                   จัดการงานก่อสร้างได้ดีขึ้น
