@@ -211,7 +211,7 @@ export default function WhyArunLink() {
               {painPointCards.map((card) => (
                 <article
                   key={card.title}
-                  className="group relative flex min-h-80 w-full flex-col justify-between overflow-hidden rounded-[20px] bg-[#daedf7] p-5 transition-colors duration-300 hover:bg-[#c9dbe9] sm:min-h-86 sm:p-6 md:p-8"
+                  className="group relative flex min-h-80 w-full flex-col justify-between overflow-hidden rounded-[20px] bg-[#daedf7] p-5 transition-colors duration-300 hover:bg-[#eaf6fc] sm:min-h-86 sm:p-6 md:p-8"
                 >
                   <img
                     src={card.watermark}
@@ -244,7 +244,7 @@ export default function WhyArunLink() {
               ))}
             </div>
 
-            <article className="group relative mt-4 h-130 w-full overflow-hidden rounded-[20px] bg-[#dff1fb] px-6 py-8 transition-colors duration-300 hover:bg-[#bccdde] md:mt-6 md:h-206.25 md:px-8 md:py-12 lg:flex lg:h-126 lg:items-center">
+            <article className="group relative mt-4 h-130 w-full overflow-hidden rounded-[20px] bg-[#dff1fb] px-6 py-8 transition-colors duration-300 hover:bg-[#eaf6fc md:mt-6 md:h-206.25 md:px-8 md:py-12 lg:flex lg:h-126 lg:items-center">
               <img
                 src="/WhyArunLink/watermark/5.webp"
                 alt=""
