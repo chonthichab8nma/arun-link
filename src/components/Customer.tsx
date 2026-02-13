@@ -61,7 +61,7 @@ export default function Customer() {
   ];
 
   return (
-    <section className="bg-white py-20 md:max-w-2xl md:mx-auto lg:max-w-none lg:mx-auto mb-100 lg:mb-0 ">
+    <section className="bg-white py-20 md:max-w-2xl md:mx-auto lg:max-w-none lg:mx-auto  lg:mb-0 ">
      
         {/* Title */}
         <h2 className="text-center text-[36px] font-bold  tracking-tight text-slate-900">
@@ -70,7 +70,7 @@ export default function Customer() {
 
         {/* Cards */}
         <div className="mt-14 grid gap-[16px] md:flex lg:grid lg:grid-cols-3  lg:gap-4  px-4 md:px-4 max-w-7xl mx-auto h-auto
-              md:overflow-x-auto [scrollbar-width:none] snap-x snap-mandatory  [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden h-62.5 ">
+              md:overflow-x-auto md:pb-2 [scrollbar-width:none] snap-x snap-mandatory  [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden h-62.5 ">
           {reviews.map((r, idx) => (
             <article
               key={idx}
