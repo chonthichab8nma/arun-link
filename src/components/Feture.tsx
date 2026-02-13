@@ -104,7 +104,7 @@ export default function Feture() {
               "
             >
               <div className="px-8 pt-10 relative z-10">
-                <h4 className="text-[22px] font-bold leading-tight text-slate-900">
+                <h4 className="text-[22px] font-bold leading-[1.45] tracking-wide text-slate-900">
                   {it.title}
                 </h4>
                 <p className="mt-4 text-[16px] leading-relaxed text-[#6B757A]">
@@ -155,7 +155,7 @@ export default function Feture() {
               "
             >
               <div className="px-8 pt-10 relative z-10">
-                <h4 className="text-[22px] font-bold leading-tight text-slate-900">
+                <h4 className="text-[22px] font-bold leading-[1.45] tracking-normal text-slate-900">
                   {it.title}
                 </h4>
                 <p className="mt-4 text-[16px] leading-relaxed text-[#6B757A]">
@@ -206,7 +206,7 @@ export default function Feture() {
               "
             >
               <div className="px-8 pt-10 relative z-10">
-                <h4 className="text-[22px] font-bold leading-tight text-slate-900">
+                <h4 className="text-[22px] font-bold leading-[1.45] tracking-normal text-slate-900">
                   {it.title}
                 </h4>
                 <p className="mt-4 text-[16px] leading-relaxed text-[#6B757A]">
