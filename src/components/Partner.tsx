@@ -4,22 +4,25 @@ export default function Customer() {
   return (
     <section className="bg-white py-16">
       <div className="mx-auto max-w-[1200px] px-6">
-       <div
-  className="group relative overflow-visible rounded-[28px] px-8 py-10 md:px-14 md:py-14"
-  style={{
-    backgroundImage: "url(/Partner/Background1.webp)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  }}
->
-
-<div className="pointer-events-none absolute inset-0 rounded-[28px] bg-gradient-to-r from-[#1891CD]/60 to-[#1891CD]/40" />
-
-
-
-
-
+        <div
+          className="group relative overflow-visible rounded-[28px] px-8 py-10 md:px-14 md:py-14"
+          style={{
+            backgroundImage: `
+    linear-gradient(
+      135deg,
+      rgba(15,115,170,1) 40%,
+      rgba(15,115,170,1) 64%,
+      rgba(15,115,170,1) 80%
+    ),
+    url(/Partner/Background1.webp)
+  `,
+            backgroundBlendMode: "hard-light,overlay",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          {/* <div className="pointer-events-none absolute inset-0 rounded-[28px] bg-gradient-to-r from-[#1891CD]/80 to-[#1891CD] opacity-10" /> */}
 
           <div className="relative grid items-center gap-10 lg:grid-cols-2">
             {/* LEFT */}
@@ -57,11 +60,11 @@ export default function Customer() {
             {/* spacer */}
             <div className="relative min-h-[260px] sm:min-h-[300px] md:min-h-[340px] lg:min-h-[360px]" />
 
-{/* IMAGE */}
-<img
-  src="/Partner/Menphone.webp"
-  alt="Menphone"
-  className="
+            {/* IMAGE */}
+            <img
+              src="/Partner/Menphone.webp"
+              alt="Menphone"
+              className="
     absolute pointer-events-none select-none
     w-auto object-contain
     drop-shadow-[0_18px_35px_rgba(0,0,0,0.25)]
@@ -79,7 +82,7 @@ export default function Customer() {
     /* ===== Laptop+ (lg) : ใช้ของเดิม ไม่เปลี่ยนดีไซน์ ===== */
     lg:right-[-100px] lg:bottom-auto lg:-top-[203px] lg:h-[620px]
   "
-/>
+            />
           </div>
         </div>
       </div>
