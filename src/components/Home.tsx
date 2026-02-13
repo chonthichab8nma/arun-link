@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <section className="bg-white">   
+    <section className="bg-white">
       <div className="relative w-screen">
         <div className="relative w-full overflow-hidden h-[680px] md:h-[760px] lg:h-[820px]">
           <div
@@ -19,7 +19,7 @@ export default function Home() {
           <img
             src="/Home/All.png"
             alt="materials"
-             className="pointer-events-none select-none absolute inset-0  h-full w-full object-contain object-center  animate-under-in2"
+            className="pointer-events-none select-none absolute inset-0  h-full w-full object-contain object-center  animate-under-in2"
           />
 
           {/* Content */}
@@ -38,9 +38,14 @@ export default function Home() {
               </p>
 
               <div className="mt-10 flex items-center justify-center gap-4">
-                <button className="rounded-xl bg-white px-6 py-3 text-[14px] font-semibold text-[#1891CD] shadow-sm transition hover:bg-white/90">
+                <a
+                  href="https://arunlink.vercel.app/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-xl bg-white px-6 py-3 text-[14px] font-semibold text-[#1891CD] shadow-sm transition hover:bg-white/90"
+                >
                   สมัครสมาชิก
-                </button>
+                </a>
 
                 <button className="rounded-xl bg-white/25 px-6 py-3 text-[14px] font-semibold text-white backdrop-blur-sm transition hover:bg-white/30">
                   สมัครพาร์ทเนอร์
@@ -49,11 +54,10 @@ export default function Home() {
             </div>
           </div>
 
-
           <img
             src="/Home/under.png"
             alt="under"
-             className="pointer-events-none select-none absolute left-0 right-0 bottom-0 w-full h-[250px] object-cover animate-under-in"
+            className="pointer-events-none select-none absolute left-0 right-0 bottom-0 w-full h-[250px] object-cover animate-under-in"
             // className="pointer-events-none select-none absolute left-0 right-0 bottom-0 w-full h-[250px] object-cover transform transition-transform ease-in-out translate-y-full duration-500 hover:translate-y-0"
           />
         </div>
