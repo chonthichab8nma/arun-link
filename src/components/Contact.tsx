@@ -1,5 +1,4 @@
-import React from "react";
-import { Mail, Phone, Facebook, MapPin } from "lucide-react";
+
 
 export default function Footer() {
   return (
@@ -13,7 +12,7 @@ export default function Footer() {
             md:px-10 md:py-10
           "
           style={{
-            backgroundImage: "url(/Contact/bg2.png)", // เปลี่ยนเป็นรูปพื้นหลังของคุณ
+            backgroundImage: "url(/Contact/bg2.png)",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -24,7 +23,7 @@ export default function Footer() {
 
           <div className="relative flex flex-col items-center text-center">
             <img
-              src="Logoblue.png" 
+              src="Logoblue.png"
               alt="Arun Link"
               className="h-10 w-auto md:h-12"
             />
@@ -43,7 +42,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img
-                src="Logoblue.png" // เปลี่ยน path ให้ตรงของคุณ
+                src="Logoblue.png" 
                 alt="Arun Link"
                 className="h-10 w-auto"
               />
@@ -82,52 +81,36 @@ export default function Footer() {
 
             <div className="mt-4 space-y-3 text-[13px] text-[#6B7A8C]">
               <div className="flex items-center gap-2">
-               <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#6B7280]">
-                <img
-                  src="/Contact/1.svg"
-                  alt="icon"
-                  className="h-4 w-4"
-                />
-              </div>
+                <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-[#6B7280]">
+                  <img src="/Contact/1.svg" alt="icon" className="h-4 w-4" />
+                </div>
 
-                <span>อีเมล</span>
-                <span className="ml-auto text-[#4A5A6A]">support@arunlink.co</span>
+                <span className="w-24">อีเมล</span>
+                <span className="text-[#4A5A6A]">support@arunlink.co</span>
               </div>
 
               <div className="flex items-center gap-2">
-                 <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#6B7280]">
-                <img
-                  src="/Contact/2.svg"
-                  alt="icon"
-                  className="h-4 w-4"
-                />
-              </div>
-                <span>Line</span>
-                <span className="ml-auto text-[#4A5A6A]">arunlink</span>
+                <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-[#6B7280]">
+                  <img src="/Contact/2.svg" alt="icon" className="h-4 w-4" />
+                </div>
+                <span className="w-24">Line</span>
+                <span className="text-[#4A5A6A]">arunlink</span>
               </div>
 
               <div className="flex items-center gap-2">
-                 <div className="flex h-7 w-7 items-center justify-center rounded-full">
-                <img
-                  src="/Contact/3.svg"
-                  alt="icon"
-                  className="h-6 w-6"
-                />
-              </div>
-                <span>Facebook</span>
-                <span className="ml-auto text-[#4A5A6A]">ArunLink</span>
+                <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full">
+                  <img src="/Contact/3.svg" alt="icon" className="h-6 w-6" />
+                </div>
+                <span className="w-24">Facebook</span>
+                <span className="text-[#4A5A6A]">ArunLink</span>
               </div>
 
               <div className="flex items-center gap-2">
-                <div className="flex h-6 w-6 items-center justify-center rounded-full bg-[#6B7280]">
-                <img
-                  src="/Contact/4.svg"
-                  alt="icon"
-                  className="h-4 w-4"
-                />
-              </div>
-                <span>Google Maps</span>
-                <span className="ml-auto text-[#4A5A6A]">ArunLink</span>
+                <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-[#6B7280]">
+                  <img src="/Contact/4.svg" alt="icon" className="h-4 w-4" />
+                </div>
+                <span className="w-24">Google Maps</span>
+                <span className="text-[#4A5A6A]">ArunLink</span>
               </div>
             </div>
           </div>
@@ -144,16 +127,9 @@ export default function Footer() {
               href="https://facebook.com"
               target="_blank"
               rel="noreferrer"
-              
               aria-label="Facebook"
             >
-             
-                <img
-                  src="/Contact/fb.svg"
-                  alt="icon"
-                  className="h-7 w-7"
-                />
-              
+              <img src="/Contact/fb.svg" alt="icon" className="h-7 w-7" />
             </a>
             <a
               href="https://line.me"
@@ -162,11 +138,7 @@ export default function Footer() {
               className="grid h-8 w-8 place-items-center rounded-full text-white hover:opacity-90"
               aria-label="Line"
             >
-                <img
-                  src="/Contact/L.svg"
-                  alt="icon"
-                  className="h-7 w-7"
-                />
+              <img src="/Contact/L.svg" alt="icon" className="h-7 w-7" />
             </a>
             <a
               href="https://www.youtube.com"
@@ -175,11 +147,7 @@ export default function Footer() {
               className="grid h-8 w-8 place-items-center rounded-full  text-white hover:opacity-90"
               aria-label="YouTube"
             >
-                  <img
-                  src="/Contact/ut.svg"
-                  alt="icon"
-                  className="h-7 w-7"
-                />
+              <img src="/Contact/ut.svg" alt="icon" className="h-7 w-7" />
             </a>
             <a
               href="https://www.tiktok.com"
@@ -188,11 +156,7 @@ export default function Footer() {
               className="grid h-8 w-8 place-items-center rounded-full  text-white hover:opacity-90"
               aria-label="TikTok"
             >
-                <img
-                  src="/Contact/tt.svg"
-                  alt="icon"
-                  className="h-7 w-7"
-                />
+              <img src="/Contact/tt.svg" alt="icon" className="h-7 w-7" />
             </a>
           </div>
         </div>
