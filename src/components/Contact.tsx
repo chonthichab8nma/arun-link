@@ -19,7 +19,7 @@ export default function Footer() {
           }}
         >
           {/* overlay ให้พื้นหลังนุ่ม ๆ */}
-          <div className="pointer-events-none absolute inset-0 bg-[#D9F1FF]/80" />
+          <div className="pointer-events-none absolute inset-0 bg-[#D9F1FF]/70" />
 
           <div className="relative flex flex-col items-center text-center">
             <img
