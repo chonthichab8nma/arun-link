@@ -159,13 +159,13 @@ export default function WhyArunLink() {
               key={card.title}
               className={`group relative mx-auto h-55.5 w-full max-w-95.5
                 overflow-hidden rounded-[22px]
-                border border-[#ebebeb]
+                border border-black/5
                 p-5 md:p-6
                 transform-gpu transition-all duration-500 ease-out
-                hover:bg-[#eff9ff]
+                bg-[linear-gradient(155deg,#ffffff_0%,#ffffff_58%,#dff2ff_100%)]
+                hover:bg-[linear-gradient(155deg,#ffffff_0%,#ffffff_55%,#d9efff_100%)]
                 ${idx === 2 ? "md:col-span-2 md:mx-auto lg:col-span-1 lg:mx-0" : ""}`}
             >
-              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(76,196,255,0.2)_0%,rgba(76,196,255,0.08)_45%,rgba(76,196,255,0)_78%)]" />
               <img
                 src={card.image}
                 alt=""
