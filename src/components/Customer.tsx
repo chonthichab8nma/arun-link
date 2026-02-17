@@ -7,6 +7,8 @@ type Review = {
   rating: number; // 0-5
   date: string;
   message: string;
+   avatar: string;
+   Area: string;
 };
 
 function Star({ filled }: { filled: boolean }) {
@@ -40,7 +42,9 @@ export default function Customer() {
       rating: 5,
       date: "21 ม.ค.",
       message:
-        "หาเจอช่างดี ๆ ผ่านจรูณเลิศก็ จองง่าย ไม่ต้องโทรให้ยุ่ง รีวิวก็ช่วยตัดสินใจได้ งานบวกราคา สบายใจกว่าครั้งก่อน ๆ มากครับ",
+        "จ้างช่างปูคอบเบิลสโตนสีเทารอบบ้าน ตัวงานเป็นสีเทาเรียบ ๆ ไม่มีลวดลาย แต่พอปูแล้วดูสะอาดตาและเป็นระเบียบดี ผิวงานค่อนข้างเรียบร้อย ขนาดสม่ำเสมอ ทำให้ช่างปูง่าย ",
+      avatar:"/Customer/Avatar1.png",
+      Area:"/Customer/Area1.png",
     },
     {
       name: "คุณพิม (ดูแลแม่ที่บ้าน)",
@@ -48,7 +52,9 @@ export default function Customer() {
       rating: 5,
       date: "18 ม.ค.",
       message:
-        "อยากหาช่างผู้หญิงที่ไว้ใจได้ แล้วก็เจอจากจรูณเลิศพอดี ใช้ง่ายมาก แชทได้ก่อนตัดสินใจ มีรีวิว ช่วยได้เยอะเลยค่ะ",
+        "จ้างช่างทำรั้วรอบบ้าน ช่างแนะนำของ Arun Link งานเสาตรง แข็งแรง ผิวเรียบร้อย ติดตั้งแล้วแนวสวย ไม่ต้องแก้หลายรอบ โดยรวมคุณภาพเหมาะกับราคา พอใจ..",
+        avatar:"/Customer/Avatar2.png",
+        Area:"/Customer/Area2.png",
     },
     {
       name: "ร้านรุ่งเรืองวัสดุก่อสร้าง",
@@ -56,7 +62,9 @@ export default function Customer() {
       rating: 5,
       date: "14 ม.ค.",
       message:
-        "เราแนะนำลูกค้าให้จองช่างผ่านจรูณเลิศได้เลย จบทุกช้างาน ไม่ต้องตอบซ้ำ ระบบก็ดูแลดี ลูกค้ากับช่างก็แฮปปี้ เราก็ขายของได้เพิ่มครับ",
+        "เอามาทำขอบทางเดินกับแบ่งพื้นที่รอบบ้าน ขนาดสม่ำเสมอ เรียงแล้วแนวตรง ดูเรียบร้อย เนื้อปูนแน่นดี งานออกมาดูสะอาดตา คุ้มค่ากับงบครับ",
+        avatar:"/Customer/Avatar3.png",
+        Area:"/Customer/Area3.png",
     },
   ];
 
@@ -69,33 +77,44 @@ export default function Customer() {
         </h2>
 
         {/* Cards */}
-        <div className="mt-14 grid gap-[16px] md:flex lg:grid lg:grid-cols-3  lg:gap-4  px-4 md:px-4 max-w-7xl mx-auto h-auto
-              md:overflow-x-auto md:pb-2 [scrollbar-width:none] snap-x snap-mandatory  [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden h-62.5 ">
-          {reviews.map((r, idx) => (
-            <article
-              key={idx}
-              className="rounded-3xl border border-slate-200 bg-white p-10 shadow-sm  lg:w-full md:min-w-lg lg:min-w-0"
-            >
-              <div className="flex items-start justify-between gap-4 ">
-                <div>
-                  <h3 className="text-[16px] font-bold text-slate-900 truncate">{r.name}</h3>
-                  <p className="mt-1 text-[13px] text-slate-500">{r.role}</p>
-                </div>
-              </div>
-
-              <div className="mt-[16px] flex items-center gap-[8px]">
-                <RatingRow rating={r.rating} />
-                <span className="text-slate-300">•</span>
-                <span className="text-sm text-slate-400">{r.date}</span>
-              </div>
-
-              <p className="mt-[16px] text-[14px] leading-7 text-slate-500 line-clamp-3  text-wrap overflow-hidden text-ellipsis
-                [display:-webkit-box] [-webkit-line-clamp:3] [-webkit-box-orient:vertical]">
-                {r.message}
-              </p>
-            </article>
-          ))}
+       <div className="mt-14 grid gap-[16px] md:flex lg:grid lg:grid-cols-3 lg:gap-4 px-4 md:px-4 max-w-7xl mx-auto h-auto md:overflow-x-auto md:pb-2 [scrollbar-width:none] snap-x snap-mandatory [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden h-62.5">
+  {reviews.map((r, idx) => (
+    <article
+      key={idx}
+      className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm lg:w-full md:min-w-lg lg:min-w-0"
+    >
+      <img 
+        src={r.Area}
+        alt={r.name}
+        className="mb-3"/>
+      {/* ส่วนหัว: Avatar + ชื่อ/ตำแหน่ง */}
+      <div className="flex items-center gap-2">
+        <img 
+          src={r.avatar} 
+          alt={r.name} 
+          className="h-6 w-6 rounded-full object-cover bg-slate-100" 
+        />
+        <div className="overflow-hidden">
+          <h3 className="text-[16px] font-bold text-slate-900 truncate">
+            {r.name}
+          </h3>
         </div>
+      </div>
+
+      {/* ส่วน Rating & Date */}
+      <div className="mt-[16px] flex items-center gap-[8px]">
+        <RatingRow rating={r.rating} />
+        <span className="text-slate-300">•</span>
+        <span className="text-sm text-slate-400">{r.date}</span>
+      </div>
+
+      {/* ส่วน Message */}
+      <p className="mt-[16px] text-[14px] leading-7 text-slate-900 line-clamp-3 text-wrap overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:3] [-webkit-box-orient:vertical]">
+        {r.message}
+      </p>
+    </article>
+  ))}
+</div>
 
     </section>
   );
