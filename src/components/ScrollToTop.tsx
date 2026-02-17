@@ -29,7 +29,7 @@ const ScrollToTop = () => {
       {isVisible && (
         <button
           onClick={scrollToHome}
-          className="bg-blue-200 border border-blue-400 hover:bg-blue-400 hover:text-white text-blue-400 p-3 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center w-12 h-12"
+          className="bg-[#1891CD]/10 border border-[#1891CD] hover:bg-blue-400 hover:text-white text-blue-400 p-3 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center w-12 h-12"
         >
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
