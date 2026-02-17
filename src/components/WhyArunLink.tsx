@@ -38,34 +38,33 @@ const painPointCards: PainPointCard[] = [
   {
     title: "ปัญหาด้านราคาและต้นทุน",
     lines: [
-      "ราคาวัสดุก่อสร้างผันผวน",
-      "ผู้รับเหมามักต้องปรับแผนงานและงบประมาณ",
-      "ต้นทุนที่สูงขึ้น ส่งผลให้ควบคุมค่าใช้จ่ายได้ยาก",
+      "ต้นทุนสูง คุมงบยาก จึงต้องวางแผนงาน",
+      "และจัดสรรกำลังคนให้เหมาะกับงบ",
+      "ที่ควบคุมได้",
     ],
     image: "/WhyArunLink/asset/Asset8.webp",
     imageClass:
-      "w-[125%] max-w-[840px] -right-5 -bottom-37 lg:-right-10 lg:-bottom-80 rotate-[5deg] md:w-[150%] md:-bottom-50",
+      "left-0 right-0 bottom-0 w-full max-w-none md:w-full lg:w-full",
 
     watermark: "/WhyArunLink/watermark/1.webp",
   },
   {
     title: "ปัญหาด้านห่วงโซ่อุปทาน",
     lines: [
-      "ความล่าช้าของวัสดุเฉพาะทาง",
-      "ส่งผลต่อกำหนดการก่อสร้าง",
-      "ระบบขนส่งและโลจิสติกส์ยังมีความซับซ้อน",
+      "กระทบกำหนดการ ต้องปรับตาราง",
+      "และเสริมทีมทันทีเมื่อหน้างานพร้อม",
     ],
     image: "/WhyArunLink/asset/Asset9.webp",
     imageClass:
-      "w-[150%] max-w-[840px] -right-40 -bottom-20 lg:-right-10 lg:-bottom-30 lg:w-[100%] md:w-[150%] md:-bottom-25",
+      "w-[78%] max-w-[560px] -right-6 -bottom-2 md:w-[72%] md:-right-6 md:-bottom-3 lg:w-[74%] lg:-right-20 lg:-bottom-25",
     watermark: "/WhyArunLink/watermark/2.webp",
   },
   {
     title: "ปัญหาด้านช่างผู้รับเหมา",
     lines: [
-      "ช่างและผู้รับเหมาขาดแคลน",
-      "ต้นทุนแรงงานสูงขึ้น",
-      "การควบคุมคุณภาพงานทำได้ยาก",
+      "หาคนยาก คุณภาพไม่สม่ำเสมอ",
+      "ต้องเข้าถึงแรงงานที่มีทักษะ",
+      "ได้รวดเร็วและตรวจสอบได้",
     ],
     image: "/WhyArunLink/asset/Asset10.webp",
     imageClass: "w-[150%] max-w-[840px] -right-53 -bottom-5 lg:-right-30 lg:-bottom-5 lg:w-[100%] md:w-[140%] md:bottom-1",
@@ -74,12 +73,12 @@ const painPointCards: PainPointCard[] = [
   {
     title: "การขาดแคลนแรงงาน",
     lines: [
-      "หากโครงการขาดแรงงาน",
-      "อาจทำให้งานล่าช้า และกระทบ",
-      "ต่อกำหนดส่งมอบหรือการซ่อมแซม",
+      "แรงงานไม่เพียงพอ งานเสี่ยงล่าช้า",
+      "มีแรงงานเสริมพร้อมหน้างาน",
+      "ช่วยให้งานเดินตามแผน",
     ],
     image: "/WhyArunLink/asset/Asset11.webp",
-    imageClass: "w-[100%] max-w-[840px] -right-30 -bottom-15 lg:-right-20 lg:-bottom-40 lg:w-[80%] md:w-[110%] md:-bottom-25 md:-right-45  ",
+    imageClass: "w-[78%] max-w-[620px] -right-6 -bottom-1 md:w-[74%] md:-right-8 md:-bottom-2 lg:w-[72%] lg:-right-8 lg:-bottom-3",
     watermark: "/WhyArunLink/watermark/4.webp",
   },
 ];
@@ -211,7 +210,7 @@ export default function WhyArunLink() {
               {painPointCards.map((card) => (
                 <article
                   key={card.title}
-                  className="group relative flex min-h-80 w-full flex-col justify-between overflow-hidden rounded-[20px] bg-[#daedf7] p-5 transition-colors duration-300 hover:bg-[#eaf6fc] sm:min-h-86 sm:p-6 md:p-8"
+                  className="group relative flex min-h-80 w-full flex-col justify-between overflow-hidden rounded-[20px] bg-[#F0F0F0] p-5 transition-colors duration-300 hover:bg-[#CDCDCD] sm:min-h-86 sm:p-6 md:p-8"
                 >
                   <img
                     src={card.watermark}
@@ -234,22 +233,18 @@ export default function WhyArunLink() {
                     src={card.image}
                     alt=""
                     aria-hidden="true"
-                    className={`pointer-events-none absolute transition-transform duration-500 ease-out ${
-                      card.title === "ปัญหาด้านห่วงโซ่อุปทาน"
-                        ? "scale-x-[-1] group-hover:scale-x-[-1.1] group-hover:scale-y-[1.1]"
-                        : "group-hover:scale-110"
-                    } ${card.imageClass}`}
+                    className={`pointer-events-none absolute transition-transform duration-500 ease-out group-hover:scale-110 ${card.imageClass}`}
                   />
                 </article>
               ))}
             </div>
 
-            <article className="group relative mt-4 h-150 w-full overflow-hidden rounded-[20px] bg-[#dff1fb] px-6 py-8 transition-colors duration-300 hover:bg-[#eaf6fc md:mt-6 md:h-206.25 md:px-8 md:py-12 lg:flex lg:h-126 lg:items-center">
+            <article className="group relative mt-4 h-150 w-full overflow-hidden rounded-[20px] bg-[#DAEDF7] px-6 py-8 transition-colors duration-300 hover:bg-[#BCDDEE] md:mt-6 md:h-206.25 md:px-8 md:py-12 lg:flex lg:h-126 lg:items-center">
               <img
                 src="/WhyArunLink/watermark/5.webp"
                 alt=""
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-45"
+                className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-65 mix-blend-multiply"
               />
               <div className="relative z-10 w-full lg:pr-[58%]">
                 <h3 className="text-3xl font-bold leading-normal text-[#17191f]">
