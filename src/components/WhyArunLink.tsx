@@ -92,7 +92,7 @@ export default function WhyArunLink() {
           src="/WhyArunLink/bg/bg1.webp"
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 h-full w-full object-cover opacity-[0.1] grayscale"
+          className="absolute inset-0 h-full w-full object-contain object-center opacity-[0.1] grayscale"
         />
         <img
           src="/WhyArunLink/asset/Asset1.webp"
