@@ -118,7 +118,7 @@ export default function WhyArunLink() {
           className="pointer-events-none absolute -bottom-2 -right-5 w-[56vw] max-w-125 md:-bottom-2 md:-right-5 md:w-[45vw] lg:-bottom-4 lg:right-0 lg:w-[36vw]"
         />
 
-        <div className="relative z-10 mx-auto flex min-h-245 max-w-7xl flex-col px-5 pt-76 pb-20 text-center md:min-h-215 md:px-8 md:pt-64 lg:min-h-254 lg:pt-76">
+        <div className="relative z-10 mx-auto flex min-h-245 max-w-7xl flex-col px-5 pt-76 pb-20 text-center md:min-h-215 md:px-20 md:pt-64 lg:min-h-254 lg:pt-76">
           <div className="mx-auto max-w-5xl">
             <h2 className="leading-[1.1] tracking-[-0.01em] text-[#0f1116] FeatuesText text-[42px] md:text-h1">
               งานโครงสร้างที่ดี
@@ -139,7 +139,7 @@ export default function WhyArunLink() {
         </div>
       </div>
 
-      <div className="relative z-20 mx-auto mt-16 md:mt-20 lg:mt-5 max-w-7xl px-5 sm:px-6 md:px-10 lg:px-16 pb-20 md:pb-28 lg:pb-36 pt-10 md:pt-14 lg:pt-20">
+      <div className="relative z-20 mx-auto mt-16 md:mt-20 lg:mt-5 max-w-7xl px-5 pb-20 pt-10 md:px-20 md:pb-28 md:pt-14 lg:pb-36 lg:pt-20">
         <h2 className="lg:text-[36px]  text-center text-3xl font-bold leading-normal tracking-[-0.01em] text-[#14161b] md:text-h1">
           เราคัดเฉพาะงาน
           <br />
