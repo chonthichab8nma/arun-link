@@ -3,7 +3,7 @@
 export default function Footer() {
   return (
     <footer className="bg-white">
-      <div className="mx-auto max-w-[1200px] px-6 pt-10">
+      <div className="mx-auto max-w-7xl px-5 pt-10 md:px-20">
         <div
           className="
             relative mb-10 overflow-hidden

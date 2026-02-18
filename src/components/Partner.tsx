@@ -3,7 +3,7 @@ import React from "react";
 export default function Customer() {
   return (
     <section className="bg-white lg:py-16">
-      <div className="mx-auto lg:max-w-[1200px] md:max-w-[1200px]  px-6 ">
+      <div className="mx-auto max-w-7xl px-5 md:px-20">
         <div
           className="group relative overflow-visible rounded-[28px] px-8 py-10 md:px-14 md:py-14"
           style={{

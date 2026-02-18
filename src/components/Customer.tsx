@@ -69,15 +69,15 @@ export default function Customer() {
   ];
 
   return (
-    <section className="bg-white py-20 md:max-w-2xl md:mx-auto lg:max-w-none lg:mx-auto  lg:mb-0 ">
-     
+    <section className="bg-white py-20 lg:mb-0">
+      <div className="mx-auto max-w-7xl px-5 md:px-20">
         {/* Title */}
         <h2 className="text-center text-[36px] font-bold  tracking-tight text-slate-900">
           สิ่งที่ลูกค้าพูดถึงเรา
         </h2>
 
         {/* Cards */}
-       <div className="mt-14 grid gap-[16px] md:flex lg:grid lg:grid-cols-3 lg:gap-4 px-4 md:px-4 max-w-7xl mx-auto h-auto md:overflow-x-auto md:pb-2 [scrollbar-width:none] snap-x snap-mandatory [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden h-62.5">
+        <div className="mt-14 grid h-62.5 h-auto gap-[16px] snap-x snap-mandatory md:flex md:overflow-x-auto md:pb-2 lg:grid lg:grid-cols-3 lg:gap-4 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
   {reviews.map((r, idx) => (
     <article
       key={idx}
@@ -115,7 +115,7 @@ export default function Customer() {
     </article>
   ))}
 </div>
-
+      </div>
     </section>
   );
 }

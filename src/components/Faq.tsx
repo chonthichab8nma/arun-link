@@ -130,8 +130,9 @@ export default function Faq() {
   };
 
   return (
-    <section className="bg-white px-4 py-16 sm:px-6 md:py-20">
-      <div className="mx-auto max-w-4xl">
+    <section className="bg-white py-16 md:py-20">
+      <div className="mx-auto max-w-7xl px-5 md:px-20">
+        <div className="mx-auto max-w-4xl">
         <h2 className="mb-10 text-center text-[28px] font-bold leading-tight text-gray-900 sm:mb-12 sm:text-[40px]">
           คำถามที่พบบ่อย
         </h2>
@@ -146,6 +147,7 @@ export default function Faq() {
               onToggle={handleToggle}
             />
           ))}
+        </div>
         </div>
       </div>
     </section>
