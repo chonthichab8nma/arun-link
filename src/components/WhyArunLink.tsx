@@ -56,7 +56,7 @@ const painPointCards: PainPointCard[] = [
     ],
     image: "/WhyArunLink/asset/Asset9.webp",
     imageClass:
-      "w-[78%] max-w-[560px] -right-6 -bottom-2 md:w-[72%] md:-right-6 md:-bottom-3 lg:w-[74%] lg:-right-20 lg:-bottom-25",
+      "w-[120%] max-w-[560px] rotate-[-3deg] -right-40 -bottom-20 md:w-[120%] md:-right-50 md:-bottom-30 md:rotate-[-2deg] lg:w-[74%] lg:-right-20 lg:-bottom-25",
     watermark: "/WhyArunLink/watermark/2.webp",
   },
   {
@@ -78,7 +78,7 @@ const painPointCards: PainPointCard[] = [
       "ช่วยให้งานเดินตามแผน",
     ],
     image: "/WhyArunLink/asset/Asset11.webp",
-    imageClass: "w-[78%] max-w-[620px] -right-6 -bottom-1 md:w-[74%] md:-right-8 md:-bottom-2 lg:w-[72%] lg:-right-8 lg:-bottom-3",
+    imageClass: "w-[78%] max-w-[620px] -right-6 -bottom-1 md:w-[100%] md:-right-30 md:-bottom-2 lg:w-[72%] lg:-right-8 lg:-bottom-3",
     watermark: "/WhyArunLink/watermark/4.webp",
   },
 ];
@@ -124,7 +124,9 @@ export default function WhyArunLink() {
               งานโครงสร้างที่ดี
             </h2>
             <h3 className="mt-2 FeatuesText leading-normal tracking-[-0.01em] text-[#1f93ce] text-[42px] md:text-h1">
-              ทำไมต้องที่ อรุณลิงก์
+              คือหัวใจของทุกพื้นที่
+              <br />
+              ที่ อรุณลิงก์ ใส่ใจ
             </h3>
 
             <p className="mx-auto mt-10 max-w-5xl leading-[1.45] text-[#707a82] text-[18px] md:text-[24px]">
@@ -218,15 +220,13 @@ export default function WhyArunLink() {
                     aria-hidden="true"
                     className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-45"
                   />
-                  <div className="relative z-10 w-full pr-[24%] sm:pr-[28%] md:pr-[25%] lg:pr-[10%]">
+                  <div className="relative z-10 w-full pr-[24%] sm:pr-[28%] md:pr-[20%] lg:pr-[10%]">
                     <h3 className="text-xl font-bold leading-[1.2] text-[#17191f]">
                       {card.title}
                     </h3>
-                    <div className="mt-3 space-y-1 text-[16px] leading-[1.45] text-[#5f6b73]">
-                      {card.lines.map((line) => (
-                        <p key={line}>{line}</p>
-                      ))}
-                    </div>
+                    <p className="mt-3 text-[16px] leading-[1.45] text-[#5f6b73]">
+                      {card.lines.join(" ")}
+                    </p>
                   </div>
 
                   <img
@@ -244,7 +244,7 @@ export default function WhyArunLink() {
                 src="/WhyArunLink/watermark/5.webp"
                 alt=""
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-65 mix-blend-multiply"
+                className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-1000 mix-blend-normal"
               />
               <div className="relative z-10 w-full lg:pr-[58%]">
                 <h3 className="text-3xl font-bold leading-normal text-[#17191f]">
