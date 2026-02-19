@@ -88,12 +88,12 @@ export default function Home() {
           </div>
 
 <img
-  src="/Home/under.webp"
+  src="/Home/Wall.png"
   alt="under"
   className="
     pointer-events-none select-none
     absolute left-0 right-0 bottom-0
-    w-full h-[250px]
+    w-full h-[180px]
     object-cover
     z-[2]
     animate-under-in
@@ -162,11 +162,21 @@ export default function Home() {
             </div>
           </div>
 
-          <img
-            src="/Home/under.webp"
-            alt="under"
-            className="pointer-events-none select-none absolute left-0 right-0 bottom-0 w-full h-[250px] object-cover animate-under-in"
-          />
+         <div 
+  className="
+    pointer-events-none select-none 
+    absolute left-0 right-0 bottom-0 
+    w-full h-[250px] 
+    z-[2] 
+    animate-under-in
+  "
+  style={{
+    backgroundImage: "url(/Home/Wall.png)",
+    backgroundRepeat: "repeat-x", /* ให้รูปต่อกันในแนวนอน */
+    backgroundPosition: "bottom center",
+    backgroundSize: "contain", /* หรือใช้ความสูงคงที่เพื่อให้ขนาดรูปไม่เปลี่ยนตามความกว้างจอ */
+  }}
+/>
         </div>
       </div>
     </section>
