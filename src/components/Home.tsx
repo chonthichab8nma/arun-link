@@ -118,13 +118,25 @@ export default function Home() {
           <img
             src="/Home/All-left.webp"
             alt="materials"
-            className="pointer-events-none select-none absolute lg:inset h-230  w-full object-contain  object-bottom-left animate-under-in2 md:-bottom-30 md:-left-40  lg:-left-10 lg:-bottom-30"
+            className=" scale-30 lg:scale-65 md:scale-75 pointer-events-none select-none absolute lg:inset lg:h-250
+            md:h-220 w-full object-contain  object-bottom-left animate-under-in2 md:-bottom-30 md:-left-20  lg:-left-10 lg:-bottom-30
+             w-[600px] lg:w-[800px] h-auto left-0 -translate-x-[20%] lg:-translate-x-[13%]"
           />
-            <img
-            src="/Home/All-right.webp"
-            alt="materials"
-            className="pointer-events-none select-none absolute lg:inset-0 h-full w-full object-contain object-bottom-right animate-under-in2 md:-bottom-30 md:-right-40"
-          />
+          <img
+  src="/Home/All-right.webp"
+  alt="materials"
+  className="
+    pointer-events-none select-none absolute z-[1] animate-under-in2
+    right-0 bottom-0 md:-bottom-10 
+   w-[600px] lg:w-[800px] h-auto lg:h-200 
+    object-contain object-bottom-right
+     
+    translate-x-[5%] lg:translate-x-[13%]
+    md:translate-x-[15%]
+
+    scale-50 md:scale-75 lg:scale-75
+  "
+/>
 
           <div className="relative z-10 flex h-full items-center justify-center ">
             <div className="text-center text-white">

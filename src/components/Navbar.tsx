@@ -77,11 +77,11 @@ export default function Navbar() {
               setActiveHash("#home");
             }}
           >
-            <div className={`leading-tight ${textClass}`}>
+            <div className={`leading-tight ${textClass} -mt-2`}>
               <img
                 src={isWhite ? "/Logoblue.png" : "/Logowhite.png"}
                 alt="ArunLink logo"
-                className="h-10 w-auto object-contain"
+                className="h-10 w-auto object-contain -translate-y-1"
                 onError={(e) => {
                   e.currentTarget.src = "/Logowhite.png";
                 }}
