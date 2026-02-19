@@ -140,7 +140,7 @@ export default function WhyArunLink() {
         </div>
       </div>
 
-      <div className="relative z-20 mx-auto mt-8 md:mt-10 lg:mt-5 max-w-7xl px-5 pb-14 pt-6 md:px-20 md:pb-20 md:pt-10 lg:pb-28 lg:pt-14">
+      <div className="relative z-20 mx-auto mt-8 md:mt-10 lg:mt-5 max-w-7xl px-5 pb-14 pt-6 md:px-8 md:pb-20 md:pt-10 lg:px-20 lg:pb-28 lg:pt-14">
         <h2 className="lg:text-[36px]  text-center text-3xl font-bold leading-normal tracking-[-0.01em] text-[#14161b] md:text-[34px]">
           เราคัดเฉพาะงาน
           <br />
@@ -211,7 +211,7 @@ export default function WhyArunLink() {
               {painPointCards.map((card) => (
                 <article
                   key={card.title}
-                  className="group relative flex min-h-80 w-full flex-col justify-between overflow-hidden rounded-[20px] bg-[#F0F0F0] p-5 transition-colors duration-300 hover:bg-[#CDCDCD] sm:min-h-86 sm:p-6 md:p-8"
+                  className="group relative flex min-h-80 w-full flex-col justify-between overflow-hidden rounded-[20px] bg-[#F0F0F0] p-4 transition-colors duration-300 hover:bg-[#CDCDCD] sm:min-h-86 sm:p-5 md:p-6 lg:p-8"
                 >
                   <img
                     src={card.watermark}
@@ -219,7 +219,7 @@ export default function WhyArunLink() {
                     aria-hidden="true"
                     className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-45"
                   />
-                  <div className="relative z-10 w-full pr-[24%] sm:pr-[28%] md:pr-[20%] lg:pr-[10%]">
+                  <div className="relative z-10 w-full pr-0 sm:pr-0 md:pr-0 lg:pr-[10%]">
                     <h3 className="text-xl font-bold leading-[1.2] text-[#17191f]">
                       {card.title}
                     </h3>
