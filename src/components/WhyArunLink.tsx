@@ -91,7 +91,7 @@ export default function WhyArunLink() {
           src="/WhyArunLink/bg/bg1.webp"
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 h-full w-full object-contain object-center opacity-[0.1] grayscale"
+          className="absolute inset-0 h-full w-full object-cover object-[center_58%] scale-[1.1] opacity-[0.1] grayscale md:object-center md:scale-[1.12] lg:object-contain lg:scale-100"
         />
         <img
           src="/WhyArunLink/asset/Asset1.webp"
@@ -109,30 +109,29 @@ export default function WhyArunLink() {
           src="/WhyArunLink/asset/Asset3.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 left-0 w-[56vw] max-w-130 md:-bottom-10 md:left-0 md:w-[48vw] lg:-bottom-7 lg:left-0 lg:w-[36vw]"
+          className="pointer-events-none absolute bottom-0 left-0 w-[56vw] max-w-130 md:-bottom-16 md:left-0 md:w-[48vw] lg:-bottom-7 lg:left-0 lg:w-[36vw]"
         />
         <img
           src="/WhyArunLink/asset/Asset4.webp"
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute -bottom-2 -right-5 w-[56vw] max-w-125 md:-bottom-2 md:-right-5 md:w-[45vw] lg:-bottom-4 lg:right-0 lg:w-[36vw]"
+          className="pointer-events-none absolute -bottom-2 -right-5 w-[56vw] max-w-125 md:-bottom-1 md:-right-4 md:w-[36vw] lg:-bottom-3 lg:right-0 lg:w-[32vw]"
         />
 
         <div className="relative z-10 mx-auto flex min-h-245 max-w-7xl flex-col px-5 pt-76 pb-20 text-center md:min-h-215 md:px-20 md:pt-64 lg:min-h-254 lg:pt-76">
           <div className="mx-auto max-w-5xl">
-            <h2 className="leading-[1.1] tracking-[-0.01em] text-[#0f1116] FeatuesText text-[42px] md:text-h1">
+            <h2 className="leading-[1.1] tracking-[-0.01em] text-[#0f1116] FeatuesText text-[38px] md:text-[52px] lg:text-h1">
               งานโครงสร้างที่ดี
             </h2>
-            <h3 className="mt-2 FeatuesText leading-normal tracking-[-0.01em] text-[#1f93ce] text-[42px] md:text-h1">
+            <h3 className="mt-2 FeatuesText leading-normal tracking-[-0.01em] text-[#1f93ce] text-[38px] md:text-[52px] lg:text-h1">
               คือหัวใจของทุกพื้นที่
               <br />
               ที่ อรุณลิงก์ ใส่ใจ
             </h3>
-
-            <p className="mx-auto mt-10 max-w-5xl leading-[1.45] text-[#707a82] text-[18px] md:text-[24px]">
+            <p className="mx-auto mt-10 max-w-[22rem] leading-[1.4] text-[#707a82] text-[16px] md:max-w-5xl md:text-[17px] lg:text-[24px]">
               หลายคนเริ่มงานก่อสร้าง โดยเฉพาะงานโครงสร้างอย่างกำแพงกันดิน
             </p>
-            <p className="mx-auto mt-8 max-w-4xl leading-normal text-[#707a82] text-[18px] md:text-[24px]">
+            <p className="mx-auto mt-8 max-w-[22.5rem] leading-[1.4] text-[#707a82] text-[16px] md:max-w-4xl md:text-[17px] lg:text-[24px]">
               โดยมีข้อมูลไม่ครบถ้วนในการเลือกวัสดุหรือแนวทางก่อสร้าง
               ทั้งที่งานประเภทเหล่านี้ต้องอาศัยความเชี่ยวชาญเฉพาะทาง
               เพื่อให้แข็งแรง ปลอดภัย และใช้งานได้ในระยะยาว
@@ -141,8 +140,8 @@ export default function WhyArunLink() {
         </div>
       </div>
 
-      <div className="relative z-20 mx-auto mt-16 md:mt-20 lg:mt-5 max-w-7xl px-5 pb-20 pt-10 md:px-20 md:pb-28 md:pt-14 lg:pb-36 lg:pt-20">
-        <h2 className="lg:text-[36px]  text-center text-3xl font-bold leading-normal tracking-[-0.01em] text-[#14161b] md:text-h1">
+      <div className="relative z-20 mx-auto mt-8 md:mt-10 lg:mt-5 max-w-7xl px-5 pb-14 pt-6 md:px-8 md:pb-20 md:pt-10 lg:px-20 lg:pb-28 lg:pt-14">
+        <h2 className="lg:text-[36px]  text-center text-3xl font-bold leading-normal tracking-[-0.01em] text-[#14161b] md:text-[34px]">
           เราคัดเฉพาะงาน
           <br />
           ที่ต้องใช้ความเชี่ยวชาญจริง
@@ -171,7 +170,7 @@ export default function WhyArunLink() {
                 src={card.image}
                 alt=""
                 aria-hidden="true"
-                className={`pointer-events-none absolute bottom-0 right-0 z-10
+                className={`pointer-events-none absolute bottom-0 md:-right-10 z-10 right-0
                   transform-gpu transition-transform duration-700 ease-out
                   origin-bottom
                   scale-100 group-hover:scale-[1.08]
@@ -184,14 +183,14 @@ export default function WhyArunLink() {
                   }`}
               />
 
-              <div className="relative z-20 max-w-[72%] md:max-w-[58%]">
-                <h3 className="text-[24px] font-bold leading-[1.2] text-[#17191f]">
+              <div className="relative z-20 ">
+                <h3 className="text-[24px] lg:text-[24px] md:text-[20px] font-bold leading-[1.2] text-[#17191f]">
                   {card.title}
                 </h3>
-                <p className="mt-2 text-[16px] leading-[1.45] text-[#6b757d]">
+                <p className="mt-2 text-[16px] md:text-[16px] leading-[1.45] text-[#6b757d]">
                   {card.desc1}
                 </p>
-                <p className="text-[16px] leading-[1.45] text-[#6b757d]">
+                <p className="text-[16px] md:text-[16px] leading-[1.45] text-[#6b757d]">
                   {card.desc2}
                 </p>
               </div>
@@ -212,7 +211,7 @@ export default function WhyArunLink() {
               {painPointCards.map((card) => (
                 <article
                   key={card.title}
-                  className="group relative flex min-h-80 w-full flex-col justify-between overflow-hidden rounded-[20px] bg-[#F0F0F0] p-5 transition-colors duration-300 hover:bg-[#CDCDCD] sm:min-h-86 sm:p-6 md:p-8"
+                  className="group relative flex min-h-80 w-full flex-col justify-between overflow-hidden rounded-[20px] bg-[#F0F0F0] p-4 transition-colors duration-300 hover:bg-[#CDCDCD] sm:min-h-86 sm:p-5 md:p-6 lg:p-8"
                 >
                   <img
                     src={card.watermark}
@@ -220,13 +219,15 @@ export default function WhyArunLink() {
                     aria-hidden="true"
                     className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-45"
                   />
-                  <div className="relative z-10 w-full pr-[24%] sm:pr-[28%] md:pr-[20%] lg:pr-[10%]">
+                  <div className="relative z-10 w-full pr-0 sm:pr-0 md:pr-0 lg:pr-[10%]">
                     <h3 className="text-xl font-bold leading-[1.2] text-[#17191f]">
                       {card.title}
                     </h3>
-                    <p className="mt-3 text-[16px] leading-[1.45] text-[#5f6b73]">
-                      {card.lines.join(" ")}
-                    </p>
+                    <div className="mt-3 space-y-0.5 text-[16px] leading-[1.45] text-[#5f6b73]">
+                      {card.lines.map((line) => (
+                        <p key={`${card.title}-${line}`}>{line}</p>
+                      ))}
+                    </div>
                   </div>
 
                   <img
@@ -266,7 +267,7 @@ export default function WhyArunLink() {
                 aria-hidden="true"
                 className="
                 pointer-events-none absolute bottom-0
-                -right-10 w-[300%]
+                -right-24 w-[300%]
                 transition-transform duration-500 ease-out group-hover:scale-110
                 md:-right-12  md:w-[120%]
                 lg:-right-16 lg:w-[54%] lg:max-w-225"
