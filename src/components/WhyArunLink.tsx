@@ -128,7 +128,6 @@ export default function WhyArunLink() {
               <br />
               ที่ อรุณลิงก์ ใส่ใจ
             </h3>
-
             <p className="mx-auto mt-10 max-w-[22rem] leading-[1.4] text-[#707a82] text-[16px] md:max-w-5xl md:text-[17px] lg:text-[24px]">
               หลายคนเริ่มงานก่อสร้าง โดยเฉพาะงานโครงสร้างอย่างกำแพงกันดิน
             </p>
@@ -171,7 +170,7 @@ export default function WhyArunLink() {
                 src={card.image}
                 alt=""
                 aria-hidden="true"
-                className={`pointer-events-none absolute bottom-0 right-0 z-10
+                className={`pointer-events-none absolute bottom-0 md:-right-10 z-10
                   transform-gpu transition-transform duration-700 ease-out
                   origin-bottom
                   scale-100 group-hover:scale-[1.08]
@@ -184,14 +183,14 @@ export default function WhyArunLink() {
                   }`}
               />
 
-              <div className="relative z-20 max-w-[72%] md:max-w-[58%]">
-                <h3 className="text-[24px] font-bold leading-[1.2] text-[#17191f]">
+              <div className="relative z-20 ">
+                <h3 className="text-[24px] lg:text-[24px] md:text-[20px] font-bold leading-[1.2] text-[#17191f]">
                   {card.title}
                 </h3>
-                <p className="mt-2 text-[16px] leading-[1.45] text-[#6b757d]">
+                <p className="mt-2 text-[16px] md:text-[16px] leading-[1.45] text-[#6b757d]">
                   {card.desc1}
                 </p>
-                <p className="text-[16px] leading-[1.45] text-[#6b757d]">
+                <p className="text-[16px] md:text-[16px] leading-[1.45] text-[#6b757d]">
                   {card.desc2}
                 </p>
               </div>
