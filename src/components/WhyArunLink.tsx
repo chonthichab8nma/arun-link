@@ -170,7 +170,7 @@ export default function WhyArunLink() {
                 src={card.image}
                 alt=""
                 aria-hidden="true"
-                className={`pointer-events-none absolute bottom-0 md:-right-10 z-10
+                className={`pointer-events-none absolute bottom-0 md:-right-10 z-10 right-0
                   transform-gpu transition-transform duration-700 ease-out
                   origin-bottom
                   scale-100 group-hover:scale-[1.08]
@@ -267,7 +267,7 @@ export default function WhyArunLink() {
                 aria-hidden="true"
                 className="
                 pointer-events-none absolute bottom-0
-                -right-10 w-[300%]
+                -right-24 w-[300%]
                 transition-transform duration-500 ease-out group-hover:scale-110
                 md:-right-12  md:w-[120%]
                 lg:-right-16 lg:w-[54%] lg:max-w-225"
