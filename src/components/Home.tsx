@@ -118,7 +118,7 @@ export default function Home() {
           <img
             src="/Home/All-left.webp"
             alt="materials"
-            className="pointer-events-none select-none absolute lg:inset h-220  w-full object-contain  object-bottom-left animate-under-in2 md:-bottom-30 md:-left-40 lg:-bottom-20"
+            className="pointer-events-none select-none absolute lg:inset h-230  w-full object-contain  object-bottom-left animate-under-in2 md:-bottom-30 md:-left-40 lg:-bottom-20"
           />
             <img
             src="/Home/All-right.webp"
@@ -167,7 +167,7 @@ export default function Home() {
     pointer-events-none select-none 
     absolute left-0 right-0 bottom-0 
     w-full h-[250px] 
-    z-[2] 
+    z-[1] 
     animate-under-in
   "
   style={{
