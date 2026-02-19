@@ -29,11 +29,12 @@ export default function Home() {
     left-1/4 bottom-10
     -translate-x-1/2            
     w-[100%] max-w-none 
-    h-[420px] sm:h-[500px] 
+    h-[460px] sm:h-[500px] 
     object-contain object-bottom
     z-[1] 
     object-bottom-left  
-    animate-under-in2         
+    animate-under-in2 
+    scale-60        
   "
 />
 <img
@@ -47,11 +48,12 @@ export default function Home() {
     translate-x-0      
     w-auto            
     max-w-none      
-    h-[420px] sm:h-[500px] 
+    h-[460px] sm:h-[500px] 
     object-contain 
     object-right-bottom 
     z-[1] 
     animate-under-in2
+    scale-60  
   "
 />
 
@@ -93,7 +95,7 @@ export default function Home() {
   className="
     pointer-events-none select-none
     absolute left-0 right-0 bottom-0
-    w-full h-[180px]
+    w-full h-[200px]
     object-cover
     z-[2]
     animate-under-in
@@ -118,7 +120,7 @@ export default function Home() {
           <img
             src="/Home/All-left.webp"
             alt="materials"
-            className=" scale-30 lg:scale-65 md:scale-75 pointer-events-none select-none absolute lg:inset lg:h-250
+            className="  lg:scale-65 md:scale-75 pointer-events-none select-none absolute lg:inset lg:h-265
             md:h-220 w-full object-contain  object-bottom-left animate-under-in2 md:-bottom-30 md:-left-20  lg:-left-10 lg:-bottom-30
              w-[600px] lg:w-[800px] h-auto left-0 -translate-x-[20%] lg:-translate-x-[13%]"
           />
@@ -128,13 +130,13 @@ export default function Home() {
   className="
     pointer-events-none select-none absolute z-[1] animate-under-in2
     right-0 bottom-0 md:-bottom-10 
-   w-[600px] lg:w-[800px] h-auto lg:h-200 
+   w-[600px] lg:w-[800px] h-auto lg:h-240 md:h-250
     object-contain object-bottom-right
      
     translate-x-[5%] lg:translate-x-[13%]
-    md:translate-x-[15%]
+    md:translate-x-[25%]
 
-    scale-50 md:scale-75 lg:scale-75
+    md:scale-75 lg:scale-75
   "
 />
 
@@ -178,7 +180,7 @@ export default function Home() {
   className="
     pointer-events-none select-none 
     absolute left-0 right-0 bottom-0 
-    w-full h-[160px] 
+    w-full h-[200px] 
     z-[1] 
     animate-under-in
   "
