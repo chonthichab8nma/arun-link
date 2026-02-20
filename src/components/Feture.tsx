@@ -132,7 +132,7 @@ export default function Feture() {
           ))}
         </div>
 
-        <div className="border-t border-slate-200 my-5"></div>
+        <div className="border-t border-slate-200 my-5 mx-8"></div>
         <div className="flex justify-center">
           <h3 className="mt-10 mb-10 flex items-center gap-3 text-[30px] font-bold text-[#6B757A]">
             <img className="h-8 w-8" src="/Feature/i2.svg" alt="icon" />
@@ -185,7 +185,7 @@ export default function Feture() {
           ))}
         </div>
 
-        <div className="border-t border-slate-200 my-5"></div>
+        <div className="border-t border-slate-200 my-5 mx-8"></div>
         <div className="flex justify-center">
           <h3 className="mt-10 mb-10 flex items-center gap-3 text-[30px] font-bold text-[#6B757A]">
             <img className="h-8 w-8" src="/Feature/i3.svg" alt="icon" />
