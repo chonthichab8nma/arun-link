@@ -87,15 +87,14 @@ export default function Feture() {
         </div>
 
         {/*  <= md: เลื่อนข้าง / >= md: grid 4 */}
-        <div
-          className="
-            md:flex  md:gap-6 lg:grid lg:grid-cols-4
-            flex gap-6 overflow-x-auto md:overflow-x-auto
-            snap-x snap-mandatory 
-            pb-4 
-            [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
-          "
-        >
+      <div
+  className="
+    md:flex md:gap-6 lg:grid lg:grid-cols-4
+    flex gap-6 overflow-x-auto
+    pb-4
+    [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
+  "
+>
           {items1.map((it, i) => (
             <div
               key={i}
@@ -105,7 +104,7 @@ export default function Feture() {
                 bg-[#FFFFFF]
                 overflow-hidden 
                 snap-start 
-                shrink-0 w-[85%] sm:w-[60%] md:max-w-[288px] lg:w-auto
+                shrink-0 w-[85%] sm:w-[60%] md:max-w-[288px] lg:w-auto max-w-[280px]
               "
             >
               <div className="px-8 pt-10 relative z-10">
@@ -141,15 +140,14 @@ export default function Feture() {
           </h3>
         </div>
 
-        <div
-          className="
-            md:flex  md:gap-6 lg:grid lg:grid-cols-4
-            flex gap-6 overflow-x-auto md:overflow-x-auto
-            snap-x snap-mandatory
-            pb-4
-            [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
-          "
-        >
+       <div
+  className="
+    md:flex md:gap-6 lg:grid lg:grid-cols-4
+    flex gap-6 overflow-x-auto
+    pb-4
+    [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
+  "
+>
           {items2.map((it, i) => (
             <div
               key={i}
@@ -159,7 +157,7 @@ export default function Feture() {
                 bg-[#FFFFFF]
                 overflow-hidden
                 snap-start
-                shrink-0 w-[85%] sm:w-[60%] md:max-w-[288px] lg:w-auto
+                shrink-0 w-[85%] sm:w-[60%] md:max-w-[288px] lg:w-auto max-w-[280px]
               "
             >
               <div className="px-8 pt-10 relative z-10">
@@ -195,15 +193,14 @@ export default function Feture() {
           </h3>
         </div>
 
-        <div
-          className="
-            md:flex md:gap-6 lg:grid lg:grid-cols-4
-            flex gap-6 overflow-x-auto md:overflow-x-auto
-            snap-x snap-mandatory
-            pb-4
-            [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
-          "
-        >
+          <div
+  className="
+    md:flex md:gap-6 lg:grid lg:grid-cols-4
+    flex gap-6 overflow-x-auto
+    pb-4
+    [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
+  "
+>
           {items3.map((it, i) => (
             <div
               key={i}
@@ -213,7 +210,7 @@ export default function Feture() {
                 bg-[#FFFFFF]
                 overflow-hidden
                 snap-start
-                shrink-0 w-[85%] sm:w-[60%] md:max-w-[288px] lg:w-auto
+                shrink-0 w-[85%] sm:w-[60%] md:max-w-[288px] lg:w-auto max-w-[280px]
               "
             >
               <div className="px-8 pt-10 relative z-10">
