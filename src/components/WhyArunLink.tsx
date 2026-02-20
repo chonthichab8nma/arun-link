@@ -158,13 +158,22 @@ export default function WhyArunLink() {
             <article
               key={card.title}
               className={`group relative mx-auto h-55.5 w-full max-w-95.5
-                overflow-hidden rounded-[22px]
-                border border-black/5
-                p-5 md:p-6
-                transform-gpu transition-all duration-500 ease-out
-                bg-[linear-gradient(155deg,#ffffff_0%,#ffffff_58%,#dff2ff_100%)]
-                hover:bg-[linear-gradient(155deg,#ffffff_0%,#ffffff_55%,#d9efff_100%)]
-                ${idx === 2 ? "md:col-span-2 md:mx-auto lg:col-span-1 lg:mx-0" : ""}`}
+    overflow-hidden rounded-[22px]
+    border border-black/5
+    p-5 md:p-6
+ 
+    transform-gpu transition-all duration-500 ease-in-out
+    
+
+    bg-[linear-gradient(155deg,#ffffff_0%,#ffffff_58%,#dff2ff_100%)]
+    
+   
+   hover:bg-[linear-gradient(155deg,#ffffff_0%,#EFF9FF_100%)]
+    
+    /* เพิ่มเงาจางๆ ด้านในเพื่อให้ดูมีมิติขึ้นโดยที่การ์ดไม่ขยับ */
+    hover:shadow-inner 
+    
+    ${idx === 2 ? "md:col-span-2 md:mx-auto lg:col-span-1 lg:mx-0" : ""}`}
             >
               <img
                 src={card.image}
@@ -211,7 +220,7 @@ export default function WhyArunLink() {
               {painPointCards.map((card) => (
                 <article
                   key={card.title}
-                  className="group relative flex min-h-80 w-full flex-col justify-between overflow-hidden rounded-[20px] bg-[#F0F0F0] p-4 transition-colors duration-300 hover:bg-[#CDCDCD] sm:min-h-86 sm:p-5 md:p-6 lg:p-8"
+                  className="group relative flex min-h-80 w-full flex-col justify-between overflow-hidden rounded-[20px] bg-[#F0F0F0] p-4 transition-colors duration-300 hover:bg-[#CDCDCD]/45 sm:min-h-86 sm:p-5 md:p-6 lg:p-8"
                 >
                   <img
                     src={card.watermark}
