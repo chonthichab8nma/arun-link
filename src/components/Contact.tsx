@@ -12,14 +12,14 @@ export default function Footer() {
             md:px-10 md:py-10
           "
           style={{
-            backgroundImage: "url(/Contact/bg2.png)",
+            backgroundImage: "url(/Contact/CTA.png)",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
         >
           {/* overlay ให้พื้นหลังนุ่ม ๆ */}
-          <div className="pointer-events-none absolute inset-0 bg-[#DAEDF7]/92" />
+          <div className="pointer-events-none absolute inset-0 bg-[#DAEDF7]/30" />
 
           <div className="relative flex flex-col items-center text-center">
             <img
