@@ -80,7 +80,7 @@ export default function Customer() {
                   h-[600px] sm:h-[600px] md:h-[720px]
 
                   /* ===== iPad (md) ===== */
-                  md:right-[-50px] md:bottom-[-186px] md:h-[460px]
+                  md:right-[-50px] md:bottom-[-186px] md:h-[460px] 
 
                   /* ===== Laptop+ (lg) : ใช้ของเดิม ไม่เปลี่ยนดีไซน์ ===== */
                   lg:right-[-100px] lg:bottom-auto lg:-top-[203px] lg:h-[620px]
