@@ -69,8 +69,8 @@ export default function Feture() {
 
   return (
     <section className="bg-white py-16 max-w-7xl mx-auto">
-      <div className="px-5 md:px-20">
-        <header className="text-center">
+      <div className="lg-px-5 ">
+        <header className="text-center px-5">
           <h2 className="text-[36px] font-bold mb-4">
             ฟีเจอร์ที่ช่วยให้การทำงานง่ายขึ้น
           </h2>
@@ -87,14 +87,14 @@ export default function Feture() {
         </div>
 
         {/*  <= md: เลื่อนข้าง / >= md: grid 4 */}
-      <div
-  className="
-    md:flex md:gap-6 lg:grid lg:grid-cols-4
-    flex gap-6 overflow-x-auto
-    pb-4
-    [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
-  "
->
+            <div
+        className="
+          md:flex md:gap-6 lg:grid lg:grid-cols-4
+          flex gap-6 overflow-x-auto
+          pb-4
+          [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
+        "
+           >
           {items1.map((it, i) => (
             <div
               key={i}
