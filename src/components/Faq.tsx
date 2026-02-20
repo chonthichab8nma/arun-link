@@ -1,9 +1,8 @@
 import { useState, type FC } from "react";
-// นำเข้าไอคอนสำหรับปุ่มเปิด-ปิด (ถ้ายังใช้ Lucide อยู่)
 import { ChevronDown } from "lucide-react";
 
 type FAQItem = {
-  icon: string; // เปลี่ยนจาก LucideIcon เป็น string เพื่อรับ Path ของไฟล์ SVG
+  icon: string; 
   question: string;
   answer: string;
 };
@@ -76,7 +75,7 @@ const FAQCard: FC<FAQCardProps> = ({ item, index, isActive, onToggle }) => {
       >
         <div className="flex min-w-0 items-center gap-3 sm:gap-4">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-200 bg-white overflow-hidden p-2">
-            {/* เปลี่ยนจากการ Render คอมโพเนนต์เป็นแท็ก img */}
+     
             <img 
               src={item.icon} 
               alt="" 
@@ -126,7 +125,7 @@ export default function Faq() {
   };
 
   return (
-    <section className="bg-gray-50 py-16 md:py-24">
+    <section className=" py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-5 md:px-20">
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-10 text-center text-[28px] font-bold leading-tight text-gray-900 sm:mb-12 sm:text-[40px]">
