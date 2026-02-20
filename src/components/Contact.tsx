@@ -38,84 +38,83 @@ export default function Footer() {
         </div>
 
         {/* ===== MAIN FOOTER ===== */}
-        <div className="grid gap-10 md:grid-cols-[1.2fr_1fr_1fr] md:items-start">
-          {/* Brand */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <img
-                src="Logoblue.png" 
-                alt="Arun Link"
-                className="h-10 w-auto"
-              />
-            </div>
-          </div>
+       <div className="grid gap-10 md:grid-cols-2 md:items-start lg:grid-cols-[1.2fr_1fr_1fr]">
+  {/* Brand - ใช้ md:col-span-2 เพื่อให้โลโก้อยู่บรรทัดบนสุดในจอ md */}
+  <div className="space-y-4 md:col-span-2 lg:col-span-1">
+    <div className="flex items-center gap-3">
+      <img
+        src="Logoblue.png" 
+        alt="Arun Link"
+        className="h-10 w-auto"
+      />
+    </div>
+  </div>
 
-          {/* Policies */}
-          <div>
-            <h3 className="text-[14px] font-semibold text-[#1D2B3A]">
-              นโยบายและเงื่อนไข
-            </h3>
-            <ul className="mt-4 space-y-2 text-[13px] text-[#6B7A8C]">
-              <li>
-                <a href="/policy/privacy" className="hover:text-[#0B77B7]">
-                  นโยบายความเป็นส่วนตัว
-                </a>
-              </li>
-              <li>
-                <a href="/policy/terms" className="hover:text-[#0B77B7]">
-                  ข้อกำหนดและเงื่อนไขการใช้งาน
-                </a>
-              </li>
-              <li>
-                <a href="/policy/cancel" className="hover:text-[#0B77B7]">
-                  นโยบายการยกเลิกบริการ
-                </a>
-              </li>
-            </ul>
-          </div>
+  {/* Policies - จะขยับมาอยู่บรรทัดที่สองในจอ md */}
+  <div className="md:col-span-1">
+    <h3 className="text-[14px] font-semibold text-[#1D2B3A]">
+      นโยบายและเงื่อนไข
+    </h3>
+    <ul className="mt-4 space-y-2 text-[13px] text-[#6B7A8C]">
+      <li>
+        <a href="/policy/privacy" className="hover:text-[#0B77B7]">
+          นโยบายความเป็นส่วนตัว
+        </a>
+      </li>
+      <li>
+        <a href="/policy/terms" className="hover:text-[#0B77B7]">
+          ข้อกำหนดและเงื่อนไขการใช้งาน
+        </a>
+      </li>
+      <li>
+        <a href="/policy/cancel" className="hover:text-[#0B77B7]">
+          นโยบายการยกเลิกบริการ
+        </a>
+      </li>
+    </ul>
+  </div>
 
-          {/* Contact */}
-          <div>
-            <h3 className="text-[14px] font-semibold text-[#1D2B3A]">
-              ติดต่อเรา
-            </h3>
+  {/* Contact - จะอยู่ข้างๆ Policies ในบรรทัดที่สองของจอ md */}
+  <div className="md:col-span-1">
+    <h3 className="text-[14px] font-semibold text-[#1D2B3A]">
+      ติดต่อเรา
+    </h3>
 
-            <div className="mt-4 space-y-3 text-[13px] text-[#6B7A8C]">
-              <div className="flex items-center gap-2">
-                <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-[#6B7280]">
-                  <img src="/Contact/1.svg" alt="icon" className="h-4 w-4" />
-                </div>
-
-                <span className="w-24">อีเมล</span>
-                <span className="text-[#4A5A6A]">support@arunlink.co</span>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-[#6B7280]">
-                  <img src="/Contact/2.svg" alt="icon" className="h-4 w-4" />
-                </div>
-                <span className="w-24">Line</span>
-                <span className="text-[#4A5A6A]">arunlink</span>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full">
-                  <img src="/Contact/3.svg" alt="icon" className="h-6 w-6" />
-                </div>
-                <span className="w-24">Facebook</span>
-                <span className="text-[#4A5A6A]">ArunLink</span>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-[#6B7280]">
-                  <img src="/Contact/4.svg" alt="icon" className="h-4 w-4" />
-                </div>
-                <span className="w-24">Google Maps</span>
-                <span className="text-[#4A5A6A]">ArunLink</span>
-              </div>
-            </div>
-          </div>
+    <div className="mt-4 space-y-3 text-[13px] text-[#6B7A8C]">
+      <div className="flex items-center gap-2">
+        <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-[#6B7280]">
+          <img src="/Contact/1.svg" alt="icon" className="h-4 w-4" />
         </div>
+        <span className="w-24">อีเมล</span>
+        <span className="text-[#4A5A6A]">support@arunlink.co</span>
+      </div>
+
+      <div className="flex items-center gap-2">
+        <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-[#6B7280]">
+          <img src="/Contact/2.svg" alt="icon" className="h-4 w-4" />
+        </div>
+        <span className="w-24">Line</span>
+        <span className="text-[#4A5A6A]">arunlink</span>
+      </div>
+
+      <div className="flex items-center gap-2">
+        <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full">
+          <img src="/Contact/3.svg" alt="icon" className="h-6 w-6" />
+        </div>
+        <span className="w-24">Facebook</span>
+        <span className="text-[#4A5A6A]">ArunLink</span>
+      </div>
+
+      <div className="flex items-center gap-2">
+        <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-[#6B7280]">
+          <img src="/Contact/4.svg" alt="icon" className="h-4 w-4" />
+        </div>
+        <span className="w-24">Google Maps</span>
+        <span className="text-[#4A5A6A]">ArunLink</span>
+      </div>
+    </div>
+  </div>
+</div>
 
         {/* Bottom bar */}
         <div className="mt-10 flex flex-col gap-4 border-t border-[#E8EEF5] pt-6 md:flex-row md:items-center md:justify-between items-center">
