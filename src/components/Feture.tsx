@@ -88,12 +88,12 @@ export default function Feture() {
 
         {/*  <= md: เลื่อนข้าง / >= md: grid 4 */}
             <div
-        className="
-          md:flex md:gap-6 lg:grid lg:grid-cols-4
-          flex gap-6 overflow-x-auto
-          pb-4
-          [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
-        "
+            className="
+              md:flex md:gap-6 lg:grid lg:grid-cols-4
+              flex gap-6 overflow-x-auto
+              pb-4  pl-5 pr-0 
+              [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
+            "
            >
           {items1.map((it, i) => (
             <div
@@ -144,7 +144,7 @@ export default function Feture() {
   className="
     md:flex md:gap-6 lg:grid lg:grid-cols-4
     flex gap-6 overflow-x-auto
-    pb-4
+    pb-4  pl-5 pr-0 
     [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
   "
 >
@@ -197,7 +197,7 @@ export default function Feture() {
   className="
     md:flex md:gap-6 lg:grid lg:grid-cols-4
     flex gap-6 overflow-x-auto
-    pb-4
+    pb-4  pl-5 pr-0 
     [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
   "
 >
