@@ -6,6 +6,18 @@ export default function Navbar() {
   const [autoWhite, setAutoWhite] = useState(false);
   const [activeHash, setActiveHash] = useState("#home");
 
+  const items: NavItem[] = useMemo(
+    () => [
+      { label: "ทำไมต้องอรุณ", href: "#why" },
+      { label: "ฟีเจอร์", href: "#feature" },
+      { label: "ลูกค้า", href: "#customer" },
+      { label: "สมัครพาร์ทเนอร์", href: "#partner" },
+      { label: "คำถามที่พบบ่อย", href: "#faq" },
+      { label: "ติดต่อเรา", href: "#contact" },
+    ],
+    [],
+  );
+
   useEffect(() => {
     const onScroll = () => {
       const whySection = document.getElementById("why");
@@ -27,17 +39,30 @@ export default function Navbar() {
     return () => window.removeEventListener("hashchange", setFromHash);
   }, []);
 
-  const items: NavItem[] = useMemo(
-    () => [
-      { label: "ทำไมต้องอรุณ", href: "#why" },
-      { label: "ฟีเจอร์", href: "#feature" },
-      { label: "ลูกค้า", href: "#customer" },
-      { label: "สมัครพาร์ทเนอร์", href: "#partner" },
-      { label: "คำถามที่พบบ่อย", href: "#faq" },
-      { label: "ติดต่อเรา", href: "#contact" },
-    ],
-    [],
-  );
+  useEffect(() => {
+    const navItems = [{ href: "#home" }, ...items];
+    const onScrollSpy = () => {
+      const scrollTop = window.scrollY;
+      const viewportMarker = scrollTop + window.innerHeight * 0.35;
+      let currentHash = "#home";
+
+      for (const item of navItems) {
+        const id = item.href.replace("#", "");
+        const section = document.getElementById(id);
+        if (!section) continue;
+
+        if (viewportMarker >= section.offsetTop - 120) {
+          currentHash = item.href;
+        }
+      }
+
+      setActiveHash((prev) => (prev === currentHash ? prev : currentHash));
+    };
+
+    onScrollSpy();
+    window.addEventListener("scroll", onScrollSpy, { passive: true });
+    return () => window.removeEventListener("scroll", onScrollSpy);
+  }, [items]);
 
   const wrapperClass =
     "fixed inset-x-0 top-0 z-50 transition-all duration-300";
@@ -62,7 +87,7 @@ export default function Navbar() {
 
     return [
       linkBase,
-      isActive ? "text-white" : "text-blue-200 hover:text-white ",
+      isActive ? "text-[#1E93CE]" : "text-blue-200 hover:text-white",
     ].join(" ");
   };
 
