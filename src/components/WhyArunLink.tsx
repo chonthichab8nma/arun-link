@@ -170,8 +170,7 @@ export default function WhyArunLink() {
    
    hover:bg-[linear-gradient(155deg,#ffffff_0%,#EFF9FF_100%)]
     
-    /* เพิ่มเงาจางๆ ด้านในเพื่อให้ดูมีมิติขึ้นโดยที่การ์ดไม่ขยับ */
-    hover:shadow-inner 
+ 
     
     ${idx === 2 ? "md:col-span-2 md:mx-auto lg:col-span-1 lg:mx-0" : ""}`}
             >
@@ -249,7 +248,7 @@ export default function WhyArunLink() {
               ))}
             </div>
 
-            <article className="group relative mt-4 h-150 w-full overflow-hidden rounded-[20px] bg-[#DAEDF7] px-6 py-8 transition-colors duration-300 hover:bg-[#BCDDEE] md:mt-6 md:h-206.25 md:px-8 md:py-12 lg:flex lg:h-126 lg:items-center">
+            <article className="group relative mt-4 h-150 w-full overflow-hidden rounded-[20px] bg-[#DAEDF7] px-6 py-8 transition-colors duration-300 hover:bg-[oklch(0.879_0.042_230.25)]/65 md:mt-6 md:h-206.25 md:px-8 md:py-12 lg:flex lg:h-126 lg:items-center">
               <img
                 src="/WhyArunLink/watermark/5.webp"
                 alt=""
