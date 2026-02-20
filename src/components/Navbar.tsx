@@ -1,10 +1,11 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 type NavItem = { label: string; href: string };
 
 export default function Navbar() {
   const [autoWhite, setAutoWhite] = useState(false);
   const [activeHash, setActiveHash] = useState("#home");
+  const mobileLinkRefs = useRef<Record<string, HTMLAnchorElement | null>>({});
 
   const items: NavItem[] = useMemo(
     () => [
@@ -63,6 +64,19 @@ export default function Navbar() {
     window.addEventListener("scroll", onScrollSpy, { passive: true });
     return () => window.removeEventListener("scroll", onScrollSpy);
   }, [items]);
+
+  useEffect(() => {
+    if (typeof window === "undefined" || window.innerWidth >= 768) return;
+
+    const activeLink = mobileLinkRefs.current[activeHash];
+    if (!activeLink) return;
+
+    activeLink.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: activeHash === "#contact" ? "end" : "center",
+    });
+  }, [activeHash]);
 
   const wrapperClass =
     "fixed inset-x-0 top-0 z-50 transition-all duration-300";
@@ -136,6 +150,9 @@ export default function Navbar() {
           {items.map((it) => (
             <a
               key={it.href}
+              ref={(el) => {
+                mobileLinkRefs.current[it.href] = el;
+              }}
               href={it.href}
               className={`${linkClass(it.href)} shrink-0`}
               onClick={() => setActiveHash(it.href)}
