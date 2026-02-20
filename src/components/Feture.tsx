@@ -91,7 +91,7 @@ export default function Feture() {
             className="
               md:flex md:gap-6 lg:grid lg:grid-cols-4
               flex gap-6 overflow-x-auto
-              pb-4  pl-5 pr-0 
+              pb-4  pl-5 pr-5
               [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
             "
            >
@@ -144,7 +144,7 @@ export default function Feture() {
   className="
     md:flex md:gap-6 lg:grid lg:grid-cols-4
     flex gap-6 overflow-x-auto
-    pb-4  pl-5 pr-0 
+    pb-4  pl-5 pr-5
     [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
   "
 >
@@ -197,7 +197,7 @@ export default function Feture() {
   className="
     md:flex md:gap-6 lg:grid lg:grid-cols-4
     flex gap-6 overflow-x-auto
-    pb-4  pl-5 pr-0 
+    pb-4  pl-5 pr-5
     [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
   "
 >
