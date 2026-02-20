@@ -27,10 +27,9 @@ export default function Customer() {
           <div className="relative grid items-center lg:gap-10 md:gap-10 gap-0 lg:grid-cols-2">
             {/* LEFT */}
             <div className="text-white">
-              <h1 className="text-[34px] font-extrabold leading-tight md:text-[40px]">
-                อยากรับงานเพิ่ม
-                <br />
-                แบบจัดการง่ายขึ้นไหม?
+              <h1 className="text-[30px] font-extrabold leading-[1.22] md:text-[40px] md:leading-[1.2]">
+                <span className="block">อยากรับงานเพิ่ม</span>
+                <span className=" block md:mt-2">แบบจัดการง่ายขึ้นไหม?</span>
               </h1>
 
               <p className="mt-5 max-w-[520px] text-[16px] leading-7 text-white/90">
