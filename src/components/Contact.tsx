@@ -6,20 +6,21 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-5 pt-10 md:px-20">
         <div
           className="
-            relative mb-10 overflow-hidden
+            relative mb-20 overflow-hidden
             rounded-[16px]
             px-6 pt-8
             md:px-10 md:py-10
+            
           "
           style={{
-            backgroundImage: "url(/Contact/CTA.png)",
+            backgroundImage: "url(/Contact/CTA3.png)",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
         >
           {/* overlay ให้พื้นหลังนุ่ม ๆ */}
-          <div className="pointer-events-none absolute inset-0 bg-[#DAEDF7]/30" />
+          <div className="pointer-events-none absolute inset-0 bg-[#DAEDF7]/70" />
 
           <div className="relative flex flex-col items-center text-center">
             <img
