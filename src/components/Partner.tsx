@@ -70,7 +70,7 @@ export default function Customer() {
               className="
                   absolute pointer-events-none select-none
                   w-auto object-contain
-                  drop-shadow-[0_18px_35px_rgba(0,0,0,0.25)]
+                 
                   transform-gpu transition-transform duration-700 ease-out origin-bottom
                   lg:scale-100 group-hover:scale-[1.05] md:scale-100 scale-130
 
