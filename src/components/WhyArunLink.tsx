@@ -3,6 +3,7 @@ type ServiceCard = {
   desc1: string;
   desc2: string;
   image: string;
+  href: string;
 };
 
 type PainPointCard = {
@@ -19,18 +20,21 @@ const serviceCards: ServiceCard[] = [
     desc1: "งานฐานราก กำแพงกันดิน",
     desc2: "และโครงสร้างหลัก",
     image: "/WhyArunLink/asset/Asset5.webp",
+    href: "https://arunlink.vercel.app/search?category_id=000000000000000000000001",
   },
   {
     title: "งานซ่อมแซม",
     desc1: "แก้ไข ปรับปรุง",
     desc2: "ดูแลโครงสร้างและระบบเดิม",
     image: "/WhyArunLink/asset/Asset6.webp",
+    href: "https://arunlink.vercel.app/search?category_id=000000000000000000000008",
   },
   {
     title: "งานต่อเติม",
     desc1: "ต่อเติมพื้นที่",
     desc2: "เพิ่มฟังก์ชันการใช้งาน",
     image: "/WhyArunLink/asset/Asset7.webp",
+    href: "https://arunlink.vercel.app/search?category_id=000000000000000000000009",
   },
 ];
 
@@ -122,6 +126,7 @@ export default function WhyArunLink() {
           <div className="mx-auto max-w-5xl">
             <h2 className="leading-[1.1] tracking-[-0.01em] text-[#0f1116] FeatuesText text-[38px] md:text-[52px] lg:text-h1">
               งานโครงสร้างที่ดี
+              
             </h2>
             <h3 className="mt-2 FeatuesText leading-normal tracking-[-0.01em] text-[#1f93ce] text-[38px] md:text-[52px] lg:text-h1">
               คือหัวใจของทุกพื้นที่
@@ -204,7 +209,9 @@ export default function WhyArunLink() {
               </div>
 
               <a
-                href="#contact"
+                href={card.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="absolute bottom-5 left-5 z-20 text-[16px] font-medium text-[#1183c8] transition hover:text-[#0d6da8] md:bottom-6 md:left-6"
               >
                 ดูเพิ่มเติม {">"}
