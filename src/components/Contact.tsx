@@ -3,12 +3,12 @@
 export default function Footer() {
   return (
     <footer className="bg-white">
-      <div className="mx-auto max-w-7xl px-5 pt-10 md:px-20">
+      <div className="mx-auto max-w-7xl px-5 lg:pt-10 md:px-20 mt-2 mb-2">
         <div
           className="
             relative mb-20 overflow-hidden
             rounded-[16px]
-            px-6 pt-8
+            px-6 pt-8 py-9
             md:px-10 md:py-10
             
           "
@@ -22,7 +22,7 @@ export default function Footer() {
           {/* overlay ให้พื้นหลังนุ่ม ๆ */}
           <div className="pointer-events-none absolute inset-0 bg-[#DAEDF7]/70" />
 
-          <div className="relative flex flex-col items-center text-center">
+          <div className="relative flex flex-col items-center text-center mt-2 mb-2">
             <img
               src="Logoblue.png"
               alt="Arun Link"
@@ -118,8 +118,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-10 flex flex-col gap-4 border-t border-[#E8EEF5] pt-6 md:flex-row md:items-center md:justify-between">
-          <div className="text-[12px] text-[#8AA0B2]">
+        <div className="mt-10 flex flex-col gap-4 border-t border-[#E8EEF5] pt-6 md:flex-row md:items-center md:justify-between items-center">
+          <div className="text-[12px] text-[#8AA0B2] ">
             © 2026 ArunLink by Soraroon Group. All rights reserved.
           </div>
 

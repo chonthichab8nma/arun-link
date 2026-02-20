@@ -28,13 +28,13 @@ export default function Home() {
     absolute 
     left-1/4 bottom-10
     -translate-x-1/2            
-    w-[100%] max-w-none 
-    h-[460px] sm:h-[500px] 
+    w-[70%] max-w-none 
+    h-[300px] sm:h-[500px] 
     object-contain object-bottom
     z-[1] 
     object-bottom-left  
     animate-under-in2 
-    scale-60        
+    scale-75       
   "
 />
 <img
@@ -46,14 +46,14 @@ export default function Home() {
     bottom-10
     -right-1/4           
     translate-x-0      
-    w-auto            
+    w-[200%]           
     max-w-none      
-    h-[460px] sm:h-[500px] 
+    h-[300px] sm:h-[500px] 
     object-contain 
     object-right-bottom 
     z-[1] 
     animate-under-in2
-    scale-60  
+    scale-75  
   "
 />
 
@@ -63,7 +63,7 @@ export default function Home() {
 
 
           {/* Content */}
-          <div className="relative z-10 flex h-full items-start pt-40 md:pt-0 md:items-center justify-center px-6">
+          <div className="relative z-10 flex h-full items-start pt-50 md:pt-0 md:items-center justify-center px-6">
             <div className="text-center text-white">
               <h1 className="text-[56px] font-extrabold leading-none drop-shadow-[0_6px_18px_rgba(0,0,0,0.25)]">
                 อรุณลิงก์
@@ -90,12 +90,12 @@ export default function Home() {
           </div>
 
 <img
-  src="/Home/Wall.png"
+  src="/Home/under.webp"
   alt="under"
   className="
     pointer-events-none select-none
     absolute left-0 right-0 bottom-0
-    w-full h-[200px]
+    w-full h-[170px]
     object-cover
     z-[2]
     animate-under-in

@@ -77,11 +77,13 @@ export default function Customer() {
         </h2>
 
         {/* Cards */}
-        <div className="mt-14 grid h-62.5 h-auto gap-[16px] snap-x snap-mandatory md:flex md:overflow-x-auto md:pb-2 lg:grid lg:grid-cols-3 lg:gap-4 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+        <div className="mt-14  h-62.5 h-auto gap-[16px] snap-x snap-mandatory flex overflow-x-auto pb-2 
+        lg:grid lg:grid-cols-3 lg:gap-4 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
+          ">
   {reviews.map((r, idx) => (
     <article
       key={idx}
-      className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm lg:w-full md:min-w-lg lg:min-w-0"
+      className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm lg:w-full md:min-w-lg lg:min-w-0 min-w-sm"
     >
       <img 
         src={r.Area}

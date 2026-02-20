@@ -68,7 +68,7 @@ export default function Navbar() {
 
   return (
     <header className={`${wrapperClass} ${bgClass}`}>
-      <div className="mx-auto mt-2 mb-2 max-w-auto px-6 py-3">
+      <div className="mx-auto lg:mt-2 lg:mb-2 md:mt-2 md:mb-2 mt-[24px] mb-[16px] max-w-auto px-6 py-3">
         <div className="flex items-center justify-between md:hidden">
           <a
             href="#home"
