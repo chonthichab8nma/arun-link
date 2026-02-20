@@ -40,11 +40,11 @@ export default function Navbar() {
   );
 
   const wrapperClass =
-    "absolute inset-x-0 top-0 z-50 transition-all duration-300 md:fixed md:inset-x-0 md:top-0";
+    "fixed inset-x-0 top-0 z-50 transition-all duration-300";
   const isWhite = autoWhite;
   const bgClass = isWhite
-    ? "bg-transparent md:bg-white/95 md:backdrop-blur-md md:shadow-sm"
-    : "bg-transparent";
+    ? "bg-white h-[116px] shadow-sm md:h-auto md:bg-white/95 md:backdrop-blur-md md:shadow-sm"
+    : "bg-transparent h-auto";
 
   const textClass = isWhite ? "text-white md:text-sky-700" : "text-white";
 
