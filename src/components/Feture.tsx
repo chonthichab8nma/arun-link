@@ -70,7 +70,7 @@ export default function Feture() {
   return (
     <section className="bg-white py-16 max-w-7xl mx-auto">
       <div className="lg-px-5 ">
-        <header className="text-center px-5">
+        <header className="text-center px-10">
           <h2 className="text-[36px] font-bold mb-4">
             ฟีเจอร์ที่ช่วยให้การทำงานง่ายขึ้น
           </h2>
@@ -91,7 +91,7 @@ export default function Feture() {
             className="
               md:flex md:gap-6 lg:grid lg:grid-cols-4
               flex gap-6 overflow-x-auto
-              pb-4  pl-5 pr-5
+              pb-4  pl-8 pr-8
               [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
             "
            >
@@ -144,7 +144,7 @@ export default function Feture() {
   className="
     md:flex md:gap-6 lg:grid lg:grid-cols-4
     flex gap-6 overflow-x-auto
-    pb-4  pl-5 pr-5
+    pb-4  pl-8 pr-8
     [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
   "
 >
@@ -197,7 +197,7 @@ export default function Feture() {
   className="
     md:flex md:gap-6 lg:grid lg:grid-cols-4
     flex gap-6 overflow-x-auto
-    pb-4  pl-5 pr-5
+    pb-4  pl-8 pr-8
     [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
   "
 >
