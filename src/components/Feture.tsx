@@ -69,7 +69,7 @@ export default function Feture() {
 
   return (
     <section className="bg-white py-16 max-w-7xl mx-auto">
-      <div className="lg-px-5 ">
+      <div className=" lg:px-12 ">
         <header className="text-center px-10">
           <h2 className="text-[36px] font-bold mb-4">
             ฟีเจอร์ที่ช่วยให้การทำงานง่ายขึ้น

@@ -70,14 +70,14 @@ export default function Customer() {
 
   return (
     <section className="bg-white py-20 lg:mb-0">
-      <div className="mx-auto max-w-7xl px-5 md:px-20">
+      <div className="mx-auto max-w-7xl ">
         {/* Title */}
         <h2 className="text-center text-[36px] font-bold  tracking-tight text-slate-900">
           สิ่งที่ลูกค้าพูดถึงเรา
         </h2>
 
         {/* Cards */}
-        <div className="mt-14  h-62.5 h-auto gap-[16px] snap-x snap-mandatory flex overflow-x-auto pb-2 
+        <div className="mt-14  h-62.5 h-auto gap-[16px] snap-x snap-mandatory flex overflow-x-auto pb-2  pl-8 pr-8
         lg:grid lg:grid-cols-3 lg:gap-4 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden
           ">
   {reviews.map((r, idx) => (
