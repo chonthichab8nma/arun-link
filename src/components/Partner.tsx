@@ -3,7 +3,7 @@ import React from "react";
 export default function Customer() {
   return (
     <section className="bg-white lg:py-16">
-      <div className="mx-auto max-w-7xl px-5 md:px-20">
+      <div className="mx-auto max-w-7xl px-5 pr-8 pl-8">
         <div
           className="group relative overflow-visible rounded-[28px] px-8 py-10 md:px-14 md:py-14"
           style={{
@@ -79,7 +79,7 @@ export default function Customer() {
                   h-[220px] sm:h-[600px] md:h-[720px]
 
                   /* ===== iPad (md) ===== */
-                  md:right-[-50px] md:bottom-[-210px] md:h-[460px]  md:translate-x-0 md:left-0
+                  md:right-[-50px] md:bottom-[-167px] md:h-[460px]  md:translate-x-0 md:left-0
 
                   /* ===== Laptop+ (lg) : ใช้ของเดิม ไม่เปลี่ยนดีไซน์ ===== */
                   lg:right-[-100px] lg:bottom-auto lg:-top-[202px] lg:h-[620px]  lg:translate-x-0  lg:left-auto
