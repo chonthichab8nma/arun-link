@@ -9,7 +9,7 @@ export default function Navbar() {
 
   const items: NavItem[] = useMemo(
     () => [
-      { label: "ทำไมต้องอรุณ", href: "#why" },
+      { label: "ทำไมอรุณลิงก์?", href: "#why" },
       { label: "ฟีเจอร์", href: "#feature" },
       { label: "ลูกค้า", href: "#customer" },
       { label: "สมัครพาร์ทเนอร์", href: "#partner" },
